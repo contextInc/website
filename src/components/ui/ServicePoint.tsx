@@ -4,39 +4,43 @@ import {
 } from '@chakra-ui/react';
 import { useTranslation } from 'react-i18next';
 import '@/i18n';
-import AppealPoint from './AppealPoint';
+import PageMoveButton from '../buttons/pageMoveButton';
+import AppealPointWithNum from './AppealPointWithNum';
 
 export default function ServicePoint() {
     const displayValue = useBreakpointValue({base: 'small', md: 'large'});
     const { t } = useTranslation();
 
-    if (displayValue === 'small') {
-        // モバイル用のヘッダー
+    if (displayValue === 'small') {        
         return (
-            <Stack bg="#FFFFFF" >
-                <Stack bg="#C85062" color="white" px={10} py={100} align="center" justify="space-between">
-                    <Text textStyle="3xl" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("YourVoicePreciousMobile")}</Text>
-                    <Text textStyle="xl" whiteSpace="pre-wrap" py={4} fontWeight="bold" fontFamily='system-ui, sans-serif'>{t("WhatIsContextMobile")}</Text>
-                </Stack>
+            <Stack bg="#FFFFFF"  py={20} align="center" justify="space-between">
+                <Text textStyle="3xl" marginBottom={10} color="#6D7685" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("ContextServicePoint")}</Text>
+                <AppealPointWithNum  num={1} appealSentence={t("appeal1Mobile")} detailSentence={t("detail1Mobile")} wpoint={320} hpoint={450} />
+                <AppealPointWithNum  num={2} appealSentence={t("appeal2Mobile")} detailSentence={t("detail2Mobile")} wpoint={320} hpoint={360} />
+                <AppealPointWithNum  num={3} appealSentence={t("appeal3Mobile")} detailSentence={t("detail3Mobile")} wpoint={320} hpoint={300} />
+                <AppealPointWithNum  num={4} appealSentence={t("appeal4Mobile")} detailSentence={t("detail4Mobile")} wpoint={320} hpoint={300} />
+                <AppealPointWithNum  num={5} appealSentence={t("appeal5Mobile")} detailSentence={t("detail5Mobile")} wpoint={320} hpoint={180} />
+                <AppealPointWithNum  num={6} appealSentence={t("appeal6Mobile")} detailSentence={t("detail6Mobile")} wpoint={320} hpoint={180} />
+                <PageMoveButton toRef="/howtouse" buttonLabel={t("LookHowToUse")} />
             </Stack>
         );
     } else {
-        // pcおよびタブレット用のヘッダー
         return (
-            <Stack bg="#FFFFFF"  px={56} py={20} align="center" justify="space-between">
-                <Text textStyle="3xl" color="#6D7685" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("ContextServicePoint")}</Text>
-                <Flex  alignItems="flex-start">
-                    <AppealPoint appealSentence={t("appeal1")} detailSentence={t("detail1")} />
-                    <AppealPoint appealSentence={t("appeal2")} detailSentence={t("detail2")} />
+            <Stack bg="#FFFFFF" px={56} py={40} align="center" justify="space-between">
+                <Text textStyle="5xl" marginBottom={20} color="#6D7685" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("ContextServicePoint")}</Text>
+                <Flex align="center" gap={12} py={8} justify="space-between">
+                    <AppealPointWithNum  num={1} appealSentence={t("appeal1")} detailSentence={t("detail1")} />
+                    <AppealPointWithNum  num={2} appealSentence={t("appeal2")} detailSentence={t("detail2")} />
                 </Flex>
-                <Flex  alignItems="flex-start">
-                    <AppealPoint appealSentence={t("appeal3")} detailSentence={t("detail3")} />
-                    <AppealPoint appealSentence={t("appeal4")} detailSentence={t("detail4")} />
+                <Flex align="center" gap={12} py={8} justify="space-between">
+                    <AppealPointWithNum  num={3} appealSentence={t("appeal3")} detailSentence={t("detail3")} />
+                    <AppealPointWithNum  num={4} appealSentence={t("appeal4")} detailSentence={t("detail4")} />
                 </Flex>
-                <Flex  alignItems="flex-start">
-                    <AppealPoint appealSentence={t("appeal5")} detailSentence={t("detail5")} />
-                    <AppealPoint appealSentence={t("appeal6")} detailSentence={t("detail6")} />
+                <Flex align="center" gap={12} py={8} justify="space-between">
+                    <AppealPointWithNum  num={5} appealSentence={t("appeal5")} detailSentence={t("detail5")} />
+                    <AppealPointWithNum  num={6} appealSentence={t("appeal6")} detailSentence={t("detail6")} />
                 </Flex>
+                <PageMoveButton toRef="/howtouse" buttonLabel={t("LookHowToUse")} />
             </Stack>
         );
     }

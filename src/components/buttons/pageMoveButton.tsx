@@ -9,7 +9,7 @@ interface PageMoveButtonProps {
     buttonLabel: string;
 }
 
-export default function pageMoveButton(props: PageMoveButtonProps) {
+export default function PageMoveButton(props: PageMoveButtonProps) {
     const displayValue = useBreakpointValue({base: 'small', md: 'large'});
 
     if (displayValue === 'small') {

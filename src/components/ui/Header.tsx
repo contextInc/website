@@ -11,7 +11,7 @@ export default function Header() {
     if (displayValue === 'small') {
         // モバイル用のヘッダー
         return (
-            <Flex as="header" bg="#C85062" color="white" px={5} py={0} align="center" justify="space-between">
+            <Flex as="header" bg="#C85062" color="white" px={4} py={0} align="center" justify="space-between">
                 <Flex direction={"column"} alignItems="flex-start">
                     <Link href="/" fontWeight="bold" color="#FFFFFF" fontFamily='system-ui, sans-serif' fontSize={32} >context</Link>
                     <Box fontSize={16} fontFamily='system-ui, sans-serif'>the Last Voice App</Box>

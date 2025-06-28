@@ -1,0 +1,37 @@
+import {
+  useBreakpointValue, 
+  Box,
+  Flex
+} from '@chakra-ui/react';
+import '@/i18n';
+import AppealPoint from './AppealPoint';
+import '@/i18n';
+import { useTranslation } from 'react-i18next';
+
+interface AppealPointWithNumProps {
+    num: number;
+    appealSentence: string;
+    detailSentence: string;
+    wpoint?: number;
+    hpoint?: number;
+}
+
+export default function AppealPointWithNum(props: AppealPointWithNumProps) {
+    const displayValue = useBreakpointValue({base: 'small', md: 'large'});
+
+    if (displayValue === 'small') {
+        return (
+            <Flex direction="column" px={4} py={2}>
+                <Box borderRadius={20} bg="#C85062" w={10} h={10} fontSize={20} padding={1} position="relative" zIndex={1} >{props.num}</Box>
+                <AppealPoint  appealSentence={props.appealSentence} detailSentence={props.detailSentence} wpoint={props.wpoint ? props.wpoint : 0} hpoint={props.hpoint ? props.hpoint : 0} />
+            </Flex>
+        );
+    } else {
+        return (
+            <Flex direction="column" px={4} py={4}>
+                <Box borderRadius={20} bg="#C85062" w={10} h={10} fontSize={20} padding={1} position="relative" zIndex={1} >{props.num}</Box>
+                <AppealPoint  appealSentence={props.appealSentence} detailSentence={props.detailSentence} wpoint={600} hpoint={300} />
+            </Flex>
+        );
+    }
+}
