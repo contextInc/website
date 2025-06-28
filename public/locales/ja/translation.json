@@ -27,5 +27,8 @@
     "PRICE": "料金",
     "ABOUT": "会社概要",
     "PrivacyPolicy": "プライバシーポリシー",
-    "Contact": "お問い合わせ"
+    "Contact": "お問い合わせ",
+    "ContextServicePoint": "contextのサービスのポイント",
+    "appeal1": "contextは残された大切な人に、音声メッセージを直接お届けします。",
+    "appeal2": "contextは、あなたの考えるタイミングで、大切な人に音声メッセージを送信出来ます。"
 }

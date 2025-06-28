@@ -1,5 +1,5 @@
 import {
-  useBreakpointValue, Stack, Text,
+  useBreakpointValue, 
   Button
 } from '@chakra-ui/react';
 import '@/i18n';

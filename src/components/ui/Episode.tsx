@@ -21,7 +21,7 @@ export default function Episode() {
                 <Text textStyle="lg" marginTop={4} color="#6D7685" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("episode5Mobile")}</Text>
                 <Text textStyle="lg"  color="#6D7685" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("episode6Mobile")}</Text>
                 <Text textStyle="lg" marginTop={4}  color="#6D7685" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("episode7Mobile")}</Text>
-                <PageMoveButton toRef="/how-to-use" buttonLabel={t("LookSpecifically")} />
+                <PageMoveButton toRef="/service" buttonLabel={t("LookSpecifically")} />
             </Stack>
         );
     } else {
@@ -36,7 +36,7 @@ export default function Episode() {
                 <Text textStyle="2xl" marginTop={12} color="#6D7685" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("episode5")}</Text>
                 <Text textStyle="2xl"  color="#6D7685" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("episode6")}</Text>
                 <Text textStyle="2xl" marginTop={12}  color="#6D7685" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("episode7")}</Text>
-                <PageMoveButton toRef="/how-to-use" buttonLabel={t("LookSpecifically")} />
+                <PageMoveButton toRef="/service" buttonLabel={t("LookSpecifically")} />
             </Stack>
         );
     }
