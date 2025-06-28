@@ -20,5 +20,12 @@
     "HowToUseContext": "contextの使い方",
     "FeaturesOfContext": "contextの特徴",
     "devReason": "開発の背景",
-    "LookSpecifically": "詳細を見る"
+    "LookSpecifically": "詳細を見る",
+    "HOME": "ホーム",
+    "SERVICE": "サービス",
+    "SECURITY": "セキュリティ",
+    "PRICE": "料金",
+    "ABOUT": "会社概要",
+    "PrivacyPolicy": "プライバシーポリシー",
+    "Contact": "お問い合わせ"
 }

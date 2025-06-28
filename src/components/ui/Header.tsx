@@ -2,9 +2,11 @@ import {
   Box, Flex, IconButton, Drawer, Portal, useBreakpointValue, CloseButton, Link
 } from '@chakra-ui/react';
 import { FaBars } from 'react-icons/fa';
+import { useTranslation } from 'react-i18next';
 
 export default function Header() {
     const displayValue = useBreakpointValue({base: 'small', md: 'large'});
+    const { t } = useTranslation();
 
     if (displayValue === 'small') {
         // モバイル用のヘッダー
@@ -50,13 +52,12 @@ export default function Header() {
                     <Box fontSize={16} fontFamily='system-ui, sans-serif'>the Last Voice App</Box>
                 </Flex>
                 {/* PC用ナビゲーション */}
-                <Flex gap={8}>
-                    <Box fontSize={22} cursor="pointer">Home</Box>
-                    <Box fontSize={22} cursor="pointer">Service</Box>
-                    <Box fontSize={22} cursor="pointer">Security</Box>
-                    <Box fontSize={22} cursor="pointer">Price</Box>
-                    <Box fontSize={22} cursor="pointer">About</Box>
-                    <Box fontSize={22} cursor="pointer">Contact</Box>
+                <Flex gap={12}>
+                    <Box fontSize={22} cursor="pointer">{t("HOME")}</Box>
+                    <Box fontSize={22} cursor="pointer">{t("SERVICE")}</Box>
+                    <Box fontSize={22} cursor="pointer">{t("PRICE")}</Box>
+                    <Box fontSize={22} cursor="pointer">{t("SECURITY")}</Box>
+                    <Box fontSize={22} cursor="pointer">{t("ABOUT")}</Box>
                 </Flex>
             </Flex>
         );

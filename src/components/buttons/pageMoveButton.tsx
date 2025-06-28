@@ -2,7 +2,6 @@ import {
   useBreakpointValue, Stack, Text,
   Button
 } from '@chakra-ui/react';
-import { useTranslation } from 'react-i18next';
 import '@/i18n';
 
 interface PageMoveButtonProps {
@@ -12,7 +11,6 @@ interface PageMoveButtonProps {
 
 export default function pageMoveButton(props: PageMoveButtonProps) {
     const displayValue = useBreakpointValue({base: 'small', md: 'large'});
-    const { t } = useTranslation();
 
     if (displayValue === 'small') {
         // モバイル用のヘッダー
