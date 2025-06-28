@@ -5,24 +5,28 @@ import {
 import { useTranslation } from 'react-i18next';
 import '@/i18n';
 
-export default function pageMoveButton() {
+interface PageMoveButtonProps {
+    toRef: string;
+    buttonLabel: string;
+}
+
+export default function pageMoveButton(props: PageMoveButtonProps) {
     const displayValue = useBreakpointValue({base: 'small', md: 'large'});
     const { t } = useTranslation();
 
     if (displayValue === 'small') {
         // モバイル用のヘッダー
         return (
-            <Stack bg="#FFFFFF" >
-                <Stack bg="#C85062" color="white" px={10} py={100} align="center" justify="space-between">
-                    <Text textStyle="3xl" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("YourVoicePreciousMobile")}</Text>
-                    <Text textStyle="xl" whiteSpace="pre-wrap" py={4} fontWeight="bold" fontFamily='system-ui, sans-serif'>{t("WhatIsContextMobile")}</Text>
-                </Stack>
-            </Stack>
+            <Button asChild fontSize={18} w="160px" h="48px" marginTop={12} variant="outline" boxShadow="sm" fontFamily='Open Sans, sans-serif' color="#C85062" borderColor="#C85062" borderWidth={2} _hover={{ bg: "#C85062", color: "white" }} _active={{ bg: "#C85062", color: "white" }}>
+                <a href={props.toRef}>{props.buttonLabel}</a>
+            </Button>
         );
     } else {
         // pcおよびタブレット用のヘッダー
         return (
-            <Button>{t("HowToUse")}</Button>
+            <Button asChild fontSize={18} w="200px" h="48px" marginTop={20} variant="outline" boxShadow="sm" fontFamily='Open Sans, sans-serif' color="#C85062" borderColor="#C85062" borderWidth={2} _hover={{ bg: "#C85062", color: "white" }} _active={{ bg: "#C85062", color: "white" }}>
+                <a href={props.toRef}>{props.buttonLabel}</a>
+            </Button>
         );
     }
 }

@@ -50,10 +50,13 @@ export default function Header() {
                     <Box fontSize={16} fontFamily='system-ui, sans-serif'>the Last Voice App</Box>
                 </Flex>
                 {/* PC用ナビゲーション */}
-                <Flex gap={6}>
-                    <Box cursor="pointer">Home</Box>
-                    <Box cursor="pointer">About</Box>
-                    <Box cursor="pointer">Contact</Box>
+                <Flex gap={8}>
+                    <Box fontSize={22} cursor="pointer">Home</Box>
+                    <Box fontSize={22} cursor="pointer">Service</Box>
+                    <Box fontSize={22} cursor="pointer">Security</Box>
+                    <Box fontSize={22} cursor="pointer">Price</Box>
+                    <Box fontSize={22} cursor="pointer">About</Box>
+                    <Box fontSize={22} cursor="pointer">Contact</Box>
                 </Flex>
             </Flex>
         );
