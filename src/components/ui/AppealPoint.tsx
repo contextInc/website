@@ -13,7 +13,7 @@ interface AppealPointProps {
 }
 
 export default function AppealPoint(props: AppealPointProps) {
-    const displayValue = useBreakpointValue({base: 'small', md: 'large'});
+    const displayValue = useBreakpointValue({base: 'small', lg: 'large'});
 
     if (displayValue === 'small') {
         return (

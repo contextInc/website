@@ -6,13 +6,13 @@ import '@/i18n';
 import PageMoveButton from "@/components/buttons/pageMoveButton";
 
 export default function Episode() {
-    const displayValue = useBreakpointValue({base: 'small', md: 'large'});
+    const displayValue = useBreakpointValue({base: 'small', lg: 'large'});
     const { t } = useTranslation();
 
     if (displayValue === 'small') {
         // モバイル用のヘッダー
         return (
-            <Stack bg="#FFFFFF" color="white" px={4} py={10} align="center" >
+            <Stack bg="#FFFFFF" color="white" px={4} py={10} align="center" w="100vw" >
                 <Text textStyle="xl"  color="#6D7685"  whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{"~ " + t("devReason") + " ~"}</Text>
                 <Text textStyle="lg" marginTop={4} color="#6D7685"  whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("episode1Mobile")}</Text>
                 <Text textStyle="lg" marginTop={4} color="#6D7685" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("episode2Mobile")}</Text>
@@ -27,7 +27,7 @@ export default function Episode() {
     } else {
         // pcおよびタブレット用のヘッダー
         return (
-            <Stack bg="#FFFFFF" color="white" px={248} py={50} align="center" >
+            <Stack bg="#FFFFFF" color="white" px={248} py={50} align="center" w="100vw" >
                 <Text textStyle="4xl"  color="#6D7685"  whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{"~ " + t("devReason") + " ~"}</Text>
                 <Text textStyle="2xl" marginTop={8} color="#6D7685"  whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("episode1")}</Text>
                 <Text textStyle="2xl" marginTop={4} color="#6D7685" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("episode2")}</Text>

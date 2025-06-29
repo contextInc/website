@@ -16,7 +16,7 @@ interface AppealPointWithNumProps {
 }
 
 export default function AppealPointWithNum(props: AppealPointWithNumProps) {
-    const displayValue = useBreakpointValue({base: 'small', md: 'large'});
+    const displayValue = useBreakpointValue({base: 'small', lg: 'large'});
 
     if (displayValue === 'small') {
         return (

@@ -8,7 +8,7 @@ import PageMoveButton from '../buttons/pageMoveButton';
 import AppealPointWithNum from './AppealPointWithNum';
 
 export default function ServicePoint() {
-    const displayValue = useBreakpointValue({base: 'small', md: 'large'});
+    const displayValue = useBreakpointValue({base: 'small', lg: 'large'});
     const { t } = useTranslation();
 
     if (displayValue === 'small') {        
