@@ -14,7 +14,7 @@ export default function ServicePoint() {
     if (displayValue === 'small') {        
         return (
             <Stack bg="#FFFFFF"  py={20} align="center" justify="space-between" w="100vw">
-                <Text textStyle="3xl" marginBottom={10} color="#6D7685" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("ContextServicePoint")}</Text>
+                <Text textStyle="3xl" marginBottom={10} fontWeight="bold"  color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("ContextServicePoint")}</Text>
                 <AppealPointWithNum  num={1} appealSentence={t("appeal1Mobile")} detailSentence={t("detail1Mobile")} wpoint={320} hpoint={360} />
                 <AppealPointWithNum  num={2} appealSentence={t("appeal2Mobile")} detailSentence={t("detail2Mobile")} wpoint={320} hpoint={360} />
                 <AppealPointWithNum  num={3} appealSentence={t("appeal3Mobile")} detailSentence={t("detail3Mobile")} wpoint={320} hpoint={320} />
@@ -27,7 +27,7 @@ export default function ServicePoint() {
     } else {
         return (
             <Stack bg="#FFFFFF" px="10vw" py={40} align="center" justify="space-between" overflowX="hidden" w="100vw">
-                <Text textStyle="5xl" marginBottom={16} color="#6D7685" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("ContextServicePoint")}</Text>
+                <Text textStyle="5xl" marginBottom={16} color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("ContextServicePoint")}</Text>
                 <Flex align="center" gap={4} py={8} justify="space-between">
                     <AppealPointWithNum  num={1} appealSentence={t("appeal1")} detailSentence={t("detail1")} />
                     <AppealPointWithNum  num={2} appealSentence={t("appeal2")} detailSentence={t("detail2")} />

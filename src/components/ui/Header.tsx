@@ -30,9 +30,11 @@ export default function Header() {
                                     <Drawer.Title>Menu</Drawer.Title>
                                 </Drawer.Header>
                                 <Drawer.Body>
-                                    <Box mb={4}>Home</Box>
-                                    <Box mb={4}>About</Box>
-                                    <Box mb={4}>Contact</Box>
+                                    <Box mb={4}><Link href="/"  color="#FFFFFF" fontSize={22} >{t("HOME")}</Link></Box>
+                                    <Box mb={4}><Link href="/service"  color="#FFFFFF" fontSize={22} >{t("SERVICE")}</Link></Box>
+                                    <Box mb={4}><Link href="/price"  color="#FFFFFF" fontSize={22} >{t("PRICE")}</Link></Box>
+                                    <Box mb={4}><Link href="/security"  color="#FFFFFF" fontSize={22} >{t("SECURITY")}</Link></Box>
+                                    <Box mb={4}><Link href="/company"  color="#FFFFFF" fontSize={22} >{t("ABOUT")}</Link></Box>
                                 </Drawer.Body>
                                 <Drawer.CloseTrigger>
                                     <CloseButton size='sm' />
@@ -53,11 +55,11 @@ export default function Header() {
                 </Flex>
                 {/* PC用ナビゲーション */}
                 <Flex gap={12}>
-                    <Box fontSize={22} cursor="pointer">{t("HOME")}</Box>
-                    <Box fontSize={22} cursor="pointer">{t("SERVICE")}</Box>
-                    <Box fontSize={22} cursor="pointer">{t("PRICE")}</Box>
-                    <Box fontSize={22} cursor="pointer">{t("SECURITY")}</Box>
-                    <Box fontSize={22} cursor="pointer">{t("ABOUT")}</Box>
+                    <Link href="/"  color="#FFFFFF" fontSize={22} >{t("HOME")}</Link>
+                    <Link href="/service"  color="#FFFFFF" fontSize={22} >{t("SERVICE")}</Link>
+                    <Link href="/price"  color="#FFFFFF" fontSize={22} >{t("PRICE")}</Link>
+                    <Link href="/security"  color="#FFFFFF" fontSize={22} >{t("SECURITY")}</Link>
+                    <Link href="/company"  color="#FFFFFF" fontSize={22} >{t("ABOUT")}</Link>
                 </Flex>
             </Flex>
         );

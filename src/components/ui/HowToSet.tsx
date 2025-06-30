@@ -18,7 +18,7 @@ export default function HowToSet() {
         return(
             <>
                 <Stack bg="#FFFFFF" py={10} w="100vw" >
-                    <Text textStyle="2xl" marginBottom={10} color="#6D7685" whiteSpace="pre-wrap" fontWeight='bold' fontFamily='Open Sans, sans-serif'>{t("UseFlowMobile")}</Text>
+                    <Text textStyle="2xl" marginBottom={10} color="#C85062" whiteSpace="pre-wrap" fontWeight='bold' fontFamily='Open Sans, sans-serif'>{t("UseFlowMobile")}</Text>
                     <Flex direction="column" align="flex-start" >
                         <Text textStyle="2xl" px={6} color="#6D7685" whiteSpace="pre-wrap" fontWeight='bold' fontFamily='Open Sans, sans-serif'>{t("Flow1Mobile")}</Text>
                         <Box mt={2} px={12} alignItems="start">
@@ -86,7 +86,7 @@ export default function HowToSet() {
         return(
             <>
                 <Stack bg="#FFFFFF" py={10} w="100vw" >
-                    <Text textStyle="2xl" marginBottom={10} color="#6D7685" whiteSpace="pre-wrap" fontWeight='bold' fontFamily='Open Sans, sans-serif'>{t("UseFlowMobile")}</Text>
+                    <Text textStyle="2xl" marginBottom={10} color="#C85062" whiteSpace="pre-wrap" fontWeight='bold' fontFamily='Open Sans, sans-serif'>{t("UseFlowMobile")}</Text>
                     <Flex direction="column" align="flex-start" >
                         <Text textStyle="2xl" px={6} color="#6D7685" whiteSpace="pre-wrap" fontWeight='bold' fontFamily='Open Sans, sans-serif'>{t("Flow1Mobile")}</Text>
                         <Box mt={2} px={12} alignItems="start">
@@ -153,10 +153,10 @@ export default function HowToSet() {
     } else {
         return (
             <Stack bg="#FFFFFF" px={56} py={40} align="center"  w="100vw" >
-                <Text textStyle="5xl" marginBottom={20} color="#6D7685" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("UseFlow")}</Text>
+                <Text textStyle="5xl" marginBottom={20} color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("UseFlow")}</Text>
                 <Flex align="center" gap={12} py={8} justify="space-between" w={1200}>
                     <Flex direction="column" align="flex-start">
-                        <Text textStyle="5xl" color="#6D7685" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow1")}</Text>
+                        <Text textStyle="5xl" color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow1")}</Text>
                         <Box mt={4} px={12}>
                             <Text textStyle="xl" color="#6D7685" alignItems="start" alignSelf="start" justifyContent="start" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow1detail1")}</Text>
                         </Box>

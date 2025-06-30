@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Service from './pages/Service';
 import HowToUse from './pages/HowToUse';
 import HowToAccept from './pages/HowToAccept';
+import Security from './pages/Security';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/service" element={<Service />} />
           <Route path="/howtouse" element={<HowToUse />} />
           <Route path="/howtoaccept" element={<HowToAccept />} />
+          <Route path="/security" element={<Security />} />
           {/* <Route path="/about" element={<About />} /> */}
           <Route path="*" element={<h1>404 Not Found</h1>} />
         </Routes>
