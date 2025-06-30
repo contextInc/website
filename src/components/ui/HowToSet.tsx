@@ -15,7 +15,7 @@ export default function HowToSet() {
     if (displayValue === 'small') {        
         return(
             <>
-                <Stack bg="#FFFFFF" py={10}  >
+                <Stack bg="#FFFFFF" py={10} w="100vw" >
                     <Text textStyle="2xl" marginBottom={10} color="#6D7685" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("UseFlowMobile")}</Text>
                     <Flex direction="column" align="flex-start" >
                         <Text textStyle="2xl" px={4} color="#6D7685" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow1Mobile")}</Text>
@@ -172,7 +172,7 @@ export default function HowToSet() {
         );
     } else {
         return (
-            <Stack bg="#FFFFFF" px={56} py={40} align="center" >
+            <Stack bg="#FFFFFF" px={56} py={40} align="center"  w="100vw" >
                 <Text textStyle="5xl" marginBottom={20} color="#6D7685" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("UseFlow")}</Text>
                 <Flex align="center" gap={12} py={8} justify="space-between" w={1200}>
                     <Flex direction="column" align="flex-start">

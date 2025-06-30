@@ -16,7 +16,7 @@ interface AppealPointWithNumProps {
 }
 
 export default function AppealPointWithNum(props: AppealPointWithNumProps) {
-    const displayValue = useBreakpointValue({base: 'small', lg: 'large'});
+    const displayValue = useBreakpointValue({base: 'small', md: 'large'});
 
     if (displayValue === 'small') {
         return (
@@ -29,7 +29,7 @@ export default function AppealPointWithNum(props: AppealPointWithNumProps) {
         return (
             <Flex direction="column" px={4} py={4}>
                 <Box borderRadius={20} bg="#C85062" w={10} h={10} fontSize={20} padding={1} position="relative" zIndex={1} >{props.num}</Box>
-                <AppealPoint  appealSentence={props.appealSentence} detailSentence={props.detailSentence} wpoint={600} hpoint={300} />
+                <AppealPoint  appealSentence={props.appealSentence} detailSentence={props.detailSentence} wpoint={480} hpoint={400} />
             </Flex>
         );
     }

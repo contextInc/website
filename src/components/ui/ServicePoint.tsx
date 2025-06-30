@@ -13,7 +13,7 @@ export default function ServicePoint() {
 
     if (displayValue === 'small') {        
         return (
-            <Stack bg="#FFFFFF"  py={20} align="center" justify="space-between">
+            <Stack bg="#FFFFFF"  py={20} align="center" justify="space-between" w="100vw">
                 <Text textStyle="3xl" marginBottom={10} color="#6D7685" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("ContextServicePoint")}</Text>
                 <AppealPointWithNum  num={1} appealSentence={t("appeal1Mobile")} detailSentence={t("detail1Mobile")} wpoint={320} hpoint={450} />
                 <AppealPointWithNum  num={2} appealSentence={t("appeal2Mobile")} detailSentence={t("detail2Mobile")} wpoint={320} hpoint={360} />
@@ -26,17 +26,17 @@ export default function ServicePoint() {
         );
     } else {
         return (
-            <Stack bg="#FFFFFF" px={56} py={40} align="center" justify="space-between">
-                <Text textStyle="5xl" marginBottom={20} color="#6D7685" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("ContextServicePoint")}</Text>
-                <Flex align="center" gap={12} py={8} justify="space-between">
-                    <AppealPointWithNum  num={1} appealSentence={t("appeal1")} detailSentence={t("detail1")} />
+            <Stack bg="#FFFFFF" px="10vw" py={40} align="center" justify="space-between" overflowX="hidden" w="100vw">
+                <Text textStyle="5xl" marginBottom={16} color="#6D7685" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("ContextServicePoint")}</Text>
+                <Flex align="center" gap={4} py={8} justify="space-between">
+                    <AppealPointWithNum  num={1} appealSentence={t("appeal1")} detailSentence={t("detail1Mobile")} />
                     <AppealPointWithNum  num={2} appealSentence={t("appeal2")} detailSentence={t("detail2")} />
                 </Flex>
-                <Flex align="center" gap={12} py={8} justify="space-between">
+                <Flex align="center" gap={4} py={8} justify="space-between">
                     <AppealPointWithNum  num={3} appealSentence={t("appeal3")} detailSentence={t("detail3")} />
                     <AppealPointWithNum  num={4} appealSentence={t("appeal4")} detailSentence={t("detail4")} />
                 </Flex>
-                <Flex align="center" gap={12} py={8} justify="space-between">
+                <Flex align="center" gap={4} py={8} justify="space-between">
                     <AppealPointWithNum  num={5} appealSentence={t("appeal5")} detailSentence={t("detail5")} />
                     <AppealPointWithNum  num={6} appealSentence={t("appeal6")} detailSentence={t("detail6")} />
                 </Flex>

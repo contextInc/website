@@ -19,7 +19,7 @@ export default function Footer() {
     } else {
         // pcおよびタブレット用のヘッダー
         return (
-            <Flex as="footer" bg="#DDDDDD" color="#6D7685" px={56} py={2} align="center" justify="space-between" w="100vw">
+            <Flex as="footer" bg="#DDDDDD" color="#6D7685" px="10vw" py={2} align="center" justify="space-between" w="100vw">
                 <Flex gap={8}>
                     <Box fontSize={16} cursor="pointer">{t("PrivacyPolicy")}</Box>
                     <Box fontSize={16} cursor="pointer">{t("Contact")}</Box>
