@@ -27,7 +27,7 @@ export default function Episode() {
     } else {
         // pcおよびタブレット用のヘッダー
         return (
-            <Stack bg="#FFFFFF" color="white" px={248} py={50} align="center" w="100vw" >
+            <Stack bg="#FFFFFF" color="white" px={40} py={50} align="center" w="100vw" >
                 <Text textStyle="4xl"  color="#6D7685"  whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{"~ " + t("devReason") + " ~"}</Text>
                 <Text textStyle="2xl" marginTop={8} color="#6D7685"  whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("episode1")}</Text>
                 <Text textStyle="2xl" marginTop={4} color="#6D7685" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("episode2")}</Text>
