@@ -136,6 +136,8 @@
     "CapitalDetail": "50万円",
     "CompanyAddress": "会社所在地",
     "AddressDetail": "東京都渋谷区道玄坂1丁目10番8号 渋谷道玄坂東急ビル2F-C",
+    "AddressDetailMedium": "東京都渋谷区道玄坂1丁目10番8号\n渋谷道玄坂東急ビル2F-C",
     "BusinessDescription": "事業内容",
-    "BusinessDescriptionDetail": "音声メッセージアプリ「context」の運営・開発・保守"
+    "BusinessDescriptionDetail": "音声メッセージアプリ「context」の運営・開発・保守",
+    "BusinessDescriptionDetailMedium": "音声メッセージアプリ「context」の\n運営・開発・保守"
 }
