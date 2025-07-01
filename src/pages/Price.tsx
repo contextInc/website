@@ -1,13 +1,13 @@
 import Header from "@/components/ui/Header";
 import Footer from "@/components/ui/Footer";
-import CompanyInfo from "@/components/ui/CompanyInfo";
+import SubscriptionInfo from "@/components/ui/SubscriptionInfo";
 
 
 export default function Price() {
   return (
     <div>
         <Header />
-        <CompanyInfo />
+        <SubscriptionInfo />
         <Footer />
     </div>
   );
