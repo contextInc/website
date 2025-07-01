@@ -116,8 +116,13 @@
     "AuthByCodeDetail": "音声メッセージ受け取り時は、音声メッセージのご案内時に、発行される認証コードの入力が必要です。",
     "AuthByTelDetail": "送信者の方が、宛先に設定した電話番号の入力、そして、電話番号宛てに送信されたワンタイムパスワードの入力が必要です。",
     "AuthByEmailDetail": "送信者の方が、宛先に設定したメールアドレスの入力、そして、\nメールアドレス宛てに送信されたワンタイムパスワードの入力が\n必要です。",
+    "AuthByEmailDetailMedium": "送信者の方が、宛先に設定したメールアドレスの入力、そして、メールアドレス宛てに送信されたワンタイムパスワードの入力が必要です。",
     "RCSMessageAppeal": "電話番号へのメッセージは旧来のSMSではなく、\n全てRCSメッセージを使用",
     "SMSDangerAppeal": "日本など一部の国を除くと、SMSの盗聴は比較的容易",
     "contextUseRCS": "contextでは、電話番号宛てのメッセージは、全てRCSメッセージを\n使用します。",
-    "HardToCheat": "電話番号宛てのRCSメッセージとメールアドレスを\n両方同時に盗聴することが非常に困難であることが、\ncontextのセキュリティの強みです。"
+    "HardToCheat": "電話番号宛てのRCSメッセージとメールアドレスを\n両方同時に盗聴することが非常に困難であることが、\ncontextのセキュリティの強みです。",
+    "RCSMessageAppealMedium": "電話番号へのメッセージは\n旧来のSMSではなく\n全てRCSメッセージを使用",
+    "SMSDangerAppealMedium": "日本など一部の国を除くと、\nSMSの盗聴は比較的容易",
+    "contextUseRCSMedium": "contextでは、電話番号宛てのメッセージは、全てRCSメッセージを使用します。",
+    "HardToCheatMedium": "電話番号宛てのRCSメッセージと\nメールアドレスを\n両方同時に盗聴することが\n非常に困難であることが\ncontextのセキュリティの強みです。"
 }
