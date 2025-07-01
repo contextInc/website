@@ -6,6 +6,7 @@ import HowToUse from './pages/HowToUse';
 import HowToAccept from './pages/HowToAccept';
 import Security from './pages/Security';
 import Company from './pages/Company';
+import Privacy from './pages/privacy';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/howtoaccept" element={<HowToAccept />} />
           <Route path="/security" element={<Security />} />
           <Route path="/company" element={<Company />} />
+          <Route path="/privacy" element={<Privacy />} />
           {/* <Route path="/about" element={<About />} /> */}
           <Route path="*" element={<h1>404 Not Found</h1>} />
         </Routes>
