@@ -14,18 +14,14 @@ export default function SubscriptionExplanation(props: SubscriptionExplanationPr
 
     if (displayValue === 'small') {
         return (
-            <Box h={130} w="84vw">
-                <Flex direction="column"  gap={4} textAlign="left">
-                    <Text textStyle="xl" color="#6D7685" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{props.content}</Text>
-                </Flex>
+            <Box h="160px" w="85vw">
+                <Text textStyle="lg" textAlign="left" color="#6D7685" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{props.content}</Text>
             </Box>
         );
     } else if (displayValue === 'medium') {
         return (
-            <Box h={130} w="70vw">
-                <Flex direction="column"  gap={4} textAlign="left">
-                    <Text textStyle="2xl" color="#6D7685" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{props.content}</Text>
-                </Flex>
+            <Box h="160px" w="85vw">
+                <Text textStyle="2xl" textAlign="left" color="#6D7685" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{props.content}</Text>
             </Box>
         );
     } else {
