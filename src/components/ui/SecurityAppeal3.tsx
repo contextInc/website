@@ -14,7 +14,11 @@ export default function SecurityAppeal3() {
 
     if (displayValue === 'small') {
         return (
-            <></>
+            <>
+                <Box bg="#FFFFFF" py={45} alignItems="center" w="100vw" >
+                    <Text textStyle="2xl" marginBottom={10} color="#233452/80" whiteSpace="pre-wrap"  fontFamily='Open Sans, sans-serif'>{t("HardToCheatMedium")}</Text>
+                </Box>
+            </>
         );
     } else if (displayValue === 'medium') {
         return (
