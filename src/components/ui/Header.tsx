@@ -32,6 +32,7 @@ export default function Header() {
                                 <Drawer.Body>
                                     <Box mb={4}><Link href="/"  color="#FFFFFF" fontSize={22} >{t("HOME")}</Link></Box>
                                     <Box mb={4}><Link href="/service"  color="#FFFFFF" fontSize={22} >{t("SERVICE")}</Link></Box>
+                                    <Box mb={4}><Link href="/howtouse"  color="#FFFFFF" fontSize={22} >{t("HOWTOUSE")}</Link></Box>
                                     <Box mb={4}><Link href="/price"  color="#FFFFFF" fontSize={22} >{t("PRICE")}</Link></Box>
                                     <Box mb={4}><Link href="/security"  color="#FFFFFF" fontSize={22} >{t("SECURITY")}</Link></Box>
                                     <Box mb={4}><Link href="/company"  color="#FFFFFF" fontSize={22} >{t("ABOUT")}</Link></Box>
@@ -57,8 +58,7 @@ export default function Header() {
                 <Flex gap={12}>
                     <Link href="/"  color="#FFFFFF" fontSize={22} >{t("HOME")}</Link>
                     <Link href="/service"  color="#FFFFFF" fontSize={22} >{t("SERVICE")}</Link>
-                    <Link href="/price"  color="#FFFFFF" fontSize={22} >{t("PRICE")}</Link>
-                    <Link href="/price"  color="#FFFFFF" fontSize={22} >{t("PRICE")}</Link>
+                    <Link href="/howtouse"  color="#FFFFFF" fontSize={22} >{t("HOWTOUSE")}</Link>
                     <Link href="/price"  color="#FFFFFF" fontSize={22} >{t("PRICE")}</Link>
                     <Link href="/security"  color="#FFFFFF" fontSize={22} >{t("SECURITY")}</Link>
                     <Link href="/company"  color="#FFFFFF" fontSize={22} >{t("ABOUT")}</Link>
