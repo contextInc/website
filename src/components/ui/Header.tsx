@@ -58,6 +58,8 @@ export default function Header() {
                     <Link href="/"  color="#FFFFFF" fontSize={22} >{t("HOME")}</Link>
                     <Link href="/service"  color="#FFFFFF" fontSize={22} >{t("SERVICE")}</Link>
                     <Link href="/price"  color="#FFFFFF" fontSize={22} >{t("PRICE")}</Link>
+                    <Link href="/price"  color="#FFFFFF" fontSize={22} >{t("PRICE")}</Link>
+                    <Link href="/price"  color="#FFFFFF" fontSize={22} >{t("PRICE")}</Link>
                     <Link href="/security"  color="#FFFFFF" fontSize={22} >{t("SECURITY")}</Link>
                     <Link href="/company"  color="#FFFFFF" fontSize={22} >{t("ABOUT")}</Link>
                 </Flex>

@@ -22,7 +22,7 @@
     "devReason": "開発の背景",
     "LookSpecifically": "詳細を見る",
     "HOME": "ホーム",
-    "SERVICE": "サービス",
+    "SERVICE": "サービス概要",
     "SECURITY": "セキュリティ",
     "PRICE": "料金",
     "ABOUT": "会社概要",
@@ -143,5 +143,7 @@
     "CompanyPhilosophy": "企業理念",
     "Peace": "この世界に穏やかさをもたらす",
     "Special": "誰かの特別な1日、1年を作る",
-    "Brave": "勇敢である"
+    "Brave": "勇敢である",
+    "PleaseMail": "お問い合わせは、こちらのメールアドレスまでお願いします。",
+    "InquiryMail": "inquiry@context-voice.jp"
 }
