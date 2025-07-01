@@ -109,7 +109,7 @@
     "Flow5Mobile": "⑤送信フォロー",
     "Flow5detail1Mobile": "音声データの送信が開始されると、\n各宛先の受け取り状況が確認可能です。\n状況次第で、特定の宛先への送信を停止することも可能です。\n\n代理送信者に送信のフォローを許可した場合は、\n代理送信者も各宛先の受け取り状況を確認できます。\n\n尚、代理送信者にフォローを許可した場合、\n代理送信者は宛先の名前、メールアドレス、電話番号も確認できます。\n\n必要に応じて、ご検討下さい。",
     "QA": "よくある質問",
-    "context3Auth": "contextには大きく3段階の認証",
+    "context3Auth": "宛先の認証時に\ncontextには大きく3段階の認証",
     "AuthByCode": "1. 認証コードによる認証",
     "AuthByTel": "2. 電話番号認証",
     "AuthByEmail": "3. メールアドレス認証",
@@ -175,5 +175,15 @@
     "ThreeHourPlanPerMonth": "(150円/月)",
     "SixHourPlanPerMonth": "(200円/月)",
     "TwelveHourPlanPerMonth": "(250円/月)",
-    "SubscriptionTicketExplanation": "※上記価格は為替等の変動により変更となる可能性がございます。"
+    "SubscriptionTicketExplanation": "※上記価格は為替等の変動により変更となる可能性がございます。",
+    "VoiceTicket": "音声送信チケット",
+    "VoiceTicketExplanation": "1宛先につき1枚の音声共有チケットが必要です。",
+    "OneVoiceTicketPrice": "400円",
+    "TwoVoiceTicketPrice": "800円",
+    "ThreeVoiceTicketPrice": "1,200円",
+    "FourVoiceTicketPrice": "1,500円",
+    "SixVoiceTicketPrice": "2,000円",
+    "EightVoiceTicketPrice": "2,500円",
+    "TenVoiceTicketPrice": "3,000円",
+    "Piece": "枚"
 }

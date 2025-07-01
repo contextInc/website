@@ -8,7 +8,7 @@ interface SubscriptionExplanationProps {
     content: string;
 }
 
-export default function SubscriptionExplanation(props: SubscriptionExplanationProps) {
+export default function VoiceTicketExplanation(props: SubscriptionExplanationProps) {
     const displayValue = useBreakpointValue({base: 'small', md: 'medium', lg: 'large'});
 
     if (displayValue === 'small') {

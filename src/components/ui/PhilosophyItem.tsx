@@ -1,8 +1,7 @@
 import {
   useBreakpointValue, 
   Text,
-  Box,
-  Flex
+  Box
 } from '@chakra-ui/react';
 
 interface PhilosophyItemProps {
