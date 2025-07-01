@@ -22,7 +22,7 @@ export default function PrivacyPolicyItemOne(props: PrivacyPolicyItemOneProps) {
         );
     } else if (displayValue === 'medium') {
         return (
-            <Box h={130} w="70vw">
+            <Box h="200px" w="77vw">
                 <Flex direction="column"  gap={4} textAlign="left">
                     <Text textStyle="2xl" color="#6D7685" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{props.content}</Text>
                 </Flex>
@@ -30,7 +30,7 @@ export default function PrivacyPolicyItemOne(props: PrivacyPolicyItemOneProps) {
         );
     } else {
         return (
-            <Box h={150} w="50vw">
+            <Box h="200px" w="50vw">
                 <Flex direction="column"  gap={4} textAlign="left">
                     <Text textStyle="2xl" color="#6D7685" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{props.content}</Text>
                 </Flex>

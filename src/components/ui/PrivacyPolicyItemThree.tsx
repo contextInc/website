@@ -24,15 +24,17 @@ export default function PrivacyPolicyItemThree(props: PrivacyPolicyItemTwoProps)
         );
     } else if (displayValue === 'medium') {
         return (
-            <Box h={130} w="70vw">
-                <Flex direction="column"  gap={4} textAlign="left">
+            <Box h={props.height + "px"} w="77vw">
+                <Flex  px={8} gap={0} textAlign="left">
+                    <Text textStyle="2xl" color="#6D7685" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{props.numberString}</Text>
+                    <Text textStyle="2xl" color="#6D7685" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>. </Text>
                     <Text textStyle="2xl" color="#6D7685" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{props.content}</Text>
                 </Flex>
             </Box>
         );
     } else {
         return (
-            <Box h={props.height} w="50vw">
+            <Box h={props.height + "px"} w="50vw">
                 <Flex  px={8} gap={0} textAlign="left">
                     <Text textStyle="2xl" color="#6D7685" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{props.numberString}</Text>
                     <Text textStyle="2xl" color="#6D7685" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>. </Text>
