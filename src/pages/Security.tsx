@@ -2,6 +2,7 @@ import Header from "@/components/ui/Header";
 import Footer from "@/components/ui/Footer";
 import SecurityAppeal1 from "@/components/ui/SecurityAppeal1";
 import SecurityAppeal2 from "@/components/ui/SecurityAppeal2";
+import SecurityAppeal3 from "@/components/ui/SecurityAppeal3";
 
 export default function Security() {
   return (
@@ -9,6 +10,7 @@ export default function Security() {
         <Header />
         <SecurityAppeal1 />
         <SecurityAppeal2 />
+        <SecurityAppeal3 />
         <Footer />
     </div>
   );
