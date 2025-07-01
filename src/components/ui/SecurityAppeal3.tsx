@@ -2,8 +2,7 @@ import {
   useBreakpointValue, 
   Text,
   Box,
-  Flex,
-  Stack
+  
 } from '@chakra-ui/react';
 import { useTranslation } from 'react-i18next';
 import '@/i18n';
