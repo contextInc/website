@@ -7,7 +7,6 @@ import {
 } from '@chakra-ui/react';
 import { useTranslation } from 'react-i18next';
 import '@/i18n';
-import CompanyInfoItem from './CompanyInfoItem';
 import PrivacyPolicyItemOne from './PrivacyPolicyItemOne';
 import PrivacyPolicyItemTwo from './PrivacyPolicyItemTwo';
 import PrivacyPolicyItemThree from './PrivacyPolicyItemThree';
@@ -24,12 +23,19 @@ export default function PrivacyPolicy() {
                     <Text textStyle="2xl" marginBottom={10} color="#C85062" whiteSpace="pre-wrap"  fontFamily='Open Sans, sans-serif'>{t("PrivacyPolicy")}</Text>
                     <Separator color="#000000" width="84vw" height={2} marginBottom={4} />
                     <Box w="84vw" >
-                        <CompanyInfoItem title={t("CompanyName")} content={t("contextInc")} />
-                        <CompanyInfoItem title={t("CEO")} content={t("KengoMatsumoto")} />
-                        <CompanyInfoItem title={t("Established")} content={t("EstablishedDate")} />
-                        <CompanyInfoItem title={t("Capital")} content={t("CapitalDetail")} />
-                        <CompanyInfoItem title={t("CompanyAddress")} content={t("AddressDetail")} />
-                        <CompanyInfoItem title={t("BusinessDescription")} content={t("BusinessDescriptionDetail")} />
+                        <PrivacyPolicyItemOne content={t("PrivacyPolicyStart")} />
+                        <PrivacyPolicyItemTwo height={100} numberString='1' content={t("PP1")} />
+                        <PrivacyPolicyItemTwo height={100} numberString='2' content={t("PP2")} />
+                        <PrivacyPolicyItemTwo height={100} numberString='3' content={t("PP3")} />
+                        <PrivacyPolicyItemTwo height={150} numberString='4' content={t("PP4")} />
+                        <PrivacyPolicyItemTwo height={150} numberString='5' content={t("PP5")} />
+                        <PrivacyPolicyItemTwo height={260} numberString='6' content={t("PP6")} />
+                        <PrivacyPolicyItemThree height={100} numberString='a' content={t("PPA")} />
+                        <PrivacyPolicyItemThree height={100} numberString='b' content={t("PPB")} />
+                        <PrivacyPolicyItemTwo height={160} numberString='7' content={t("PP7")} />
+                        <PrivacyPolicyItemTwo height={100} numberString='8' content={t("PP8")} />
+                        <PrivacyPolicyItemFour content={t("PrivacyPolicyDate")} />
+                        <PrivacyPolicyItemFour content={t("PrivacyPolicyEnd")} />
                     </Box>
                     <Separator color="#000000" width="84vw" height={2} marginBottom={4} />
                 </Stack>

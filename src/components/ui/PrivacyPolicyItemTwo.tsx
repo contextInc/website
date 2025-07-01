@@ -16,9 +16,11 @@ export default function PrivacyPolicyItemTwo(props: PrivacyPolicyItemTwoProps) {
 
     if (displayValue === 'small') {
         return (
-            <Box h={130} w="84vw">
-                <Flex direction="column"  gap={4} textAlign="left">
-                    <Text textStyle="xl" color="#6D7685" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{props.content}</Text>
+            <Box h={props.height + "px"} w="84vw">
+                <Flex  px={0} gap={0} textAlign="left">
+                    <Text textStyle="lg" color="#6D7685" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{props.numberString}</Text>
+                    <Text textStyle="lg" color="#6D7685" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>. </Text>
+                    <Text textStyle="lg" color="#6D7685" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{props.content}</Text>
                 </Flex>
             </Box>
         );

@@ -14,9 +14,9 @@ export default function PrivacyPolicyItemFour(props: PrivacyPolicyItemOneProps) 
 
     if (displayValue === 'small') {
         return (
-            <Box h={130} w="84vw">
+            <Box h={20} w="84vw">
                 <Flex direction="column"  gap={4} textAlign="left">
-                    <Text textStyle="xl" color="#6D7685" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{props.content}</Text>
+                    <Text textStyle="lg" color="#6D7685" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{props.content}</Text>
                 </Flex>
             </Box>
         );
