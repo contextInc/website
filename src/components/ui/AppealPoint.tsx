@@ -24,6 +24,18 @@ export default function AppealPoint(props: AppealPointProps) {
                 </Flex>
             </Box>
         );
+    } else if (displayValue === 'medium') {
+        return (
+            <Flex>
+                <Box w={2}></Box>
+                <Box bg="pink.100/80" borderColor="#EB5B71" borderRadius={20}  borderWidth={2} w={props.wpoint} h={props.hpoint} zIndex={0} mt={-4} >
+                    <Flex direction="column" px={8} py={8}>
+                        <Text textStyle="2xl" color="#233452" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{props.appealSentence}</Text>
+                        <Text textStyle="lg" color="#000000" marginTop={8} whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{props.detailSentence}</Text>
+                    </Flex>
+                </Box>
+            </Flex>  
+        );
     } else {
         return (
             <Flex>
@@ -34,8 +46,7 @@ export default function AppealPoint(props: AppealPointProps) {
                         <Text textStyle="lg" color="#000000" marginTop={8} whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{props.detailSentence}</Text>
                     </Flex>
                 </Box>
-            </Flex>
-            
+            </Flex>           
         );
     }
 }
