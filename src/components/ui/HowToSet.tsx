@@ -15,140 +15,138 @@ export default function HowToSet() {
     const { t } = useTranslation();
 
     if (displayValue === 'small') {
-        return(
-            <>
-                <Stack bg="#FFFFFF" py={10} w="100vw" >
-                    <Text textStyle="2xl" marginBottom={10} color="#C85062" whiteSpace="pre-wrap" fontWeight='bold' fontFamily='Open Sans, sans-serif'>{t("UseFlowMobile")}</Text>
-                    <Flex direction="column" align="flex-start" >
-                        <Text textStyle="2xl" px={6} color="#6D7685" whiteSpace="pre-wrap" fontWeight='bold' fontFamily='Open Sans, sans-serif'>{t("Flow1Mobile")}</Text>
-                        <Box mt={2} px={12} alignItems="start">
-                            <Text w="100%" textStyle="md" color="#6D7685" textAlign='left' whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow1detail1Mobile")}</Text>
+        return (
+            <Stack bg="#FFFFFF"  py={20} align="center"  w="100vw" >
+                <Text textStyle="2xl" marginBottom="20px" color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("UseFlowMobile")}</Text>
+                <Flex align="center" direction="column" gap="0px" py={8} justify="space-between" w="92vw">
+                    <Flex direction="column" align="flex-start" w="92vw">
+                        <Text textStyle="2xl" color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow1")}</Text>
+                        <Box mt={4} px={4}>
+                            <Text textStyle="lg" color="#6D7685" textAlign="left" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow1detail1")}</Text>
                         </Box>
                     </Flex>
-                    <Flex direction="column" align="center" gap={4} mt={4}>
-                        <Image src={Rainbow} alt="Voice Recording" width={200} height={300} />
-                        <Image src={Rainbow} alt="Voice Recording" width={200} height={300} />
+                    <Flex direction="column" gap="32px" marginTop="24px">
+                        <Image src={Rainbow} alt="Voice Recording" width={360} height={780} />
+                        <Image src={Rainbow} alt="Voice Recording" width={360} height={780} />
                     </Flex>
-                    <Flex direction="column" align="flex-start" mt={4} >
-                        <Text textStyle="2xl" px={6} color="#6D7685" fontWeight='bold' fontFamily='Open Sans, sans-serif'>{t("Flow2Mobile")}</Text>
-                        <Box mt={2} px={12}>
-                            <Text w="100%" textStyle="md" color="#6D7685" textAlign='left' whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow2detail1Mobile")}</Text>
+                </Flex>
+                <Flex align="center" direction="column" gap="0px" py={8} justify="space-between" w="92vw">
+                    <Flex direction="column" align="flex-start" w="92vw">
+                        <Text textStyle="2xl" color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow2")}</Text>
+                        <Box mt={4} px={4}>
+                            <Text textStyle="lg" color="#6D7685" textAlign="left" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow2detail1")}</Text>
                         </Box>
                     </Flex>
-                    <Flex direction="column" align="center" gap={8}>
-                        <Image src={Rainbow} alt="Voice Recording" width={200} height={300} />
-                        <Image src={Rainbow} alt="Voice Recording" width={200} height={300} />
+                    <Flex direction="column" gap="32px" marginTop="24px">
+                        <Image src={Rainbow} alt="Voice Recording" width={360} height={780} />
+                        <Image src={Rainbow} alt="Voice Recording" width={360} height={780} />
                     </Flex>
-                    <Flex direction="column" align="flex-start">
-                        <Text textStyle="2xl" px={6} color="#6D7685" fontWeight='bold' whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow3")}</Text>
-                        <Box mt={4} px={12}>
-                            <Text w="100%" textStyle="md" color="#6D7685" textAlign='left' whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow3detail1Mobile")}</Text>
+                </Flex>
+                <Flex align="center" direction="column" gap="0px" py={8} justify="space-between" w="92vw">
+                    <Flex direction="column" align="flex-start" w="92vw">
+                        <Text textStyle="2xl" color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow3")}</Text>
+                        <Box mt={4} px={4}>
+                            <Text textStyle="lg" color="#6D7685" textAlign="left" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow3detail1")}</Text>
                         </Box>
                     </Flex>
-                    <Flex direction="column" align="center" gap={8}>
-                        <Image src={Rainbow} alt="Voice Recording" width={200} height={300} />
-                        <Image src={Rainbow} alt="Voice Recording" width={200} height={300} />
+                    <Flex direction="column" gap="32px" marginTop="24px">
+                        <Image src={Rainbow} alt="Voice Recording" width={360} height={780} />
+                        <Image src={Rainbow} alt="Voice Recording" width={360} height={780} />
                     </Flex>
-                    <Flex direction="column" align="flex-start">
-                        <Text textStyle="2xl" px={6} color="#6D7685" fontWeight='bold' whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow4")}</Text>
-                        <Box mt={4} px={12}>
-                            <Text w="100%" textStyle="md" color="#6D7685" textAlign='left' whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow4detail1Mobile")}</Text>
-                        </Box>
-                        <Box mt={4} px={12}>
-                            <Text w="100%" textStyle="md" color="#6D7685" textAlign='left' whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow4detail2Mobile")}</Text>
-                            <Text w="100%" textStyle="md" color="#6D7685" textAlign='left' whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow4detail3Mobile")}</Text>
-                        </Box>
-                        <Box mt={4} px={12}>
-                            <Text w="100%" textStyle="md" color="#6D7685" textAlign='left' whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow4detail4Mobile")}</Text>
+                </Flex>
+                <Flex align="center" direction="column" gap="0px" py={8} justify="space-between" w="92vw">
+                    <Flex direction="column" align="flex-start" w="92vw">
+                        <Text textStyle="2xl" color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow4")}</Text>
+                        <Box mt={4} px={4}>
+                            <Text textStyle="lg" color="#6D7685" textAlign="left" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow4detail1")}</Text>
                         </Box>
                     </Flex>
-                    <Flex direction="column" align="center" gap={8}>
-                        <Image src={Rainbow} alt="Voice Recording" width={200} height={300} />
-                        <Image src={Rainbow} alt="Voice Recording" width={200} height={300} />
+                    <Flex direction="column" gap="32px" marginTop="24px">
+                        <Image src={Rainbow} alt="Voice Recording" width={360} height={780} />
+                        <Image src={Rainbow} alt="Voice Recording" width={360} height={780} />
                     </Flex>
-                    <Flex direction="column" align="flex-start">
-                        <Text textStyle="2xl" px={6} color="#6D7685" fontWeight='bold' whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow5")}</Text>
-                        <Box mt={4} px={12}>
-                            <Text w="100%" textStyle="md" color="#6D7685" textAlign='left' whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow5detail1Mobile")}</Text>
+                </Flex>
+                <Flex align="center" direction="column" gap="0px" py={8} justify="space-between" w="92vw">
+                    <Flex direction="column" align="flex-start" w="92vw">
+                        <Text textStyle="2xl" color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow5")}</Text>
+                        <Box mt={4} px={4}>
+                            <Text textStyle="lg" color="#6D7685" textAlign="left" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow5detail1")}</Text>
                         </Box>
                     </Flex>
-                    <Flex direction="column" align="center" gap={8}>
-                        <Image src={Rainbow} alt="Voice Recording" width={200} height={300} />
-                        <Image src={Rainbow} alt="Voice Recording" width={200} height={300} />
+                    <Flex direction="column" gap="32px" marginTop="24px">
+                        <Image src={Rainbow} alt="Voice Recording" width={360} height={780} />
+                        <Image src={Rainbow} alt="Voice Recording" width={360} height={780} />
                     </Flex>
-                    <Box alignItems="center">
-                        <PageMoveButtonLong toRef="/howtoaccept" buttonLabel={t("LookHowToAcceptMobile")} />
-                    </Box>
-                </Stack>
-            </>
+                </Flex>
+                <PageMoveButtonLong toRef="/howtoaccept" buttonLabel={t("LookHowToAccept")} />
+            </Stack>
         );
     } else if (displayValue === 'medium') {
-        return(
-            <>
-                <Stack bg="#FFFFFF" py={10} w="100vw" >
-                    <Text textStyle="2xl" marginBottom={10} color="#C85062" whiteSpace="pre-wrap" fontWeight='bold' fontFamily='Open Sans, sans-serif'>{t("UseFlowMobile")}</Text>
-                    <Flex direction="column" align="flex-start" >
-                        <Text textStyle="2xl" px={6} color="#6D7685" whiteSpace="pre-wrap" fontWeight='bold' fontFamily='Open Sans, sans-serif'>{t("Flow1Mobile")}</Text>
-                        <Box mt={2} px={12} alignItems="start">
-                            <Text w="100%" textStyle="md" color="#6D7685" textAlign='left' whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow1detail1Mobile")}</Text>
+        return (
+            <Stack bg="#FFFFFF"  py={20} align="center"  w="100vw" >
+                <Text textStyle="5xl" marginBottom="20px" color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("UseFlowMobile")}</Text>
+                <Flex align="center" direction="column" gap="0px" py={8} justify="space-between" w="80vw">
+                    <Flex direction="column" align="flex-start" w="80vw">
+                        <Text textStyle="4xl" color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow1")}</Text>
+                        <Box mt={4} px={8}>
+                            <Text textStyle="xl" color="#6D7685" textAlign="left" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow1detail1")}</Text>
                         </Box>
                     </Flex>
-                    <Flex align="center" gap={4} mt={4}>
-                        <Image src={Rainbow} alt="Voice Recording" width={200} height={300} />
-                        <Image src={Rainbow} alt="Voice Recording" width={200} height={300} />
+                    <Flex gap="32px" marginTop="24px">
+                        <Image src={Rainbow} alt="Voice Recording" width={240} height={520} />
+                        <Image src={Rainbow} alt="Voice Recording" width={240} height={520} />
                     </Flex>
-                    <Flex direction="column" align="flex-start" mt={4} >
-                        <Text textStyle="2xl" px={6} color="#6D7685" fontWeight='bold' fontFamily='Open Sans, sans-serif'>{t("Flow2Mobile")}</Text>
-                        <Box mt={2} px={12}>
-                            <Text w="100%" textStyle="md" color="#6D7685" textAlign='left' whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow2detail1Mobile")}</Text>
+                </Flex>
+                <Flex align="center" direction="column" gap="0px" py={8} justify="space-between" w="80vw">
+                    <Flex direction="column" align="flex-start" w="80vw">
+                        <Text textStyle="4xl" color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow2")}</Text>
+                        <Box mt={4} px={8}>
+                            <Text textStyle="xl" color="#6D7685" textAlign="left" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow2detail1")}</Text>
                         </Box>
                     </Flex>
-                    <Flex align="center" gap={8}>
-                        <Image src={Rainbow} alt="Voice Recording" width={200} height={300} />
-                        <Image src={Rainbow} alt="Voice Recording" width={200} height={300} />
+                    <Flex gap="32px" marginTop="24px">
+                        <Image src={Rainbow} alt="Voice Recording" width={240} height={520} />
+                        <Image src={Rainbow} alt="Voice Recording" width={240} height={520} />
                     </Flex>
-                    <Flex direction="column" align="flex-start">
-                        <Text textStyle="2xl" px={6} color="#6D7685" fontWeight='bold' whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow3")}</Text>
-                        <Box mt={4} px={12}>
-                            <Text w="100%" textStyle="md" color="#6D7685" textAlign='left' whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow3detail1Mobile")}</Text>
+                </Flex>
+                <Flex align="center" direction="column" gap="0px" py={8} justify="space-between" w="80vw">
+                    <Flex direction="column" align="flex-start" w="80vw">
+                        <Text textStyle="4xl" color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow3")}</Text>
+                        <Box mt={4} px={8}>
+                            <Text textStyle="xl" color="#6D7685" textAlign="left" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow3detail1")}</Text>
                         </Box>
                     </Flex>
-                    <Flex direction="row"  align="center" gap={8}>
-                        <Image src={Rainbow} alt="Voice Recording" width={200} height={300} />
-                        <Image src={Rainbow} alt="Voice Recording" width={200} height={300} />
+                    <Flex gap="32px" marginTop="24px">
+                        <Image src={Rainbow} alt="Voice Recording" width={240} height={520} />
+                        <Image src={Rainbow} alt="Voice Recording" width={240} height={520} />
                     </Flex>
-                    <Flex direction="column" align="flex-start">
-                        <Text textStyle="2xl" px={6} color="#6D7685" fontWeight='bold' whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow4")}</Text>
-                        <Box mt={4} px={12}>
-                            <Text w="100%" textStyle="md" color="#6D7685" textAlign='left' whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow4detail1Mobile")}</Text>
-                        </Box>
-                        <Box mt={4} px={12}>
-                            <Text w="100%" textStyle="md" color="#6D7685" textAlign='left' whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow4detail2Mobile")}</Text>
-                            <Text w="100%" textStyle="md" color="#6D7685" textAlign='left' whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow4detail3Mobile")}</Text>
-                        </Box>
-                        <Box mt={4} px={12}>
-                            <Text w="100%" textStyle="md" color="#6D7685" textAlign='left' whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow4detail4Mobile")}</Text>
+                </Flex>
+                <Flex align="center" direction="column" gap="0px" py={8} justify="space-between" w="80vw">
+                    <Flex direction="column" align="flex-start" w="80vw">
+                        <Text textStyle="4xl" color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow4")}</Text>
+                        <Box mt={4} px={8}>
+                            <Text textStyle="xl" color="#6D7685" textAlign="left" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow4detail1")}</Text>
                         </Box>
                     </Flex>
-                    <Flex direction="row" align="center" gap={8}>
-                        <Image src={Rainbow} alt="Voice Recording" width={200} height={300} />
-                        <Image src={Rainbow} alt="Voice Recording" width={200} height={300} />
+                    <Flex gap="32px" marginTop="24px">
+                        <Image src={Rainbow} alt="Voice Recording" width={240} height={520} />
+                        <Image src={Rainbow} alt="Voice Recording" width={240} height={520} />
                     </Flex>
-                    <Flex direction="column" align="flex-start">
-                        <Text textStyle="2xl" px={6} color="#6D7685" fontWeight='bold' whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow5")}</Text>
-                        <Box mt={4} px={12}>
-                            <Text w="100%" textStyle="md" color="#6D7685" textAlign='left' whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow5detail1Mobile")}</Text>
+                </Flex>
+                <Flex align="center" direction="column" gap="0px" py={8} justify="space-between" w="80vw">
+                    <Flex direction="column" align="flex-start" w="80vw">
+                        <Text textStyle="4xl" color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow5")}</Text>
+                        <Box mt={4} px={8}>
+                            <Text textStyle="xl" color="#6D7685" textAlign="left" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow5detail1")}</Text>
                         </Box>
                     </Flex>
-                    <Flex direction="row" align="center" gap={8}>
-                        <Image src={Rainbow} alt="Voice Recording" width={200} height={300} />
-                        <Image src={Rainbow} alt="Voice Recording" width={200} height={300} />
+                    <Flex gap="32px" marginTop="24px">
+                        <Image src={Rainbow} alt="Voice Recording" width={240} height={520} />
+                        <Image src={Rainbow} alt="Voice Recording" width={240} height={520} />
                     </Flex>
-                    <Box alignItems="center">
-                        <PageMoveButtonLong toRef="/howtoaccept" buttonLabel={t("LookHowToAcceptMobile")} />
-                    </Box>
-                </Stack>
-            </>
+                </Flex>
+                <PageMoveButtonLong toRef="/howtoaccept" buttonLabel={t("LookHowToAccept")} />
+            </Stack>
         );
     } else {
         return (
