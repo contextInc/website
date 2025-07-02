@@ -22,7 +22,7 @@ export default function PageMoveButtonLong(props: PageMoveButtonProps) {
     } else {
         // pcおよびタブレット用のヘッダー
         return (
-            <Button asChild fontSize={18} w="200px" h="48px" marginTop={20} variant="outline" boxShadow="sm" fontFamily='Open Sans, sans-serif' color="#C85062" borderColor="#C85062" borderWidth={2} _hover={{ bg: "#C85062", color: "white" }} _active={{ bg: "#C85062", color: "white" }}>
+            <Button asChild fontSize={18} w="280px" h="48px" marginTop={20} variant="outline" boxShadow="sm" fontFamily='Open Sans, sans-serif' color="#C85062" borderColor="#C85062" borderWidth={2} _hover={{ bg: "#C85062", color: "white" }} _active={{ bg: "#C85062", color: "white" }}>
                 <a href={props.toRef}>{props.buttonLabel}</a>
             </Button>
         );
