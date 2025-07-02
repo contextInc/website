@@ -22,21 +22,21 @@ export default function AppealPointWithNum(props: AppealPointWithNumProps) {
         return (
             <Flex direction="column" px={4} py={2}>
                 <Box borderRadius={20} bg="#C85062" w={10} h={10} fontSize={20} padding={1}  zIndex={1} >{props.num}</Box>
-                <AppealPoint  appealSentence={props.appealSentence} detailSentence={props.detailSentence} wpoint={props.wpoint ? props.wpoint : 0} hpoint={props.hpoint ? props.hpoint : 0} />
+                <AppealPoint pointNum={props.num} appealSentence={props.appealSentence} detailSentence={props.detailSentence} wpoint={props.wpoint ? props.wpoint : 0} hpoint={props.hpoint ? props.hpoint : 0} />
             </Flex>
         );
     } else if (displayValue === 'medium') {
         return (
             <Flex direction="column" px={4} py={4}>
                 <Box borderRadius="25px" bg="#C85062" w="50px" h="50px" fontSize={30} textAlign="center" justifyContent="center" paddingRight="1px" paddingTop="1px" zIndex={1} >{props.num}</Box>
-                <AppealPoint  appealSentence={props.appealSentence} detailSentence={props.detailSentence} wpoint={480} hpoint={428} />
+                <AppealPoint pointNum={props.num} appealSentence={props.appealSentence} detailSentence={props.detailSentence} wpoint={480} hpoint={props.hpoint ? props.hpoint : 0} />
             </Flex>
         );
     } else {
         return (
             <Flex direction="column" px={4} py={4}>
                 <Box borderRadius="25px" bg="#C85062" w="50px" h="50px" fontSize={30} textAlign="center" justifyContent="center" paddingRight="1px" paddingTop="1px" zIndex={1} >{props.num}</Box>
-                <AppealPoint  appealSentence={props.appealSentence} detailSentence={props.detailSentence} wpoint={480} hpoint={428} />
+                <AppealPoint pointNum={props.num} appealSentence={props.appealSentence} detailSentence={props.detailSentence} wpoint={480} hpoint={428} />
             </Flex>
         );
     }

@@ -29,13 +29,17 @@ export default function ServicePoint() {
     } else if (displayValue === 'medium') {
         return (
             <Stack bg="#FFFFFF"  py={20} align="center" justify="space-between" w="100vw">
-                <Text textStyle="3xl" marginBottom={10} fontWeight="bold" color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("ContextServicePoint")}</Text>
-                <AppealPointWithNum  num={1} appealSentence={t("appeal1Mobile")} detailSentence={t("detail1Mobile")} wpoint={320} hpoint={360} />
-                <AppealPointWithNum  num={2} appealSentence={t("appeal2Mobile")} detailSentence={t("detail2Mobile")} wpoint={320} hpoint={360} />
-                <AppealPointWithNum  num={3} appealSentence={t("appeal3Mobile")} detailSentence={t("detail3Mobile")} wpoint={320} hpoint={320} />
-                <AppealPointWithNum  num={4} appealSentence={t("appeal4Mobile")} detailSentence={t("detail4Mobile")} wpoint={320} hpoint={336} />
-                <AppealPointWithNum  num={5} appealSentence={t("appeal5Mobile")} detailSentence={t("detail5Mobile")} wpoint={320} hpoint={180} />
-                <AppealPointWithNum  num={6} appealSentence={t("appeal6Mobile")} detailSentence={t("detail6Mobile")} wpoint={320} hpoint={200} />
+                <Flex>
+                    <Text textStyle="3xl" marginBottom={10} fontWeight="bold" color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("ContextServicePoint")}</Text>
+                    <Image src={Impact} alt="Impact" width="24px" height="22px" />
+                </Flex>
+                <AppealPointWithNum  num={1} appealSentence={t("appeal1")} detailSentence={t("detail1")} wpoint={320} hpoint={428} />
+                <AppealPointWithNum  num={2} appealSentence={t("appeal2")} detailSentence={t("detail2")} wpoint={320} hpoint={380} />
+                <AppealPointWithNum  num={3} appealSentence={t("appeal3")} detailSentence={t("detail3")} wpoint={320} hpoint={428} />
+                <AppealPointWithNum  num={4} appealSentence={t("appeal4")} detailSentence={t("detail4")} wpoint={320} hpoint={428} />
+                <AppealPointWithNum  num={5} appealSentence={t("appeal5")} detailSentence={t("detail5")} wpoint={320} hpoint={428} />
+                <AppealPointWithNum  num={6} appealSentence={t("appeal6")} detailSentence={t("detail6")} wpoint={320} hpoint={320} />
+                <AppealPointWithNum  num={7} appealSentence={t("appeal7")} detailSentence={t("detail7")} wpoint={320} hpoint={320} />
                 <PageMoveButton toRef="/howtouse" buttonLabel={t("LookHowToUse")} />
             </Stack>
         );
