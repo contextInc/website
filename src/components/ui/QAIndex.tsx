@@ -3,14 +3,11 @@ import {
   Text,
   Box,
   Stack,
-  Separator,
   Accordion,
   Span
 } from '@chakra-ui/react';
 import { useTranslation } from 'react-i18next';
 import '@/i18n';
-import SubscriptionExplanation from './SubscriptionExplanation';
-import SubscriptionPriceItem from './SubscriptionPriceItem';
 import { useState } from 'react';
 
 export default function QAIndex() {
@@ -25,6 +22,7 @@ export default function QAIndex() {
         { value: "fourth-item", title: t("AboutDemo"), text: t("AboutDemoAnswer") },
         { value: "fifth-item", title: t("AboutRepresentativeAuth"), text: t("AboutRepresentativeAuthAnswer") },
         { value: "sixth-item", title: t("AboutAuthLimitTime"), text: t("AboutAuthLimitTimeAnswer") },
+        { value: "seventh-item", title: t("AboutSenderInfo"), text: t("AboutSenderInfoAnswer") },
     ]
 
     if (displayValue === 'small') {
