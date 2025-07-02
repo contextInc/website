@@ -38,7 +38,7 @@ export default function SubscriptionInfo() {
     } else if (displayValue === 'medium') {
         return (
             <>
-                <Stack bg="#FFFFFF" py={120} alignItems="center" w="100vw" >
+                <Stack bg="#FFFFFF" py={120} style={{transform: "translateZ(0)"}}  alignItems="center" w="100vw" >
                     <Text textStyle="5xl" marginBottom={10} color="#C85062" whiteSpace="pre-wrap"  fontFamily='Open Sans, sans-serif'>{t("Subscription")}</Text>
                     <Separator color="#000000" width="85vw" height={2} marginBottom={4} />
                     <Box w="85vw" >

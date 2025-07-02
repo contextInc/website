@@ -177,7 +177,7 @@
     "TwelveHourPlanPerMonth": "(250円/月)",
     "SubscriptionTicketExplanation": "※上記価格は為替等の変動により変更となる可能性がございます。",
     "VoiceTicket": "音声送信チケット",
-    "VoiceTicketExplanation": "1宛先につき1枚の音声共有チケットが必要です。",
+    "VoiceTicketExplanation": "1宛先につき1枚の音声送信チケットが必要です。",
     "OneVoiceTicketPrice": "400円",
     "TwoVoiceTicketPrice": "800円",
     "ThreeVoiceTicketPrice": "1,200円",

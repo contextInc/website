@@ -13,19 +13,19 @@ export default function VoiceTicketExplanation(props: SubscriptionExplanationPro
 
     if (displayValue === 'small') {
         return (
-            <Box h="160px" w="85vw">
+            <Box h="80px" w="85vw">
                 <Text textStyle="lg" textAlign="left" color="#6D7685" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{props.content}</Text>
             </Box>
         );
     } else if (displayValue === 'medium') {
         return (
-            <Box h="160px" w="85vw">
+            <Box h="80px" w="85vw">
                 <Text textStyle="2xl" textAlign="left" color="#6D7685" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{props.content}</Text>
             </Box>
         );
     } else {
         return (
-            <Box h="140px" w="50vw">
+            <Box h="80px" w="50vw">
                 <Text textStyle="2xl" textAlign="left" color="#6D7685" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{props.content}</Text>
             </Box>
         );
