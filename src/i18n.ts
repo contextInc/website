@@ -11,9 +11,9 @@ i18n
   .init({
     fallbackLng: ['en', 'ja'],
     resources: {
-      ja: {
-        translation: JA,
-      },
+    //   ja: {
+    //     translation: JA,
+    //   },
       en: {
         translation: EN,
       },
