@@ -8,6 +8,7 @@ import Security from './pages/Security';
 import Company from './pages/Company';
 import Privacy from './pages/privacy';
 import Price from './pages/Price';
+import QA from './pages/QA';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/company" element={<Company />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/price" element={<Price />} />
+          <Route path="/qa" element={<QA />} />
           {/* <Route path="/about" element={<About />} /> */}
           <Route path="*" element={<h1>404 Not Found</h1>} />
         </Routes>
