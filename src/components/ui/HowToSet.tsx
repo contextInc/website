@@ -154,142 +154,64 @@ export default function HowToSet() {
         return (
             <Stack bg="#FFFFFF" px={56} py={40} align="center"  w="100vw" >
                 <Text textStyle="5xl" marginBottom={20} color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("UseFlow")}</Text>
-                <Flex align="center" gap={12} py={8} justify="space-between" w={1200}>
-                    <Flex direction="column" align="flex-start">
+                <Flex align="center" gap="0px" py={8} justify="space-between" w="976px">
+                    <Flex direction="column" align="flex-start" w="488px">
                         <Text textStyle="5xl" color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow1")}</Text>
                         <Box mt={4} px={12}>
-                            <Text textStyle="xl" color="#6D7685" alignItems="start" alignSelf="start" justifyContent="start" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow1detail1")}</Text>
-                        </Box>
-                        <Box mt={4} px={12}>
-                            <Text textStyle="xl" color="#6D7685" alignItems="start" alignSelf="start" justifyContent="start" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow1detail2")}</Text>
-                        </Box>
-                        <Box px={12}>
-                            <Text textStyle="xl" color="#6D7685" alignItems="start" alignSelf="start" justifyContent="start" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow1detail3")}</Text>
-                        </Box>
-                        <Box mt={4} px={12}>
-                            <Text textStyle="xl" color="#6D7685" alignItems="start" alignSelf="start" justifyContent="start" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow1detail4")}</Text>
-                        </Box>
-                        <Box mt={4} px={12}>
-                            <Text textStyle="xl" color="#6D7685" alignItems="start" alignSelf="start" justifyContent="start" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow1detail5")}</Text>
+                            <Text textStyle="xl" color="#6D7685" textAlign="left" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow1detail1")}</Text>
                         </Box>
                     </Flex>
-                    <Flex gap={8}>
-                        <Image src={Rainbow} alt="Voice Recording" width={200} height={300} />
-                        <Image src={Rainbow} alt="Voice Recording" width={200} height={300} />
+                    <Flex gap="8px">
+                        <Image src={Rainbow} alt="Voice Recording" width={240} height={520} />
+                        <Image src={Rainbow} alt="Voice Recording" width={240} height={520} />
                     </Flex>
                 </Flex>
-                <Flex align="center" gap={12} py={8} justify="space-between" w={1200}>
-                    <Flex direction="column" align="flex-start">
-                        <Text textStyle="5xl" color="#6D7685" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow2")}</Text>
+                <Flex align="center" gap="0px" py={8} justify="space-between" w="976px">
+                    <Flex direction="column" align="flex-start" w="488px">
+                        <Text textStyle="5xl" color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow2")}</Text>
                         <Box mt={4} px={12}>
-                            <Text textStyle="xl" color="#6D7685" alignItems="start" alignSelf="start" justifyContent="start" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow2detail1")}</Text>
-                        </Box>
-                        <Box px={12}>
-                            <Text textStyle="xl" color="#6D7685" alignItems="start" alignSelf="start" justifyContent="start" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow2detail2")}</Text>
-                        </Box>
-                        <Box mt={4} px={12}>
-                            <Text textStyle="xl" color="#6D7685" alignItems="start" alignSelf="start" justifyContent="start" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow2detail3")}</Text>
-                        </Box>
-                        <Box px={12}>
-                            <Text textStyle="xl" color="#6D7685" alignItems="start" alignSelf="start" justifyContent="start" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow2detail4")}</Text>
+                            <Text textStyle="xl" color="#6D7685" textAlign="left" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow2detail1")}</Text>
                         </Box>
                     </Flex>
-                    <Flex gap={8}>
-                        <Image src={Rainbow} alt="Voice Recording" width={200} height={300} />
-                        <Image src={Rainbow} alt="Voice Recording" width={200} height={300} />
+                    <Flex gap="8px">
+                        <Image src={Rainbow} alt="Voice Recording" width={240} height={520} />
+                        <Image src={Rainbow} alt="Voice Recording" width={240} height={520} />
                     </Flex>
                 </Flex>
-                <Flex align="center" gap={12} py={8} justify="space-between" w={1200}>
-                    <Flex direction="column" align="flex-start">
-                        <Text textStyle="5xl" color="#6D7685" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow3")}</Text>
+                <Flex align="center" gap="0px" py={8} justify="space-between" w="976px">
+                    <Flex direction="column" align="flex-start" w="488px">
+                        <Text textStyle="5xl" color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow3")}</Text>
                         <Box mt={4} px={12}>
-                            <Text textStyle="xl" color="#6D7685" alignItems="start" alignSelf="start" justifyContent="start" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow3detail1")}</Text>
-                        </Box>
-                        <Box px={12}>
-                            <Text textStyle="xl" color="#6D7685" alignItems="start" alignSelf="start" justifyContent="start" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow3detail2")}</Text>
-                        </Box>
-                        <Box mt={4} px={12}>
-                            <Text textStyle="xl" color="#6D7685" alignItems="start" alignSelf="start" justifyContent="start" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow3detail3")}</Text>
-                        </Box>
-                        <Box px={12}>
-                            <Text textStyle="xl" color="#6D7685" alignItems="start" alignSelf="start" justifyContent="start" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow3detail4")}</Text>
-                        </Box>
-                        <Box mt={4} px={12}>
-                            <Text textStyle="xl" color="#6D7685" alignItems="start" alignSelf="start" justifyContent="start" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow3detail5")}</Text>
-                        </Box>
-                        <Box px={12}>
-                            <Text textStyle="xl" color="#6D7685" alignItems="start" alignSelf="start" justifyContent="start" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow3detail6")}</Text>
-                        </Box>
-                        <Box px={12}>
-                            <Text textStyle="xl" color="#6D7685" alignItems="start" alignSelf="start" justifyContent="start" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow3detail7")}</Text>
+                            <Text textStyle="xl" color="#6D7685" textAlign="left" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow3detail1")}</Text>
                         </Box>
                     </Flex>
-                    <Flex gap={8}>
-                        <Image src={Rainbow} alt="Voice Recording" width={200} height={300} />
-                        <Image src={Rainbow} alt="Voice Recording" width={200} height={300} />
+                    <Flex gap="8px">
+                        <Image src={Rainbow} alt="Voice Recording" width={240} height={520} />
+                        <Image src={Rainbow} alt="Voice Recording" width={240} height={520} />
                     </Flex>
                 </Flex>
-                <Flex align="center" gap={12} py={8} justify="space-between" w={1200}>
-                    <Flex direction="column" align="flex-start">
-                        <Text textStyle="5xl" color="#6D7685" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow4")}</Text>
+                <Flex align="center" gap="0px" py={8} justify="space-between" w="976px">
+                    <Flex direction="column" align="flex-start" w="488px">
+                        <Text textStyle="5xl" color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow4")}</Text>
                         <Box mt={4} px={12}>
-                            <Text textStyle="xl" color="#6D7685" alignItems="start" alignSelf="start" justifyContent="start" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow4detail1")}</Text>
-                        </Box>
-                        <Box px={12}>
-                            <Text textStyle="xl" color="#6D7685" alignItems="start" alignSelf="start" justifyContent="start" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow4detail2")}</Text>
-                        </Box>
-                        <Box mt={4} px={12}>
-                            <Text textStyle="xl" color="#6D7685" alignItems="start" alignSelf="start" justifyContent="start" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow4detail3")}</Text>
-                        </Box>
-                        <Box px={12}>
-                            <Text textStyle="xl" color="#6D7685" alignItems="start" alignSelf="start" justifyContent="start" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow4detail4")}</Text>
-                        </Box>
-                        <Box mt={4} px={12}>
-                            <Text textStyle="xl" color="#6D7685" alignItems="start" alignSelf="start" justifyContent="start" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow4detail5")}</Text>
-                        </Box>
-                        <Box px={12}>
-                            <Text textStyle="xl" color="#6D7685" alignItems="start" alignSelf="start" justifyContent="start" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow4detail6")}</Text>
+                            <Text textStyle="xl" color="#6D7685" textAlign="left" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow4detail1")}</Text>
                         </Box>
                     </Flex>
-                    <Flex gap={8}>
-                        <Image src={Rainbow} alt="Voice Recording" width={200} height={300} />
-                        <Image src={Rainbow} alt="Voice Recording" width={200} height={300} />
+                    <Flex gap="8px">
+                        <Image src={Rainbow} alt="Voice Recording" width={240} height={520} />
+                        <Image src={Rainbow} alt="Voice Recording" width={240} height={520} />
                     </Flex>
                 </Flex>
-                <Flex align="center" gap={12} py={8} justify="space-between" w={1200}>
-                    <Flex direction="column" align="flex-start">
-                        <Text textStyle="5xl" color="#6D7685" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow5")}</Text>
+                <Flex align="center" gap="0px" py={8} justify="space-between" w="976px">
+                    <Flex direction="column" align="flex-start" w="488px">
+                        <Text textStyle="5xl" color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow5")}</Text>
                         <Box mt={4} px={12}>
-                            <Text textStyle="xl" color="#6D7685" alignItems="start" alignSelf="start" justifyContent="start" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow5detail1")}</Text>
-                        </Box>
-                        <Box px={12}>
-                            <Text textStyle="xl" color="#6D7685" alignItems="start" alignSelf="start" justifyContent="start" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow5detail2")}</Text>
-                        </Box>
-                        <Box mt={4} px={12}>
-                            <Text textStyle="xl" color="#6D7685" alignItems="start" alignSelf="start" justifyContent="start" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow5detail3")}</Text>
-                        </Box>
-                        <Box mt={4} px={12}>
-                            <Text textStyle="xl" color="#6D7685" alignItems="start" alignSelf="start" justifyContent="start" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow5detail4")}</Text>
-                        </Box>
-                        <Box px={12}>
-                            <Text textStyle="xl" color="#6D7685" alignItems="start" alignSelf="start" justifyContent="start" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow5detail5")}</Text>
-                        </Box>
-                        <Box mt={4} px={12}>
-                            <Text textStyle="xl" color="#6D7685" alignItems="start" alignSelf="start" justifyContent="start" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow5detail6")}</Text>
-                        </Box>
-                        <Box px={12}>
-                            <Text textStyle="xl" color="#6D7685" alignItems="start" alignSelf="start" justifyContent="start" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow5detail7")}</Text>
-                        </Box>
-                        <Box px={12}>
-                            <Text textStyle="xl" color="#6D7685" alignItems="start" alignSelf="start" justifyContent="start" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow5detail8")}</Text>
-                        </Box>
-                        <Box mt={4} px={12}>
-                            <Text textStyle="xl" color="#6D7685" alignItems="start" alignSelf="start" justifyContent="start" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow5detail9")}</Text>
+                            <Text textStyle="xl" color="#6D7685" textAlign="left" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow5detail1")}</Text>
                         </Box>
                     </Flex>
-                    <Flex gap={8}>
-                        <Image src={Rainbow} alt="Voice Recording" width={200} height={300} />
-                        <Image src={Rainbow} alt="Voice Recording" width={200} height={300} />
+                    <Flex gap="8px">
+                        <Image src={Rainbow} alt="Voice Recording" width={240} height={520} />
+                        <Image src={Rainbow} alt="Voice Recording" width={240} height={520} />
                     </Flex>
                 </Flex>
                 <PageMoveButton toRef="/howtoaccept" buttonLabel={t("LookHowToAccept")} />
