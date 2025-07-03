@@ -23,43 +23,43 @@ export default function AppealMark(props: AppealMarkProps) {
         if (props.appealNum === 1) {
             return (
                 <Box marginBottom="16px"  justifyItems="center">
-                    <Image src={Point1} alt="Appeal Mark" width="48px" height="auto" />
+                    <Image src={Point1} alt="Appeal Mark" width="48px" height="auto" mx="auto" maxW="100%" />
                 </Box>
             );
         } else if (props.appealNum === 2) {
             return (
                 <Box marginBottom="16px"  justifyItems="center">
-                    <Image src={Point2} alt="Appeal Mark" width="48px" height="auto" />
+                    <Image src={Point2} alt="Appeal Mark" width="48px" height="auto" mx="auto" maxW="100%" />
                 </Box>
             );
         } else if (props.appealNum === 3) {
             return (
                 <Box marginBottom="16px"  justifyItems="center">
-                    <Image src={Point3} alt="Appeal Mark" width="48px" height="auto" />
+                    <Image src={Point3} alt="Appeal Mark" width="48px" height="auto" mx="auto" maxW="100%" />
                 </Box>
             );
         } else if (props.appealNum === 4) {
             return (
                 <Box marginBottom="16px"  justifyItems="center">
-                    <Image src={Point4} alt="Appeal Mark" width="48px" height="auto" />
+                    <Image src={Point4} alt="Appeal Mark" width="48px" height="auto" mx="auto" maxW="100%" />
                 </Box>
             );
         } else if (props.appealNum === 5) {
             return (
                 <Box marginBottom="16px"  justifyItems="center">
-                    <Image src={Point5} alt="Appeal Mark" width="48px" height="auto" />
+                    <Image src={Point5} alt="Appeal Mark" width="48px" height="auto" mx="auto" maxW="100%" />
                 </Box>
             );
         } else if (props.appealNum === 6) {
             return (
                 <Box marginBottom="16px"  justifyItems="center">
-                    <Image src={Point6} alt="Appeal Mark" width="48px" height="auto" />
+                    <Image src={Point6} alt="Appeal Mark" width="48px" height="auto" mx="auto" maxW="100%" />
                 </Box>
             );
         } else {
             return (
                 <Box marginBottom="16px"  justifyItems="center">
-                    <Image src={Point7} alt="Appeal Mark" width="48px" height="auto" />
+                    <Image src={Point7} alt="Appeal Mark" width="48px" height="auto" mx="auto" maxW="100%" />
                 </Box>
             );
         }
@@ -67,43 +67,43 @@ export default function AppealMark(props: AppealMarkProps) {
         if (props.appealNum === 1) {
             return (
                 <Box marginBottom="32px"  justifyItems="center">
-                    <Image src={Point1} alt="Appeal Mark" width="64px" height="auto" />
+                    <Image src={Point1} alt="Appeal Mark" width="64px" height="auto" mx="auto" maxW="100%" />
                 </Box>
             );
         } else if (props.appealNum === 2) {
             return (
                 <Box marginBottom="32px"  justifyItems="center">
-                    <Image src={Point2} alt="Appeal Mark" width="64px" height="auto" />
+                    <Image src={Point2} alt="Appeal Mark" width="64px" height="auto" mx="auto" maxW="100%" />
                 </Box>
             );
         } else if (props.appealNum === 3) {
             return (
                 <Box marginBottom="32px"  justifyItems="center">
-                    <Image src={Point3} alt="Appeal Mark" width="64px" height="auto" />
+                    <Image src={Point3} alt="Appeal Mark" width="64px" height="auto" mx="auto" maxW="100%" />
                 </Box>
             );
         } else if (props.appealNum === 4) {
             return (
                 <Box marginBottom="32px"  justifyItems="center">
-                    <Image src={Point4} alt="Appeal Mark" width="64px" height="auto" />
+                    <Image src={Point4} alt="Appeal Mark" width="64px" height="auto" mx="auto" maxW="100%" />
                 </Box>
             );
         } else if (props.appealNum === 5) {
             return (
                 <Box marginBottom="32px"  justifyItems="center">
-                    <Image src={Point5} alt="Appeal Mark" width="64px" height="auto" />
+                    <Image src={Point5} alt="Appeal Mark" width="64px" height="auto" mx="auto" maxW="100%" />
                 </Box>
             );
         } else if (props.appealNum === 6) {
             return (
                 <Box marginBottom="32px"  justifyItems="center">
-                    <Image src={Point6} alt="Appeal Mark" width="64px" height="auto" />
+                    <Image src={Point6} alt="Appeal Mark" width="64px" height="auto" mx="auto" maxW="100%" />
                 </Box>
             );
         } else {
             return (
                 <Box marginBottom="32px"  justifyItems="center">
-                    <Image src={Point7} alt="Appeal Mark" width="64px" height="auto" />
+                    <Image src={Point7} alt="Appeal Mark" width="64px" height="auto" mx="auto" maxW="100%" />
                 </Box>
             );
         }

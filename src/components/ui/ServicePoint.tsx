@@ -5,7 +5,7 @@ import {
 } from '@chakra-ui/react';
 import { useTranslation } from 'react-i18next';
 import '@/i18n';
-import PageMoveButton from '../buttons/pageMoveButton';
+import PageMoveButton from '../buttons/PageMoveButton';
 import AppealPointWithNum from './AppealPointWithNum';
 import Impact from '../../assets/Group2602.png';
 
