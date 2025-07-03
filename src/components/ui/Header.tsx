@@ -27,7 +27,7 @@ export default function Header() {
                         <Drawer.Positioner>
                             <Drawer.Content bg="black">
                                 <Drawer.Header>
-                                    <Drawer.Title>Menu</Drawer.Title>
+                                    <Drawer.Title color="white">Menu</Drawer.Title>
                                 </Drawer.Header>
                                 <Drawer.Body>
                                     <Box mb={4}><Link href="/"  color="#FFFFFF" fontSize={22} >{t("HOME")}</Link></Box>
