@@ -25,7 +25,7 @@ export default function PicTicketInfo() {
                         <PicTicketPriceItem ticketNum={1} ticketDetail={t("OnePicTicketPrice")} />
                         <PicTicketPriceItem ticketNum={2} ticketDetail={t("TwoPicTicketPrice")} />
                         <PicTicketPriceItem ticketNum={3} ticketDetail={t("ThreePicTicketPrice")} />
-                        <Box h="80px" w="85vw">
+                        <Box h="80px" w="85vw" marginBottom="20px">
                             <Text textStyle="lg" textAlign="left" color="#6D7685" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("SubscriptionTicketExplanation")}</Text>
                         </Box>
                         {/* <SubscriptionNotice title={t("BusinessDescription")} content={t("BusinessDescriptionDetail")} /> */}
@@ -65,7 +65,7 @@ export default function PicTicketInfo() {
                         <PicTicketPriceItem ticketNum={1} ticketDetail={t("OnePicTicketPrice")} />
                         <PicTicketPriceItem ticketNum={2} ticketDetail={t("TwoPicTicketPrice")} />
                         <PicTicketPriceItem ticketNum={3} ticketDetail={t("ThreePicTicketPrice")} />
-                        <Box h="80px" w="50vw">
+                        <Box h="100px" w="40vw" marginTop="20px">
                             <Text textStyle="2xl" textAlign="left" color="#6D7685" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("SubscriptionTicketExplanation")}</Text>
                         </Box>
                         {/* <SubscriptionNotice title={t("BusinessDescription")} content={t("BusinessDescriptionDetail")} /> */}

@@ -32,7 +32,7 @@ export default function VoiceTicketPriceItem(props: SubscriptionPriceItemProps) 
             <Box h={100} w="85vw">
                 <Flex gap={8} textAlign="left">
                     <Text textStyle="2xl" color="#6D7685" w="300px" fontWeight="bold" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{props.ticketNum + t("Piece")}</Text>
-                    <Text textStyle="2xl" color="#6D7685" w="100px" fontWeight="bold" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{props.ticketDetail}</Text>
+                    <Text textStyle="2xl" color="#6D7685" w="200px" fontWeight="bold" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{props.ticketDetail}</Text>
                     {/* <Text textStyle="2xl" color="#6D7685" fontWeight="bold" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{props.pricePerTicket}</Text> */}
                 </Flex>
             </Box>
@@ -42,7 +42,7 @@ export default function VoiceTicketPriceItem(props: SubscriptionPriceItemProps) 
             <Box h="60px" w="50vw">
                 <Flex gap={8} textAlign="left">
                     <Text textStyle="2xl" color="#6D7685" w="300px" fontWeight="bold" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{props.ticketNum + t("Piece")}</Text>
-                    <Text textStyle="2xl" color="#6D7685" w="100px" fontWeight="bold" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{props.ticketDetail}</Text>
+                    <Text textStyle="2xl" color="#6D7685" w="200px" fontWeight="bold" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{props.ticketDetail}</Text>
                     {/* <Text textStyle="2xl" color="#6D7685" fontWeight="bold" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{props.pricePerTicket}</Text> */}
                 </Flex>
             </Box>
