@@ -5,7 +5,7 @@ import {
 } from '@chakra-ui/react';
 import { useTranslation } from 'react-i18next';
 import '@/i18n';
-import PageMoveButton from '../buttons/PageMoveButton';
+import PageMoveButtonTwo from '../buttons/PageMoveButtonTwo';
 import AppealPointWithNum from './AppealPointWithNum';
 import Impact from '../../assets/Group2602.png';
 
@@ -27,7 +27,7 @@ export default function ServicePoint() {
                 <AppealPointWithNum  num={5} appealSentence={t("appeal5Mobile")} detailSentence={t("detail5Mobile")} wpoint={320} hpoint={452} />
                 <AppealPointWithNum  num={6} appealSentence={t("appeal6Mobile")} detailSentence={t("detail6Mobile")} wpoint={320} hpoint={256} />
                 <AppealPointWithNum  num={7} appealSentence={t("appeal7Mobile")} detailSentence={t("detail7Mobile")} wpoint={320} hpoint={300} />
-                <PageMoveButton toRef="/howtouse" buttonLabel={t("LookHowToUse")} />
+                <PageMoveButtonTwo toRef="/howtouse" buttonLabel={t("LookHowToUse")} />
             </Stack>
         );
     } else if (displayValue === 'medium') {
@@ -44,7 +44,7 @@ export default function ServicePoint() {
                 <AppealPointWithNum  num={5} appealSentence={t("appeal5")} detailSentence={t("detail5")} wpoint={320} hpoint={428} />
                 <AppealPointWithNum  num={6} appealSentence={t("appeal6")} detailSentence={t("detail6")} wpoint={320} hpoint={320} />
                 <AppealPointWithNum  num={7} appealSentence={t("appeal7")} detailSentence={t("detail7")} wpoint={320} hpoint={320} />
-                <PageMoveButton toRef="/howtouse" buttonLabel={t("LookHowToUse")} />
+                <PageMoveButtonTwo toRef="/howtouse" buttonLabel={t("LookHowToUse")} />
             </Stack>
         );
     } else {
@@ -67,7 +67,7 @@ export default function ServicePoint() {
                     <AppealPointWithNum  num={6} appealSentence={t("appeal6")} detailSentence={t("detail6")} />
                 </Flex>
                 <AppealPointWithNum  num={7} appealSentence={t("appeal7")} detailSentence={t("detail7")} />
-                <PageMoveButton toRef="/howtouse" buttonLabel={t("LookHowToUse")} />
+                <PageMoveButtonTwo toRef="/howtouse" buttonLabel={t("LookHowToUse")} />
             </Stack>
         );
     }

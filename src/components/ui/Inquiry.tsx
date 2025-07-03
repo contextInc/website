@@ -7,7 +7,7 @@ import {
 } from '@chakra-ui/react';
 import { useTranslation } from 'react-i18next';
 import '@/i18n';
-import PageMoveButton from '../buttons/pageMoveButton';
+import PageMoveButtonTwo from '../buttons/PageMoveButtonTwo';
 
 export default function Inquiry() {
     const displayValue = useBreakpointValue({base: 'small', md: 'medium',  lg: 'large'});
@@ -23,7 +23,7 @@ export default function Inquiry() {
                             <Text textStyle="2xl" textAlign="left" w="77vw" color="#6D7685" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("InquiryMail")}</Text>                            
                         </Box>
                     </Box>
-                    <PageMoveButton toRef="/qa" buttonLabel={t("QA")} />
+                    <PageMoveButtonTwo toRef="/qa" buttonLabel={t("QA")} />
                 </Stack>
         );
     } else if (displayValue === 'medium') {
@@ -39,7 +39,7 @@ export default function Inquiry() {
                             </Flex>
                         </Box>
                     </Box>
-                    <PageMoveButton toRef="/qa" buttonLabel={t("QA")} />
+                    <PageMoveButtonTwo toRef="/qa" buttonLabel={t("QA")} />
                 </Stack>
         );
     } else {
@@ -56,7 +56,7 @@ export default function Inquiry() {
                             </Flex>
                         </Box>
                     </Box>
-                    <PageMoveButton toRef="/qa" buttonLabel={t("QA")} />
+                    <PageMoveButtonTwo toRef="/qa" buttonLabel={t("QA")} />
                 </Stack>
             </>
         );

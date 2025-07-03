@@ -5,7 +5,7 @@ import {
 } from '@chakra-ui/react';
 import { useTranslation } from 'react-i18next';
 import '@/i18n';
-import PageMoveButton from '../buttons/pageMoveButton';
+import PageMoveButtonTwo from '../buttons/PageMoveButtonTwo';
 import RecordingOne from '../../assets/recordingOne.png';
 import RecordingTwo from '../../assets/recordingTwo.png';
 import ContactOne from '../../assets/contactOne.png';
@@ -224,7 +224,7 @@ export default function HowToSet() {
                         <Image src={FollowTwo} alt="Voice Recording" width={240} height={520} />
                     </Flex>
                 </Flex>
-                <PageMoveButton toRef="/howtoaccept" buttonLabel={t("LookHowToAccept")} />
+                <PageMoveButtonTwo toRef="/howtoaccept" buttonLabel={t("LookHowToAccept")} />
             </Stack>
         );
     }
