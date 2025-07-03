@@ -25,7 +25,7 @@ export default function Header() {
                     </Drawer.Trigger>
                     <Portal>
                         <Drawer.Positioner>
-                            <Drawer.Content>
+                            <Drawer.Content bg="black">
                                 <Drawer.Header>
                                     <Drawer.Title>Menu</Drawer.Title>
                                 </Drawer.Header>
