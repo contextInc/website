@@ -205,7 +205,7 @@
     "AboutSenderInfo": "contextの音声メッセージの送信者情報の信頼性は高いと考えて良いでしょうか？",
     "AboutSenderInfoAnswer": "信頼性は高いと考えて頂いて良いです。\n\ncontextでは、サブスクリプション開始時に、お客様に電話番号認証を行って頂きます。(メールアドレスは最初のログイン時に認証します。)\n\ncontextでは電話番号が未認証の状態では、音声メッセージの送信が出来ないようになっています。",
     "DifficultDomain": "メールが届きにくいドメインはありますか？",
-    "DifficultDomainAnswer": "下記メールアドレスのドメインは、メールが届きにくい可能性があります。\n\n- docomo.ne.jp\n- ezweb.ne.jp\n- softbank.ne.jp\n- i.softbank.jp\n- disneymobile.co.jp\n- icloud.com\n- me.com\n- mac.com\n\n上記ドメインのメールアドレスを宛先に設定される場合は、代理送信者を設定して頂きと共に、代理送信者の送信フォローを許可されることを強くお勧めします。",
+    "DifficultDomainAnswer": "下記メールアドレスのドメインは、メールが届きにくい可能性があります。\n\n- docomo.ne.jp\n- ezweb.ne.jp\n- au.com\n- softbank.ne.jp\n- i.softbank.jp\n\n上記ドメインのメールアドレスを宛先に設定される場合は、代理送信者を設定して頂くと共に、代理送信者の送信フォローを許可されることを強くお勧めします。",
     "DifficultNotice": "音声メッセージの案内が、メール宛てにも電話番号宛てにも届かない可能性はありますか？",
     "DifficultNoticeAnswer": "残念ながら、あります。\n\n特に日本国内においては、宛先の方のドメインと迷惑メール対策の度合次第では、宛先の方にcontext-voice.jpをドメイン指定受信に設定して頂く以外に、メール送信が困難な場合があります。\n\nまたRCSメッセージもまだ完全に日本では普及が進んでいないことから、宛先の方が受信対応出来ていない可能性があります。\n\nそのため、懸念がある場合は代理送信者を設定して頂くと共に、代理送信者の送信フォローを許可されることを強くお勧めします。",
     "SenderInfoAppeal": "送信者情報の偽りが困難",
