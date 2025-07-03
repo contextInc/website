@@ -6,7 +6,6 @@ import {
 import { useTranslation } from 'react-i18next';
 import '@/i18n';
 import PageMoveButton from '../buttons/pageMoveButton';
-import Rainbow from '../../assets/rainbow.jpg';
 import RecordingOne from '../../assets/recordingOne.png';
 import RecordingTwo from '../../assets/recordingTwo.png';
 import ContactOne from '../../assets/contactOne.png';

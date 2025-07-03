@@ -3,7 +3,6 @@ import {
   Box,
   Image
 } from '@chakra-ui/react';
-import { useTranslation } from 'react-i18next';
 import '@/i18n';
 import Point1 from '../../assets/point1.png';
 import Point2 from '../../assets/point2.png';
