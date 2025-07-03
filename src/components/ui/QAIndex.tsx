@@ -18,6 +18,8 @@ export default function QAIndex() {
     const items = [
         { value: "first-item", title: t("OtpNotArrive"), text: t("OtpNotArriveAnswer") },
         { value: "second-item", title: t("RcsNotArrive"), text: t("RcsNotArriveAnswer") },
+        { value: "eighth-item", title: t("DifficultDomain"), text: t("DifficultDomainAnswer") },
+        { value: "ninth-item", title: t("DifficultNotice"), text: t("DifficultNoticeAnswer") },
         { value: "third-item", title: t("EndToEnd"), text: t("EndToEndAnswer") },
         { value: "fourth-item", title: t("AboutDemo"), text: t("AboutDemoAnswer") },
         { value: "fifth-item", title: t("AboutRepresentativeAuth"), text: t("AboutRepresentativeAuthAnswer") },
