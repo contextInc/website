@@ -5,8 +5,16 @@ import {
 } from '@chakra-ui/react';
 import { useTranslation } from 'react-i18next';
 import '@/i18n';
-import Rainbow from '../../assets/rainbow.jpg';
 import PageMoveButtonLong from '../buttons/PageMoveButtonLong';
+import StartOne from '../../assets/startOne.png';
+import Install from '../../assets/install.png';
+import AuthCode from '../../assets/authCode.png';
+import TelInput from '../../assets/telInput.png';
+import TelOtpInput from '../../assets/telOtpInput.png';
+import MailInput from '../../assets/mailInput.png';
+import MailOtpInput from '../../assets/mailOtpInput.png';
+import Confirm from '../../assets/confirm.png';
+import VoiceIndex from '../../assets/voiceIndex.png';
 
 export default function HowToGetVoice() {
     const displayValue = useBreakpointValue({base: 'small', md: 'medium',  lg: 'large'});
@@ -25,7 +33,7 @@ export default function HowToGetVoice() {
                         </Box>
                     </Flex>
                     <Flex gap="8px" mt={4}>
-                        <Image src={Rainbow} alt="Voice Recording" width={360} height={780} />
+                        <Image src={StartOne} alt="Voice Recording" width={360} height={780} />
                     </Flex>
                 </Flex>
                 <Flex direction="column" align="center" gap="0px" py={8} justify="space-between" w="92vw">
@@ -36,7 +44,7 @@ export default function HowToGetVoice() {
                         </Box>
                     </Flex>
                     <Flex gap="8px" mt={4}>
-                        <Image src={Rainbow} alt="Voice Recording" width={360} height={780} />
+                        <Image src={Install} alt="Voice Recording" width={360} height={780} />
                     </Flex>
                 </Flex>
                 <Flex direction="column" align="center" gap="0px" py={8} justify="space-between" w="92vw">
@@ -47,7 +55,7 @@ export default function HowToGetVoice() {
                         </Box>
                     </Flex>
                     <Flex gap="8px" mt={4}>
-                        <Image src={Rainbow} alt="Voice Recording" width={360} height={780} />
+                        <Image src={AuthCode} alt="Voice Recording" width={360} height={780} />
                     </Flex>
                 </Flex>
                 <Flex direction="column" align="center" gap="0px" py={8} justify="space-between" w="92vw">
@@ -58,7 +66,7 @@ export default function HowToGetVoice() {
                         </Box>
                     </Flex>
                     <Flex gap="8px" mt={4}>
-                        <Image src={Rainbow} alt="Voice Recording" width={360} height={780} />
+                        <Image src={TelInput} alt="Voice Recording" width={360} height={780} />
                     </Flex>
                 </Flex>
                 <Flex direction="column" align="center" gap="0px" py={8} justify="space-between" w="92vw">
@@ -69,7 +77,7 @@ export default function HowToGetVoice() {
                         </Box>
                     </Flex>
                     <Flex gap="8px" mt={4}>
-                        <Image src={Rainbow} alt="Voice Recording" width={360} height={780} />
+                        <Image src={TelOtpInput} alt="Voice Recording" width={360} height={780} />
                     </Flex>
                 </Flex>
                 <Flex direction="column" align="center" gap="0px" py={8} justify="space-between" w="92vw">
@@ -80,7 +88,7 @@ export default function HowToGetVoice() {
                         </Box>
                     </Flex>
                     <Flex gap="8px" mt={4}>
-                        <Image src={Rainbow} alt="Voice Recording" width={360} height={780} />
+                        <Image src={MailInput} alt="Voice Recording" width={360} height={780} />
                     </Flex>
                 </Flex>
                 <Flex direction="column" align="center" gap="0px" py={8} justify="space-between" w="92vw">
@@ -91,7 +99,7 @@ export default function HowToGetVoice() {
                         </Box>
                     </Flex>
                     <Flex gap="8px" mt={4}>
-                        <Image src={Rainbow} alt="Voice Recording" width={360} height={780} />
+                        <Image src={MailOtpInput} alt="Voice Recording" width={360} height={780} />
                     </Flex>
                 </Flex>
                 <Flex direction="column" align="center" gap="0px" py={8} justify="space-between" w="92vw">
@@ -102,7 +110,7 @@ export default function HowToGetVoice() {
                         </Box>
                     </Flex>
                     <Flex gap="8px" mt={4}>
-                        <Image src={Rainbow} alt="Voice Recording" width={360} height={780} />
+                        <Image src={Confirm} alt="Voice Recording" width={360} height={780} />
                     </Flex>
                 </Flex>
                 <Flex direction="column" align="center" gap="0px" py={8} justify="space-between" w="92vw">
@@ -113,7 +121,7 @@ export default function HowToGetVoice() {
                         </Box>
                     </Flex>
                     <Flex gap="8px" mt={4}>
-                        <Image src={Rainbow} alt="Voice Recording" width={360} height={780} />
+                        <Image src={VoiceIndex} alt="Voice Recording" width={360} height={780} />
                     </Flex>
                 </Flex>
                 <PageMoveButtonLong toRef="/security" buttonLabel={t("CheckSecurity")} />
@@ -131,7 +139,7 @@ export default function HowToGetVoice() {
                         </Box>
                     </Flex>
                     <Flex gap="8px">
-                        <Image src={Rainbow} alt="Voice Recording" width={240} height={520} />
+                        <Image src={StartOne} alt="Voice Recording" width={240} height={520} />
                     </Flex>
                 </Flex>
                 <Flex align="center" gap="0px" py={8} justify="space-between" w="90vw">
@@ -142,7 +150,7 @@ export default function HowToGetVoice() {
                         </Box>
                     </Flex>
                     <Flex gap="8px">
-                        <Image src={Rainbow} alt="Voice Recording" width={240} height={520} />
+                        <Image src={Install} alt="Voice Recording" width={240} height={520} />
                     </Flex>
                 </Flex>
                 <Flex align="center" gap="0px" py={8} justify="space-between" w="90vw">
@@ -153,7 +161,7 @@ export default function HowToGetVoice() {
                         </Box>
                     </Flex>
                     <Flex gap="8px">
-                        <Image src={Rainbow} alt="Voice Recording" width={240} height={520} />
+                        <Image src={AuthCode} alt="Voice Recording" width={240} height={520} />
                     </Flex>
                 </Flex>
                 <Flex align="center" gap="0px" py={8} justify="space-between" w="90vw">
@@ -164,7 +172,7 @@ export default function HowToGetVoice() {
                         </Box>
                     </Flex>
                     <Flex gap="8px">
-                        <Image src={Rainbow} alt="Voice Recording" width={240} height={520} />
+                        <Image src={TelInput} alt="Voice Recording" width={240} height={520} />
                     </Flex>
                 </Flex>
                 <Flex align="center" gap="0px" py={8} justify="space-between" w="90vw">
@@ -175,7 +183,7 @@ export default function HowToGetVoice() {
                         </Box>
                     </Flex>
                     <Flex gap="8px">
-                        <Image src={Rainbow} alt="Voice Recording" width={240} height={520} />
+                        <Image src={TelOtpInput} alt="Voice Recording" width={240} height={520} />
                     </Flex>
                 </Flex>
                 <Flex align="center" gap="0px" py={8} justify="space-between" w="90vw">
@@ -186,7 +194,7 @@ export default function HowToGetVoice() {
                         </Box>
                     </Flex>
                     <Flex gap="8px">
-                        <Image src={Rainbow} alt="Voice Recording" width={240} height={520} />
+                        <Image src={MailInput} alt="Voice Recording" width={240} height={520} />
                     </Flex>
                 </Flex>
                 <Flex align="center" gap="0px" py={8} justify="space-between" w="90vw">
@@ -197,7 +205,7 @@ export default function HowToGetVoice() {
                         </Box>
                     </Flex>
                     <Flex gap="8px">
-                        <Image src={Rainbow} alt="Voice Recording" width={240} height={520} />
+                        <Image src={MailOtpInput} alt="Voice Recording" width={240} height={520} />
                     </Flex>
                 </Flex>
                 <Flex align="center" gap="0px" py={8} justify="space-between" w="90vw">
@@ -208,7 +216,7 @@ export default function HowToGetVoice() {
                         </Box>
                     </Flex>
                     <Flex gap="8px">
-                        <Image src={Rainbow} alt="Voice Recording" width={240} height={520} />
+                        <Image src={Confirm} alt="Voice Recording" width={240} height={520} />
                     </Flex>
                 </Flex>
                 <Flex align="center" gap="0px" py={8} justify="space-between" w="90vw">
@@ -219,7 +227,7 @@ export default function HowToGetVoice() {
                         </Box>
                     </Flex>
                     <Flex gap="8px">
-                        <Image src={Rainbow} alt="Voice Recording" width={240} height={520} />
+                        <Image src={VoiceIndex} alt="Voice Recording" width={240} height={520} />
                     </Flex>
                 </Flex>
                 <PageMoveButtonLong toRef="/security" buttonLabel={t("CheckSecurity")} />
@@ -237,7 +245,7 @@ export default function HowToGetVoice() {
                         </Box>
                     </Flex>
                     <Flex gap="8px">
-                        <Image src={Rainbow} alt="Voice Recording" width={240} height={520} />
+                        <Image src={StartOne} alt="Voice Recording" width={240} height={520} />
                     </Flex>
                 </Flex>
                 <Flex align="center" gap="0px" py={8} justify="space-between" w="976px">
@@ -248,7 +256,7 @@ export default function HowToGetVoice() {
                         </Box>
                     </Flex>
                     <Flex gap="8px">
-                        <Image src={Rainbow} alt="Voice Recording" width={240} height={520} />
+                        <Image src={Install} alt="Voice Recording" width={240} height={520} />
                     </Flex>
                 </Flex>
                 <Flex align="center" gap="0px" py={8} justify="space-between" w="976px">
@@ -259,7 +267,7 @@ export default function HowToGetVoice() {
                         </Box>
                     </Flex>
                     <Flex gap="8px">
-                        <Image src={Rainbow} alt="Voice Recording" width={240} height={520} />
+                        <Image src={AuthCode} alt="Voice Recording" width={240} height={520} />
                     </Flex>
                 </Flex>
                 <Flex align="center" gap="0px" py={8} justify="space-between" w="976px">
@@ -270,7 +278,7 @@ export default function HowToGetVoice() {
                         </Box>
                     </Flex>
                     <Flex gap="8px">
-                        <Image src={Rainbow} alt="Voice Recording" width={240} height={520} />
+                        <Image src={TelInput} alt="Voice Recording" width={240} height={520} />
                     </Flex>
                 </Flex>
                 <Flex align="center" gap="0px" py={8} justify="space-between" w="976px">
@@ -281,7 +289,7 @@ export default function HowToGetVoice() {
                         </Box>
                     </Flex>
                     <Flex gap="8px">
-                        <Image src={Rainbow} alt="Voice Recording" width={240} height={520} />
+                        <Image src={TelOtpInput} alt="Voice Recording" width={240} height={520} />
                     </Flex>
                 </Flex>
                 <Flex align="center" gap="0px" py={8} justify="space-between" w="976px">
@@ -292,7 +300,7 @@ export default function HowToGetVoice() {
                         </Box>
                     </Flex>
                     <Flex gap="8px">
-                        <Image src={Rainbow} alt="Voice Recording" width={240} height={520} />
+                        <Image src={MailInput} alt="Voice Recording" width={240} height={520} />
                     </Flex>
                 </Flex>
                 <Flex align="center" gap="0px" py={8} justify="space-between" w="976px">
@@ -303,7 +311,7 @@ export default function HowToGetVoice() {
                         </Box>
                     </Flex>
                     <Flex gap="8px">
-                        <Image src={Rainbow} alt="Voice Recording" width={240} height={520} />
+                        <Image src={MailOtpInput} alt="Voice Recording" width={240} height={520} />
                     </Flex>
                 </Flex>
                 <Flex align="center" gap="0px" py={8} justify="space-between" w="976px">
@@ -314,7 +322,7 @@ export default function HowToGetVoice() {
                         </Box>
                     </Flex>
                     <Flex gap="8px">
-                        <Image src={Rainbow} alt="Voice Recording" width={240} height={520} />
+                        <Image src={Confirm} alt="Voice Recording" width={240} height={520} />
                     </Flex>
                 </Flex>
                 <Flex align="center" gap="0px" py={8} justify="space-between" w="976px">
@@ -325,7 +333,7 @@ export default function HowToGetVoice() {
                         </Box>
                     </Flex>
                     <Flex gap="8px">
-                        <Image src={Rainbow} alt="Voice Recording" width={240} height={520} />
+                        <Image src={VoiceIndex} alt="Voice Recording" width={240} height={520} />
                     </Flex>
                 </Flex>
                 <PageMoveButtonLong toRef="/security" buttonLabel={t("CheckSecurity")} />

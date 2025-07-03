@@ -7,6 +7,19 @@ import { useTranslation } from 'react-i18next';
 import '@/i18n';
 import PageMoveButton from '../buttons/pageMoveButton';
 import Rainbow from '../../assets/rainbow.jpg';
+import RecordingOne from '../../assets/recordingOne.png';
+import RecordingTwo from '../../assets/recordingTwo.png';
+import ContactOne from '../../assets/contactOne.png';
+import ContactThree from '../../assets/contactThree.png';
+import ContactFour from '../../assets/contactFour.png';
+import SettingOne from '../../assets/settingOne.png';
+import SettingTwo from '../../assets/settingTwo.png';
+import TriggerOne from '../../assets/triggerOne.png';
+import TriggerTwo from '../../assets/triggerTwo.png';
+import FollowOne from '../../assets/followOne.png';
+import FollowTwo from '../../assets/followTwo.png';
+
+
 import PageMoveButtonLong from '../buttons/PageMoveButtonLong';
 
 export default function HowToSet() {
@@ -26,8 +39,8 @@ export default function HowToSet() {
                         </Box>
                     </Flex>
                     <Flex direction="column" gap="32px" marginTop="24px">
-                        <Image src={Rainbow} alt="Voice Recording" width={360} height={780} />
-                        <Image src={Rainbow} alt="Voice Recording" width={360} height={780} />
+                        <Image src={RecordingOne} alt="Voice Recording" width={360} height={780} />
+                        <Image src={RecordingTwo} alt="Voice Recording" width={360} height={780} />
                     </Flex>
                 </Flex>
                 <Flex align="center" direction="column" gap="0px" py={8} justify="space-between" w="92vw">
@@ -38,8 +51,8 @@ export default function HowToSet() {
                         </Box>
                     </Flex>
                     <Flex direction="column" gap="32px" marginTop="24px">
-                        <Image src={Rainbow} alt="Voice Recording" width={360} height={780} />
-                        <Image src={Rainbow} alt="Voice Recording" width={360} height={780} />
+                        <Image src={ContactOne} alt="Voice Recording" width={360} height={780} />
+                        <Image src={ContactFour} alt="Voice Recording" width={360} height={780} />
                     </Flex>
                 </Flex>
                 <Flex align="center" direction="column" gap="0px" py={8} justify="space-between" w="92vw">
@@ -50,8 +63,8 @@ export default function HowToSet() {
                         </Box>
                     </Flex>
                     <Flex direction="column" gap="32px" marginTop="24px">
-                        <Image src={Rainbow} alt="Voice Recording" width={360} height={780} />
-                        <Image src={Rainbow} alt="Voice Recording" width={360} height={780} />
+                        <Image src={SettingOne} alt="Voice Recording" width={360} height={780} />
+                        <Image src={SettingTwo} alt="Voice Recording" width={360} height={780} />
                     </Flex>
                 </Flex>
                 <Flex align="center" direction="column" gap="0px" py={8} justify="space-between" w="92vw">
@@ -62,8 +75,8 @@ export default function HowToSet() {
                         </Box>
                     </Flex>
                     <Flex direction="column" gap="32px" marginTop="24px">
-                        <Image src={Rainbow} alt="Voice Recording" width={360} height={780} />
-                        <Image src={Rainbow} alt="Voice Recording" width={360} height={780} />
+                        <Image src={TriggerOne} alt="Voice Recording" width={360} height={780} />
+                        <Image src={TriggerTwo} alt="Voice Recording" width={360} height={780} />
                     </Flex>
                 </Flex>
                 <Flex align="center" direction="column" gap="0px" py={8} justify="space-between" w="92vw">
@@ -74,8 +87,8 @@ export default function HowToSet() {
                         </Box>
                     </Flex>
                     <Flex direction="column" gap="32px" marginTop="24px">
-                        <Image src={Rainbow} alt="Voice Recording" width={360} height={780} />
-                        <Image src={Rainbow} alt="Voice Recording" width={360} height={780} />
+                        <Image src={FollowOne} alt="Voice Recording" width={360} height={780} />
+                        <Image src={FollowTwo} alt="Voice Recording" width={360} height={780} />
                     </Flex>
                 </Flex>
                 <PageMoveButtonLong toRef="/howtoaccept" buttonLabel={t("LookHowToAccept")} />
@@ -93,8 +106,8 @@ export default function HowToSet() {
                         </Box>
                     </Flex>
                     <Flex gap="32px" marginTop="24px">
-                        <Image src={Rainbow} alt="Voice Recording" width={240} height={520} />
-                        <Image src={Rainbow} alt="Voice Recording" width={240} height={520} />
+                        <Image src={RecordingOne} alt="Voice Recording" width={240} height={520} />
+                        <Image src={ContactThree} alt="Voice Recording" width={240} height={520} />
                     </Flex>
                 </Flex>
                 <Flex align="center" direction="column" gap="0px" py={8} justify="space-between" w="80vw">
@@ -105,8 +118,8 @@ export default function HowToSet() {
                         </Box>
                     </Flex>
                     <Flex gap="32px" marginTop="24px">
-                        <Image src={Rainbow} alt="Voice Recording" width={240} height={520} />
-                        <Image src={Rainbow} alt="Voice Recording" width={240} height={520} />
+                        <Image src={ContactOne} alt="Voice Recording" width={240} height={520} />
+                        <Image src={ContactFour} alt="Voice Recording" width={240} height={520} />
                     </Flex>
                 </Flex>
                 <Flex align="center" direction="column" gap="0px" py={8} justify="space-between" w="80vw">
@@ -117,8 +130,8 @@ export default function HowToSet() {
                         </Box>
                     </Flex>
                     <Flex gap="32px" marginTop="24px">
-                        <Image src={Rainbow} alt="Voice Recording" width={240} height={520} />
-                        <Image src={Rainbow} alt="Voice Recording" width={240} height={520} />
+                        <Image src={SettingOne} alt="Voice Recording" width={240} height={520} />
+                        <Image src={SettingTwo} alt="Voice Recording" width={240} height={520} />
                     </Flex>
                 </Flex>
                 <Flex align="center" direction="column" gap="0px" py={8} justify="space-between" w="80vw">
@@ -129,8 +142,8 @@ export default function HowToSet() {
                         </Box>
                     </Flex>
                     <Flex gap="32px" marginTop="24px">
-                        <Image src={Rainbow} alt="Voice Recording" width={240} height={520} />
-                        <Image src={Rainbow} alt="Voice Recording" width={240} height={520} />
+                        <Image src={TriggerOne} alt="Voice Recording" width={240} height={520} />
+                        <Image src={TriggerTwo} alt="Voice Recording" width={240} height={520} />
                     </Flex>
                 </Flex>
                 <Flex align="center" direction="column" gap="0px" py={8} justify="space-between" w="80vw">
@@ -141,8 +154,8 @@ export default function HowToSet() {
                         </Box>
                     </Flex>
                     <Flex gap="32px" marginTop="24px">
-                        <Image src={Rainbow} alt="Voice Recording" width={240} height={520} />
-                        <Image src={Rainbow} alt="Voice Recording" width={240} height={520} />
+                        <Image src={FollowOne} alt="Voice Recording" width={240} height={520} />
+                        <Image src={FollowTwo} alt="Voice Recording" width={240} height={520} />
                     </Flex>
                 </Flex>
                 <PageMoveButtonLong toRef="/howtoaccept" buttonLabel={t("LookHowToAccept")} />
@@ -160,8 +173,8 @@ export default function HowToSet() {
                         </Box>
                     </Flex>
                     <Flex gap="8px">
-                        <Image src={Rainbow} alt="Voice Recording" width={240} height={520} />
-                        <Image src={Rainbow} alt="Voice Recording" width={240} height={520} />
+                        <Image src={RecordingOne} alt="Voice Recording" width={240} height={520} />
+                        <Image src={RecordingTwo} alt="Voice Recording" width={240} height={520} />
                     </Flex>
                 </Flex>
                 <Flex align="center" gap="0px" py={8} justify="space-between" w="976px">
@@ -172,8 +185,8 @@ export default function HowToSet() {
                         </Box>
                     </Flex>
                     <Flex gap="8px">
-                        <Image src={Rainbow} alt="Voice Recording" width={240} height={520} />
-                        <Image src={Rainbow} alt="Voice Recording" width={240} height={520} />
+                        <Image src={ContactOne} alt="Voice Recording" width={240} height={520} />
+                        <Image src={ContactFour} alt="Voice Recording" width={240} height={520} />
                     </Flex>
                 </Flex>
                 <Flex align="center" gap="0px" py={8} justify="space-between" w="976px">
@@ -184,8 +197,8 @@ export default function HowToSet() {
                         </Box>
                     </Flex>
                     <Flex gap="8px">
-                        <Image src={Rainbow} alt="Voice Recording" width={240} height={520} />
-                        <Image src={Rainbow} alt="Voice Recording" width={240} height={520} />
+                        <Image src={SettingOne} alt="Voice Recording" width={240} height={520} />
+                        <Image src={SettingTwo} alt="Voice Recording" width={240} height={520} />
                     </Flex>
                 </Flex>
                 <Flex align="center" gap="0px" py={8} justify="space-between" w="976px">
@@ -196,8 +209,8 @@ export default function HowToSet() {
                         </Box>
                     </Flex>
                     <Flex gap="8px">
-                        <Image src={Rainbow} alt="Voice Recording" width={240} height={520} />
-                        <Image src={Rainbow} alt="Voice Recording" width={240} height={520} />
+                        <Image src={TriggerOne} alt="Voice Recording" width={240} height={520} />
+                        <Image src={TriggerTwo} alt="Voice Recording" width={240} height={520} />
                     </Flex>
                 </Flex>
                 <Flex align="center" gap="0px" py={8} justify="space-between" w="976px">
@@ -208,8 +221,8 @@ export default function HowToSet() {
                         </Box>
                     </Flex>
                     <Flex gap="8px">
-                        <Image src={Rainbow} alt="Voice Recording" width={240} height={520} />
-                        <Image src={Rainbow} alt="Voice Recording" width={240} height={520} />
+                        <Image src={FollowOne} alt="Voice Recording" width={240} height={520} />
+                        <Image src={FollowTwo} alt="Voice Recording" width={240} height={520} />
                     </Flex>
                 </Flex>
                 <PageMoveButton toRef="/howtoaccept" buttonLabel={t("LookHowToAccept")} />
