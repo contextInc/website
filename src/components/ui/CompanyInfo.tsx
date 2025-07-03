@@ -8,6 +8,7 @@ import {
 import { useTranslation } from 'react-i18next';
 import '@/i18n';
 import CompanyInfoItem from './CompanyInfoItem';
+import CompanyInfoItemLarge from './CompanyInfoItemLarge';
 
 export default function CompanyInfo() {
     const displayValue = useBreakpointValue({base: 'small', md: 'medium',  lg: 'large'});
@@ -23,8 +24,7 @@ export default function CompanyInfo() {
                         <CompanyInfoItem title={t("CompanyName")} content={t("contextInc")} />
                         <CompanyInfoItem title={t("CEO")} content={t("KengoMatsumoto")} />
                         <CompanyInfoItem title={t("Established")} content={t("EstablishedDate")} />
-                        <CompanyInfoItem title={t("Capital")} content={t("CapitalDetail")} />
-                        <CompanyInfoItem title={t("CompanyAddress")} content={t("AddressDetail")} />
+                        <CompanyInfoItemLarge title={t("CompanyAddress")} content={t("AddressDetail")} />
                         <CompanyInfoItem title={t("BusinessDescription")} content={t("BusinessDescriptionDetail")} />
                     </Box>
                     <Separator color="#000000" width="84vw" height={2} marginBottom={4} />
@@ -41,8 +41,7 @@ export default function CompanyInfo() {
                         <CompanyInfoItem title={t("CompanyName")} content={t("contextInc")} />
                         <CompanyInfoItem title={t("CEO")} content={t("KengoMatsumoto")} />
                         <CompanyInfoItem title={t("Established")} content={t("EstablishedDate")} />
-                        <CompanyInfoItem title={t("Capital")} content={t("CapitalDetail")} />
-                        <CompanyInfoItem title={t("CompanyAddress")} content={t("AddressDetailMedium")} />
+                        <CompanyInfoItemLarge title={t("CompanyAddress")} content={t("AddressDetailMedium")} />
                         <CompanyInfoItem title={t("BusinessDescription")} content={t("BusinessDescriptionDetailMedium")} />
                     </Box>
                     <Separator color="#000000" width="70vw" height={2} marginBottom={4} />
@@ -59,8 +58,7 @@ export default function CompanyInfo() {
                         <CompanyInfoItem title={t("CompanyName")} content={t("contextInc")} />
                         <CompanyInfoItem title={t("CEO")} content={t("KengoMatsumoto")} />
                         <CompanyInfoItem title={t("Established")} content={t("EstablishedDate")} />
-                        <CompanyInfoItem title={t("Capital")} content={t("CapitalDetail")} />
-                        <CompanyInfoItem title={t("CompanyAddress")} content={t("AddressDetail")} />
+                        <CompanyInfoItemLarge title={t("CompanyAddress")} content={t("AddressDetail")} />
                         <CompanyInfoItem title={t("BusinessDescription")} content={t("BusinessDescriptionDetail")} />
                     </Box>
                     <Separator color="#000000" width="50vw" height={2} marginBottom={4} />
