@@ -13,7 +13,7 @@ export default function PhilosophyItem(props: PhilosophyItemProps) {
 
     if (displayValue === 'small') {
         return (
-            <Box h={50} w="84vw">
+            <Box h="70px" w="84vw">
                 <Text textStyle="xl" color="#6D7685" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{props.content}</Text>                
             </Box>
         );

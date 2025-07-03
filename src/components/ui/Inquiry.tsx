@@ -17,12 +17,10 @@ export default function Inquiry() {
         return (
                 <Stack bg="#FFFFFF" style={{transform: "translateZ(0)"}} py={20} alignItems="center" w="100vw" >
                     <Text textStyle="2xl" marginBottom={10} color="#C85062" whiteSpace="pre-wrap"  fontFamily='Open Sans, sans-serif'>{t("Contact")}</Text>
-                    <Box w="84vw" borderColor="#C85062" bg="#FFFFFF" borderWidth={2} borderRadius={20} p={5}>
+                    <Box w="84vw" borderColor="#C85062" bg="#FFFFFF" borderWidth={2} borderRadius={20} p={5} >
                         <Box  h={220} w="84vw" >
                             <Text textStyle="2xl" marginBottom={8} w="70vw" textAlign="left"  color="#233452/70" whiteSpace="pre-wrap"  fontFamily='Open Sans, sans-serif'>{t("PleaseMail")}</Text>
-                            <Flex  gap={0} textAlign="left">
-                                <Text textStyle="2xl" color="#6D7685" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("InquiryMail")}</Text>
-                            </Flex>
+                            <Text textStyle="2xl" textAlign="left" w="77vw" color="#6D7685" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("InquiryMail")}</Text>                            
                         </Box>
                     </Box>
                     <PageMoveButton toRef="/qa" buttonLabel={t("QA")} />
