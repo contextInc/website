@@ -124,7 +124,7 @@
     "RCSMessageAppealMedium": "電話番号へのメッセージは\n旧来のSMSではなく\n全てRCSメッセージを使用",
     "SMSDangerAppealMedium": "日本など一部の国を除くと、\nSMSの盗聴は比較的容易",
     "contextUseRCSMedium": "contextでは、電話番号宛てのメッセージは、全てRCSメッセージを使用します。",
-    "HardToCheatMedium": "電話番号宛てのRCSメッセージと\nメールアドレスを\n両方同時に盗聴することが\n非常に困難であることが\ncontextのセキュリティの強みです。",
+    "HardToCheatMedium": "電話番号宛てのRCSメッセージと\nメールアドレスを\n両方同時に盗聴することが\n非常に困難であることが\ncontextのセキュリティの\n強みです。",
     "CompanyInfo": "会社案内",
     "CompanyName": "会社名",
     "contextInc": "株式会社context",

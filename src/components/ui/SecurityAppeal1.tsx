@@ -84,14 +84,14 @@ export default function SecurityAppeal1() {
                                 <Text textStyle="2xl" color="#6D7685" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("AuthByCodeDetail")}</Text>
                             </Flex>
                         </Box>
-                        <Box px="2vw" h={200} w="50vw">
+                        <Box px="2vw" h={250} w="50vw">
                             <Text textStyle="4xl" marginBottom={4}  textAlign="left"  color="#233452/70" whiteSpace="pre-wrap"  fontFamily='Open Sans, sans-serif'>{t("AuthByTel")}</Text>
                             <Flex px={5} gap={4} textAlign="left">
                                 <Text textStyle="2xl" color="#6D7685" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>・</Text>
                                 <Text textStyle="2xl" color="#6D7685" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("AuthByTelDetail")}</Text>
                             </Flex>
                         </Box>
-                        <Box px="2vw" h={200} w="50vw">
+                        <Box px="2vw" h={250} w="50vw">
                             <Text textStyle="4xl" marginBottom={4}  textAlign="left"  color="#233452/70" whiteSpace="pre-wrap"  fontFamily='Open Sans, sans-serif'>{t("AuthByEmail")}</Text>
                             <Flex px={5} gap={4} textAlign="left">
                                 <Text textStyle="2xl" color="#6D7685" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>・</Text>
