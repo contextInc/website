@@ -35,6 +35,12 @@ export default function PrivacyPolicy() {
                         <PrivacyPolicyItemTwo height={160} numberString='7' content={t("PP7")} />
                         <Text textStyle="lg" textAlign="left" color="#6D7685" fontFamily='Open Sans, sans-serif' px={10} marginBottom="20px" >{t("PrivacyEmail")}</Text>
                         <PrivacyPolicyItemTwo height={150} numberString='8' content={t("PP8")} />
+                        <PrivacyPolicyItemTwo height={150} numberString='9' content={t("PP9")} />
+                        <PrivacyPolicyItemTwo height={150} numberString='10' content={t("PP10")} />
+                        <PrivacyPolicyItemThree height={130} numberString='a' content={t("PPA_CASE")} />
+                        <PrivacyPolicyItemThree height={130} numberString='b' content={t("PPB_CASE")} />
+                        <PrivacyPolicyItemTwo height={160} numberString='11' content={t("PP11")} />
+                        <Text textStyle="lg" textAlign="left" color="#6D7685" fontFamily='Open Sans, sans-serif' px={10} marginBottom="20px" >{t("inquiryEmail")}</Text>
                         <PrivacyPolicyItemFour content={t("PrivacyPolicyDate")} />
                         <PrivacyPolicyItemFour content={t("PrivacyPolicyEnd")} />
                     </Box>
