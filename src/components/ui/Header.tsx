@@ -11,7 +11,7 @@ export default function Header() {
     if (displayValue === 'small') {
         // モバイル用のヘッダー
         return (
-            <Flex as="header" bg="#C85062" color="white" px="4vw" py={0} align="center" justify="space-between" w="100vw">
+            <Flex as="header" bg="#EB5B71" color="white" px="4vw" py={0} align="center" justify="space-between" w="100vw">
                 <Flex direction={"column"} alignItems="flex-start">
                     <Link href="/" fontWeight="bold" color="#FFFFFF" fontFamily='system-ui, sans-serif' fontSize={32} >context</Link>
                     <Box fontSize={16} fontFamily='system-ui, sans-serif'>the Last Voice App</Box>
@@ -49,7 +49,7 @@ export default function Header() {
     } else {
         // pcおよびタブレット用のヘッダー
         return (
-            <Flex as="header" bg="#C85062" color="white" px="10vw" py={2} align="center" justify="space-between" w="100vw">
+            <Flex as="header" bg="#EB5B71" color="white" px="10vw" py={2} align="center" justify="space-between" w="100vw">
                 <Flex direction={"column"} alignItems="flex-start">
                     <Link href="/" fontWeight="bold" color="#FFFFFF" fontFamily='system-ui, sans-serif' fontSize={32} >context</Link>
                     <Box fontSize={16} fontFamily='system-ui, sans-serif'>the Last Voice App</Box>
