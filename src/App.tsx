@@ -18,10 +18,10 @@ function App() {
         </nav> */}
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/service" element={<Service />} />
+          {/* <Route path="/service" element={<Service />} /> */}
           <Route path="/howtouse" element={<HowToUse />} />
           <Route path="/howtoaccept" element={<HowToAccept />} />
-          <Route path="/security" element={<Security />} />
+          {/* <Route path="/security" element={<Security />} /> */}
           <Route path="/company" element={<Company />} />
           <Route path="/privacy" element={<PrivacyTwo />} />
           <Route path="/price" element={<Price />} />
