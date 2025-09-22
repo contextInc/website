@@ -49,7 +49,7 @@ export default function ServicePoint() {
         );
     } else {
         return (
-            <Stack bg="#FFFFFF" px="10vw" py={40} align="center" justify="space-between" overflowX="hidden" w="100vw">
+            <Stack bg="#FFFFFF" px="10vw" py={20} align="center" justify="space-between" overflowX="hidden" w="100vw">
                 <Flex>
                     <Text textStyle="5xl" marginBottom={16} color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("ContextServicePoint")}</Text>
                     <Image src={Impact} alt="Impact" width="24px" height="22px" />

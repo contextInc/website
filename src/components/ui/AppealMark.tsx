@@ -35,7 +35,7 @@ export default function AppealMark(props: AppealMarkProps) {
         } else if (props.appealNum === 3) {
             return (
                 <Box marginBottom="16px"  justifyItems="center">
-                    <Image src={Point3} alt="Appeal Mark" width="48px" height="auto" mx="auto" maxW="100%" />
+                    <Image src={Point3} alt="Appeal Mark" width="144px" height="auto" mx="auto" maxW="100%" />
                 </Box>
             );
         } else if (props.appealNum === 4) {
@@ -79,7 +79,7 @@ export default function AppealMark(props: AppealMarkProps) {
         } else if (props.appealNum === 3) {
             return (
                 <Box marginBottom="32px"  justifyItems="center">
-                    <Image src={Point3} alt="Appeal Mark" width="64px" height="auto" mx="auto" maxW="100%" />
+                    <Image src={Point3} alt="Appeal Mark" width="192px" height="auto" mx="auto" maxW="100%" />
                 </Box>
             );
         } else if (props.appealNum === 4) {
@@ -123,7 +123,7 @@ export default function AppealMark(props: AppealMarkProps) {
         } else if (props.appealNum === 3) {
             return (
                 <Box marginBottom="32px"  justifyItems="center">
-                    <Image src={Point3} alt="Appeal Mark" width="64px" height="auto" />
+                    <Image src={Point3} alt="Appeal Mark" width="192px" height="auto" />
                 </Box>
             );
         } else if (props.appealNum === 4) {

@@ -1,14 +1,15 @@
 import Cover from "@/components/ui/Cover";
 import Header from "@/components/ui/Header";
-import Episode from "@/components/ui/Episode";
 import Footer from "@/components/ui/Footer";
+import ServicePoint from "@/components/ui/ServicePoint";
 
 export default function Home() {
   return (
     <div>
         <Header />
         <Cover />
-        <Episode />
+        <ServicePoint />
+        {/* <Episode /> */}
         <Footer />
     </div>
   );
