@@ -66,21 +66,11 @@ export default function VoiceTicketInfo() {
         return (
             <>
                 <Stack bg="#FFFFFF" py={30} alignItems="center" w="100vw" >
-                    <Text textStyle="5xl" marginBottom={10} color="#C85062" whiteSpace="pre-wrap"  fontFamily='Open Sans, sans-serif'>{t("VoiceTicket")}</Text>
+                    <Text textStyle="5xl" marginBottom={10} color="#C85062" whiteSpace="pre-wrap"  fontFamily='Open Sans, sans-serif'>{t("VoiceGiftTicket")}</Text>
                     <Separator color="#000000" width="45vw" height={2} marginBottom={4} />
                     <Box w="40vw" >
                         <VoiceTicketExplanation content={t("VoiceTicketExplanation")} />
                         <VoiceTicketPriceItem ticketNum={1} ticketDetail={t("OneVoiceTicketPrice")} />
-                        <VoiceTicketPriceItem ticketNum={2} ticketDetail={t("TwoVoiceTicketPrice")} />
-                        <VoiceTicketPriceItem ticketNum={3} ticketDetail={t("ThreeVoiceTicketPrice")} />
-                        <VoiceTicketPriceItem ticketNum={4} ticketDetail={t("FourVoiceTicketPrice")} />
-                        <VoiceTicketPriceItem ticketNum={6} ticketDetail={t("SixVoiceTicketPrice")} />
-                        <VoiceTicketPriceItem ticketNum={8} ticketDetail={t("EightVoiceTicketPrice")} />
-                        <VoiceTicketPriceItem ticketNum={10} ticketDetail={t("TenVoiceTicketPrice")} />
-                        <Box h="100px" w="40vw" marginTop="20px">
-                            <Text textStyle="2xl" textAlign="left" color="#6D7685" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("SubscriptionTicketExplanation")}</Text>
-                        </Box>
-                        {/* <SubscriptionNotice title={t("BusinessDescription")} content={t("BusinessDescriptionDetail")} /> */}
                     </Box>
                     <Separator color="#000000" width="45vw" height={2} marginBottom={4} />
                 </Stack>

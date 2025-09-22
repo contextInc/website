@@ -62,7 +62,7 @@ export default function SubscriptionInfo() {
             <>
                 <Stack bg="#FFFFFF" py={120} alignItems="center" w="100vw" >
                     <Text textStyle="5xl" marginBottom={10} color="#C85062" whiteSpace="pre-wrap"  fontFamily='Open Sans, sans-serif'>{t("Subscription")}</Text>
-                    <Separator color="#000000" width="45vw" height={2} marginBottom={4} />
+                    <Separator color="#000000" width="60vw" height={2} marginBottom={4} />
                     <SubscriptionExplanation content={t("SubscriptionPlanExplanation")} />
                     <Box w="75vw" > 
                         <Table.Root colorPalette={'pink'} >
@@ -78,6 +78,14 @@ export default function SubscriptionInfo() {
                         <Table.Body>
                             <Table.Row bgColor={"#FFFFFF"} height={"120px"}>
                                 <Table.Cell />
+                                <Table.Cell textStyle="xl" color="#000000"   whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif' borderLeftWidth="1px" borderLeftColor={"#000000"} >{t("LightPlanUserTarget")}</Table.Cell>
+                                <Table.Cell textStyle="xl" color="#000000"   whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif' borderLeftWidth="1px" borderLeftColor={"#000000"}>{t("StandardPlanUserTarget")}</Table.Cell>
+                                <Table.Cell textStyle="xl" color="#000000"   whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif' borderLeftWidth="1px" borderLeftColor={"#000000"}>{t("PlentyPlanUserTarget")}</Table.Cell>
+                                <Table.Cell textStyle="xl" color="#000000"   whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif' borderLeftWidth="1px" borderLeftColor={"#000000"}>{t("MaxPlanUserTarget")}</Table.Cell>
+                            </Table.Row>
+                            <Table.Row bgColor={"#FFFFFF"} height={"120px"}>
+                                {/* <Table.Cell textStyle="2xl" color="#6D7685" >{t("Price")}</Table.Cell> */}
+                                <Table.Cell textStyle="2xl" color="#6D7685" >{t("Price")}</Table.Cell>
                                 <Table.Cell textStyle="2xl" color="#000000"  fontWeight="bold" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif' borderLeftWidth="1px" borderLeftColor={"#000000"} >1,800円/年</Table.Cell>
                                 <Table.Cell textStyle="2xl" color="#000000"  fontWeight="bold" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif' borderLeftWidth="1px" borderLeftColor={"#000000"}>2,400円/年</Table.Cell>
                                 <Table.Cell textStyle="2xl" color="#000000"  fontWeight="bold" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif' borderLeftWidth="1px" borderLeftColor={"#000000"}>3,500円/年</Table.Cell>

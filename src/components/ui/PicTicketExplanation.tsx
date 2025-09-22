@@ -25,7 +25,7 @@ export default function PicTicketExplanation(props: SubscriptionExplanationProps
         );
     } else {
         return (
-            <Box h="80px" w="50vw">
+            <Box h="120px" w="50vw">
                 <Text textStyle="2xl" textAlign="left" color="#6D7685" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{props.content}</Text>
             </Box>
         );
