@@ -1,10 +1,8 @@
 import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
-import Service from './pages/Service';
 import HowToUse from './pages/HowToUse';
 import HowToAccept from './pages/HowToAccept';
-import Security from './pages/Security';
 import Company from './pages/Company';
 import Price from './pages/Price';
 import QA from './pages/QA';
