@@ -21,7 +21,7 @@ export default function AppealPoint(props: AppealPointProps) {
         return (
             <Box bg="pink.100/10" borderColor="#EB5B71" borderRadius={20}  borderWidth={2} w="85vw" h={props.hpoint} zIndex={0} mt={-4} >
                 <Flex direction="column" px={8} py={4} h={props.hpoint - 72}>
-                    <Text textStyle="xl" fontWeight={500} color="#233452" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{props.appealSentence}</Text>
+                    <Text textStyle="xl" fontWeight={600} color="#233452" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{props.appealSentence}</Text>
                     <Text textStyle="md" color="#000000" marginTop={8} whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{props.detailSentence}</Text>
                 </Flex>
                 <AppealMark appealNum={props.pointNum} />

@@ -47,7 +47,7 @@ export default function AppealMark(props: AppealMarkProps) {
         } else if (props.appealNum === 5) {
             return (
                 <Box marginBottom="16px"  justifyItems="center">
-                    <Image src={Point5} alt="Appeal Mark" width="88px" height="auto" mx="auto" maxW="100%" />
+                    <Image src={Point5} alt="Appeal Mark" width="80px" height="auto" mx="auto" maxW="100%" />
                 </Box>
             );
         } else if (props.appealNum === 6) {
