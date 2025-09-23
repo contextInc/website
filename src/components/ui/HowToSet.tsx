@@ -2,7 +2,8 @@ import {
   useBreakpointValue, Stack, Text,Image,
   Flex,
   Box,
-  Button
+  Button,
+  Accordion
 } from '@chakra-ui/react';
 import { useTranslation } from 'react-i18next';
 import '@/i18n';
@@ -18,15 +19,29 @@ import TriggerOne from '../../assets/triggerOne.png';
 import TriggerTwo from '../../assets/triggerTwo.png';
 import FollowOne from '../../assets/followOne.png';
 import FollowTwo from '../../assets/followTwo.png';
-
-
+import StartOne from '../../assets/startOne.png';
+import Install from '../../assets/install.png';
+import TelInput from '../../assets/telInput.png';
+import TelOtpInput from '../../assets/telOtpInput.png';
+import Confirm from '../../assets/confirm.png';
+import VoiceIndex from '../../assets/voiceIndex.png';
 import PageMoveButtonLong from '../buttons/PageMoveButtonLong';
 import { useState } from 'react';
+import FlowOneComponent from './FlowComponents/FlowOneComponent';
 
 export default function HowToSet() {
     const displayValue = useBreakpointValue({base: 'small', md: 'medium',  lg: 'large'});
     const { t } = useTranslation();
     const [modeNum, setModeNum] = useState(1);
+    const [value, setValue] = useState(["first-iteam"]);
+
+    const items = [
+        { value: "first-item", title: t("Flow1"), content: <FlowOneComponent/> },
+        { value: "second-item", title: t("Flow2"), content: <></> },
+        { value: "third-item", title: t("Flow3"), content: <></> },
+        { value: "fourth-item", title: t("Flow4"), content: <></> },
+        { value: "fifth-item", title: t("Flow5"), content: <></> },
+    ];
 
     if (displayValue === 'small') {
         if (modeNum === 1) {
@@ -39,18 +54,22 @@ export default function HowToSet() {
                         </Box>
                     </Box>
                     <Text textStyle="2xl" fontWeight={600} marginBottom="20px" color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("SendFlow")}</Text>
-                    <Flex align="center" direction="column" gap="0px" py={8} justify="space-between" w="92vw">
-                        <Flex direction="column" align="flex-start" w="92vw">
-                            <Text textStyle="2xl" fontWeight={600} color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow1")}</Text>
-                            <Box mt={4} px={4}>
-                                <Text textStyle="lg" color="#6D7685" textAlign="left" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow1detail1")}</Text>
-                            </Box>
-                        </Flex>
-                        <Flex direction="column" gap="32px" marginTop="24px">
-                            <Image src={RecordingOne} alt="Voice Recording" width={360} height={780} />
-                            <Image src={RecordingTwo} alt="Voice Recording" width={360} height={780} />
-                        </Flex>
-                    </Flex>
+                    <Accordion.Root collapsible value={value} onValueChange={(e) => setValue(e.value)}>
+                        {items.map((item, index) => (
+                            <Accordion.Item key={index} value={item.value} border="none">
+                                <Accordion.ItemTrigger textStyle="2xl" fontWeight={600} color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>
+                                    <Text marginLeft="4vw" width="70vw" marginTop="8px" >{item.title}</Text>
+                                    <Accordion.ItemIndicator />
+                                </Accordion.ItemTrigger>
+                                <Accordion.ItemContent>
+                                    <Accordion.ItemBody >{item.content}</Accordion.ItemBody>
+                                </Accordion.ItemContent>
+                            </Accordion.Item>
+                        ))}
+                    </Accordion.Root>
+                    
+                    
+
                     <Flex align="center" direction="column" gap="0px" py={8} justify="space-between" w="92vw">
                         <Flex direction="column" align="flex-start" w="92vw">
                             <Text textStyle="2xl" fontWeight={600} color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow2")}</Text>
@@ -63,6 +82,7 @@ export default function HowToSet() {
                             <Image src={ContactFour} alt="Voice Recording" width={360} height={780} />
                         </Flex>
                     </Flex>
+
                     <Flex align="center" direction="column" gap="0px" py={8} justify="space-between" w="92vw">
                         <Flex direction="column" align="flex-start" w="92vw">
                             <Text textStyle="2xl" fontWeight={600} color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow3")}</Text>
@@ -75,6 +95,7 @@ export default function HowToSet() {
                             <Image src={SettingTwo} alt="Voice Recording" width={360} height={780} />
                         </Flex>
                     </Flex>
+
                     <Flex align="center" direction="column" gap="0px" py={8} justify="space-between" w="92vw">
                         <Flex direction="column" align="flex-start" w="92vw">
                             <Text textStyle="2xl" fontWeight={600} color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow4")}</Text>
@@ -99,74 +120,84 @@ export default function HowToSet() {
                             <Image src={FollowTwo} alt="Voice Recording" width={360} height={780} />
                         </Flex>
                     </Flex>
-                    <PageMoveButtonLong toRef="/howtoaccept" buttonLabel={t("LookHowToAccept")} />
                 </Stack>
             );
         } else {
             return (
                 <Stack bg="#FFFFFF"  py={20} align="center"  w="100vw" >
-                    <Text textStyle="2xl" marginBottom="20px" color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("UseFlowMobile")}</Text>
-                    <Flex align="center" direction="column" gap="0px" py={8} justify="space-between" w="92vw">
+                    <Box h="96px" w="85vw"  >
+                        <Box flexDirection={"row"} placeItems={"center"} justifyContent={"center"} display="flex" gap={4} >
+                            <Button size="sm" fontSize={16} width="152px" bg="white" color="black" onClick={() => setModeNum(1)}>{t("HowToSend")}</Button>
+                            <Button size="sm" fontSize={16} width="152px" colorPalette="pink">{t("HowToAccept")}</Button>
+                        </Box>
+                    </Box>
+                    <Text textStyle="2xl"  color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("AcceptFlowMobile")}</Text>
+                    <Flex direction="column" align="center" gap="0px" py={8} justify="space-between" w="92vw">
                         <Flex direction="column" align="flex-start" w="92vw">
-                            <Text textStyle="2xl" color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow1")}</Text>
-                            <Box mt={4} px={4}>
-                                <Text textStyle="lg" color="#6D7685" textAlign="left" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow1detail1")}</Text>
+                            <Text textStyle="2xl" color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("AcceptFlow1")}</Text>
+                            <Box mt={4} px={2}>
+                                <Text textStyle="lg" color="#6D7685" textAlign="left" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("AcceptFlow1detail1")}</Text>
                             </Box>
                         </Flex>
-                        <Flex direction="column" gap="32px" marginTop="24px">
-                            <Image src={RecordingOne} alt="Voice Recording" width={360} height={780} />
-                            <Image src={RecordingTwo} alt="Voice Recording" width={360} height={780} />
+                        <Flex gap="8px" mt={4}>
+                            <Image src={StartOne} alt="Voice Recording" width={360} height={780} />
                         </Flex>
                     </Flex>
-                    <Flex align="center" direction="column" gap="0px" py={8} justify="space-between" w="92vw">
+                    <Flex direction="column" align="center" gap="0px" py={8} justify="space-between" w="92vw">
                         <Flex direction="column" align="flex-start" w="92vw">
-                            <Text textStyle="2xl" color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow2")}</Text>
-                            <Box mt={4} px={4}>
-                                <Text textStyle="lg" color="#6D7685" textAlign="left" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow2detail1")}</Text>
+                            <Text textStyle="2xl" color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("AcceptFlow2")}</Text>
+                            <Box mt={4} px={2}>
+                                <Text textStyle="lg" color="#6D7685" textAlign="left" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("AcceptFlow2detail1")}</Text>
                             </Box>
                         </Flex>
-                        <Flex direction="column" gap="32px" marginTop="24px">
-                            <Image src={ContactOne} alt="Voice Recording" width={360} height={780} />
-                            <Image src={ContactFour} alt="Voice Recording" width={360} height={780} />
+                        <Flex gap="8px" mt={4}>
+                            <Image src={Install} alt="Voice Recording" width={360} height={780} />
                         </Flex>
                     </Flex>
-                    <Flex align="center" direction="column" gap="0px" py={8} justify="space-between" w="92vw">
+                    <Flex direction="column" align="center" gap="0px" py={8} justify="space-between" w="92vw">
                         <Flex direction="column" align="flex-start" w="92vw">
-                            <Text textStyle="2xl" color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow3")}</Text>
-                            <Box mt={4} px={4}>
-                                <Text textStyle="lg" color="#6D7685" textAlign="left" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow3detail1")}</Text>
+                            <Text textStyle="2xl" color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("AcceptFlow4")}</Text>
+                            <Box mt={4} px={2}>
+                                <Text textStyle="lg" color="#6D7685" textAlign="left" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("AcceptFlow4detail1")}</Text>
                             </Box>
                         </Flex>
-                        <Flex direction="column" gap="32px" marginTop="24px">
-                            <Image src={SettingOne} alt="Voice Recording" width={360} height={780} />
-                            <Image src={SettingTwo} alt="Voice Recording" width={360} height={780} />
+                        <Flex gap="8px" mt={4}>
+                            <Image src={TelInput} alt="Voice Recording" width={360} height={780} />
                         </Flex>
                     </Flex>
-                    <Flex align="center" direction="column" gap="0px" py={8} justify="space-between" w="92vw">
+                    <Flex direction="column" align="center" gap="0px" py={8} justify="space-between" w="92vw">
                         <Flex direction="column" align="flex-start" w="92vw">
-                            <Text textStyle="2xl" color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow4")}</Text>
-                            <Box mt={4} px={4}>
-                                <Text textStyle="lg" color="#6D7685" textAlign="left" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow4detail1")}</Text>
+                            <Text textStyle="2xl" color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("AcceptFlow5Mobile")}</Text>
+                            <Box mt={4} px={2}>
+                                <Text textStyle="lg" color="#6D7685" textAlign="left" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("AcceptFlow5detail1")}</Text>
                             </Box>
                         </Flex>
-                        <Flex direction="column" gap="32px" marginTop="24px">
-                            <Image src={TriggerOne} alt="Voice Recording" width={360} height={780} />
-                            <Image src={TriggerTwo} alt="Voice Recording" width={360} height={780} />
+                        <Flex gap="8px" mt={4}>
+                            <Image src={TelOtpInput} alt="Voice Recording" width={360} height={780} />
                         </Flex>
                     </Flex>
-                    <Flex align="center" direction="column" gap="0px" py={8} justify="space-between" w="92vw">
+                    <Flex direction="column" align="center" gap="0px" py={8} justify="space-between" w="92vw">
                         <Flex direction="column" align="flex-start" w="92vw">
-                            <Text textStyle="2xl" color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow5")}</Text>
-                            <Box mt={4} px={4}>
-                                <Text textStyle="lg" color="#6D7685" textAlign="left" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow5detail1")}</Text>
+                            <Text textStyle="2xl" color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("AcceptFlow8")}</Text>
+                            <Box mt={4} px={2}>
+                                <Text textStyle="lg" color="#6D7685" textAlign="left" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("AcceptFlow8detail1")}</Text>
                             </Box>
                         </Flex>
-                        <Flex direction="column" gap="32px" marginTop="24px">
-                            <Image src={FollowOne} alt="Voice Recording" width={360} height={780} />
-                            <Image src={FollowTwo} alt="Voice Recording" width={360} height={780} />
+                        <Flex gap="8px" mt={4}>
+                            <Image src={Confirm} alt="Voice Recording" width={360} height={780} />
                         </Flex>
                     </Flex>
-                    <PageMoveButtonLong toRef="/howtoaccept" buttonLabel={t("LookHowToAccept")} />
+                    <Flex direction="column" align="center" gap="0px" py={8} justify="space-between" w="92vw">
+                        <Flex direction="column" align="flex-start" w="92vw">
+                            <Text textStyle="2xl" color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("AcceptFlow9")}</Text>
+                            <Box mt={4} px={2}>
+                                <Text textStyle="lg" color="#6D7685" textAlign="left" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("AcceptFlow9detail1")}</Text>
+                            </Box>
+                        </Flex>
+                        <Flex gap="8px" mt={4}>
+                            <Image src={VoiceIndex} alt="Voice Recording" width={360} height={780} />
+                        </Flex>
+                    </Flex>
                 </Stack>
             );
         }

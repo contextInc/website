@@ -18,7 +18,7 @@ export default function PicTicketInfo() {
         return (
             <>
                 <Stack bg="#FFFFFF" py={30} style={{transform: "translateZ(0)"}}  alignItems="center" w="100vw" >
-                    <Text textStyle="2xl" fontWeight={500} marginBottom={8} color="#C85062" whiteSpace="pre-wrap"  fontFamily='Open Sans, sans-serif'>{t("PhotoGiftTicket")}</Text>
+                    <Text textStyle="2xl" fontWeight={600} marginBottom={8} color="#C85062" whiteSpace="pre-wrap"  fontFamily='Open Sans, sans-serif'>{t("PhotoGiftTicket")}</Text>
                     <Separator color="#000000" width="85vw" height={2} marginBottom={4} />
                     <Box w="85vw" >
                         <PicTicketExplanation content={t("PicTicketExplanation")} />
