@@ -22,7 +22,7 @@ export default function SubscriptionInfo() {
         return (
             <>
                 <Stack bg="#FFFFFF" py={20} alignItems="center" w="100vw" >
-                    <Text textStyle="2xl" marginBottom={10} color="#C85062" whiteSpace="pre-wrap"  fontFamily='Open Sans, sans-serif'>{t("Subscription")}</Text>
+                    <Text textStyle="2xl" marginBottom={8} color="#C85062" whiteSpace="pre-wrap"  fontFamily='Open Sans, sans-serif'>{t("Subscription")}</Text>
                     <Separator color="#000000" width="85vw" height={2} marginBottom={4} />
                     <SubscriptionExplanation content={t("SubscriptionPlanExplanation")} />
                     <PlanSelectButtonsForMobile selectedPlan={selectedPlan} setSelectedPlan={setSelectedPlan} />

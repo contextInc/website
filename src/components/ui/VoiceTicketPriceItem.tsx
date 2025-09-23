@@ -18,7 +18,7 @@ export default function VoiceTicketPriceItem(props: SubscriptionPriceItemProps) 
 
     if (displayValue === 'small') {
         return (
-            <Box h="60px" w="85vw">
+            <Box h="88px" w="85vw">
                 <Flex gap={8} textAlign="left">
                     <Text textStyle="lg" color="#6D7685" w="160px" fontWeight="bold" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{props.ticketNum + t("PiecePerVoiceGiftTicket")}</Text>
                     <Text textStyle="lg" color="#6D7685" w="160px" fontWeight="bold" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{props.ticketDetail}</Text>
@@ -39,7 +39,7 @@ export default function VoiceTicketPriceItem(props: SubscriptionPriceItemProps) 
         );
     } else {
         return (
-            <Box h="60px" w="50vw">
+            <Box h="104px" w="50vw">
                 <Flex gap={8} textAlign="left">
                     <Text textStyle="3xl" color="#6D7685" w="300px" fontWeight="bold" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{props.ticketNum + t("PiecePerVoiceGiftTicket")}</Text>
                     <Text textStyle="3xl" color="#6D7685" w="200px" fontWeight="bold" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{props.ticketDetail}</Text>

@@ -13,13 +13,13 @@ export default function PicTicketExplanation(props: SubscriptionExplanationProps
 
     if (displayValue === 'small') {
         return (
-            <Box h="80px" w="85vw">
+            <Box h="136px" w="85vw">
                 <Text textStyle="lg" textAlign="left" color="#6D7685" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{props.content}</Text>
             </Box>
         );
     } else if (displayValue === 'medium') {
         return (
-            <Box h="80px" w="85vw">
+            <Box h="136px" w="85vw">
                 <Text textStyle="2xl" textAlign="left" color="#6D7685" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{props.content}</Text>
             </Box>
         );
