@@ -252,5 +252,8 @@
     "LightPlanPrice": "1,800円/年",
     "StandardPlanPrice": "2,400円/年",
     "PlentyPlanPrice": "3,500円/年",
-    "MaxPlanPrice": "4,500円/年"
+    "MaxPlanPrice": "4,500円/年",
+    "HowToSend": "送信方法",
+    "HowToAccept": "受け取り方法",
+    "SendFlow": "~ メッセージ送信の流れ ~"
 }
