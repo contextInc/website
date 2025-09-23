@@ -14,8 +14,8 @@ export default function SubscriptionPlanForMobile(props: SubscriptionPlanForMobi
     if (props.selectedPlan === 'light') {
         return (
             <Box w="85vw" > 
-                <Table.Root colorPalette={'pink'} >
-                    <Table.Header >
+                <Table.Root colorPalette={'pink'}>
+                    <Table.Header>
                             <Table.Row bgColor={"#FFFFFF"}>
                                 <Table.ColumnHeader color={"#000000"} fontSize={2} width={"11vw"} border={"1px  #000000"}></Table.ColumnHeader>
                                 <Table.ColumnHeader color={"#FF6633"} fontSize={24} width={"16vw"} borderLeftWidth="1px" borderLeftColor={"#000000"} borderBottom={"none"}>{t("LightPlan")}</Table.ColumnHeader>
