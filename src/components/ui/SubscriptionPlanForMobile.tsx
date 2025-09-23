@@ -17,8 +17,8 @@ export default function SubscriptionPlanForMobile(props: SubscriptionPlanForMobi
                 <Table.Root colorPalette={'pink'}>
                     <Table.Header>
                             <Table.Row bgColor={"#FFFFFF"}>
-                                <Table.ColumnHeader color={"#000000"} fontSize={2} width={"11vw"} border={"1px  #000000"}></Table.ColumnHeader>
-                                <Table.ColumnHeader color={"#FF6633"} fontSize={24} width={"16vw"} borderLeftWidth="1px" borderLeftColor={"#000000"} borderBottom={"none"}>{t("LightPlan")}</Table.ColumnHeader>
+                                <Table.ColumnHeader color={"#000000"} fontSize={2} width={"40vw"} border={"1px  #000000"}></Table.ColumnHeader>
+                                <Table.ColumnHeader color={"#FF6633"} fontSize={24} lineHeight={1.5} borderLeftWidth="1px" borderLeftColor={"#000000"} borderBottom={"none"}>{t("LightPlan")}</Table.ColumnHeader>
                             </Table.Row>
                     </Table.Header>
                     <Table.Body>    
@@ -57,8 +57,8 @@ export default function SubscriptionPlanForMobile(props: SubscriptionPlanForMobi
                 <Table.Root colorPalette={'pink'} >
                     <Table.Header >
                             <Table.Row bgColor={"#FFFFFF"}>
-                                <Table.ColumnHeader color={"#000000"} fontSize={2} width={"11vw"} border={"1px  #000000"}></Table.ColumnHeader>
-                                <Table.ColumnHeader color={"#FF6633"} fontSize={24} lineHeight={1} width={"16vw"} borderLeftWidth="1px" borderLeftColor={"#000000"} borderBottom={"none"}>{t("Standard")}<br />{t("Plan")}</Table.ColumnHeader>
+                                <Table.ColumnHeader color={"#000000"} fontSize={2} width={"40vw"} border={"1px  #000000"}></Table.ColumnHeader>
+                                <Table.ColumnHeader color={"#FF6633"} fontSize={24} lineHeight={1.5} borderLeftWidth="1px" borderLeftColor={"#000000"} borderBottom={"none"}>{t("Standard")}<br />{t("Plan")}</Table.ColumnHeader>
                             </Table.Row>
                     </Table.Header>
                     <Table.Body>    
@@ -97,8 +97,8 @@ export default function SubscriptionPlanForMobile(props: SubscriptionPlanForMobi
                 <Table.Root colorPalette={'pink'} >
                     <Table.Header >
                             <Table.Row bgColor={"#FFFFFF"}>
-                                <Table.ColumnHeader color={"#000000"} fontSize={2} width={"11vw"} border={"1px  #000000"}></Table.ColumnHeader>
-                                <Table.ColumnHeader color={"#FF6633"} fontSize={24} width={"16vw"} borderLeftWidth="1px" borderLeftColor={"#000000"} borderBottom={"none"}>{t("PlentyPlan")}</Table.ColumnHeader>
+                                <Table.ColumnHeader color={"#000000"} fontSize={2} width={"40vw"} border={"1px  #000000"}></Table.ColumnHeader>
+                                <Table.ColumnHeader color={"#FF6633"} fontSize={24} lineHeight={1.5} borderLeftWidth="1px" borderLeftColor={"#000000"} borderBottom={"none"}>{t("Plenty")}<br/>{t("Plan")}</Table.ColumnHeader>
                             </Table.Row>
                     </Table.Header>
                     <Table.Body>    
@@ -138,8 +138,8 @@ export default function SubscriptionPlanForMobile(props: SubscriptionPlanForMobi
                 <Table.Root colorPalette={'pink'} >
                     <Table.Header >
                             <Table.Row bgColor={"#FFFFFF"}>
-                                <Table.ColumnHeader color={"#000000"} fontSize={2} width={"11vw"} border={"1px  #000000"}></Table.ColumnHeader>
-                                <Table.ColumnHeader color={"#FF6633"} fontSize={24} width={"16vw"} borderLeftWidth="1px" borderLeftColor={"#000000"} borderBottom={"none"}>{t("MaxPlan")}</Table.ColumnHeader>
+                                <Table.ColumnHeader color={"#000000"} fontSize={2} width={"40vw"} border={"1px  #000000"}></Table.ColumnHeader>
+                                <Table.ColumnHeader color={"#FF6633"} fontSize={24} lineHeight={1.5} borderLeftWidth="1px" borderLeftColor={"#000000"} borderBottom={"none"}>{t("MaxPlan")}</Table.ColumnHeader>
                             </Table.Row>
                     </Table.Header>
                     <Table.Body>    
