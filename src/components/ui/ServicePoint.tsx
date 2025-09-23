@@ -20,11 +20,11 @@ export default function ServicePoint() {
                     <Text textStyle="3xl" marginBottom={10} fontWeight="bold" color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("ContextServicePoint")}</Text>
                     <Image src={Impact} alt="Impact" width="20px" height="18px" />
                 </Flex>
-                <AppealPointWithNum  num={1} appealSentence={t("appeal1Mobile")} detailSentence={t("detail1Mobile")} wpoint={320} hpoint={440} />
-                <AppealPointWithNum  num={2} appealSentence={t("appeal2Mobile")} detailSentence={t("detail2Mobile")} wpoint={320} hpoint={428} />
-                <AppealPointWithNum  num={3} appealSentence={t("appeal3Mobile")} detailSentence={t("detail3Mobile")} wpoint={320} hpoint={400} />
-                <AppealPointWithNum  num={4} appealSentence={t("appeal4Mobile")} detailSentence={t("detail4Mobile")} wpoint={320} hpoint={400} />
-                <AppealPointWithNum  num={5} appealSentence={t("appeal5Mobile")} detailSentence={t("detail5Mobile")} wpoint={320} hpoint={452} />
+                <AppealPointWithNum  num={1} appealSentence={t("appeal1Mobile")} detailSentence={t("detail1Mobile")} wpoint={320} hpoint={360} />
+                <AppealPointWithNum  num={2} appealSentence={t("appeal2Mobile")} detailSentence={t("detail2Mobile")} wpoint={320} hpoint={376} />
+                <AppealPointWithNum  num={3} appealSentence={t("appeal3Mobile")} detailSentence={t("detail3Mobile")} wpoint={320} hpoint={464} />
+                <AppealPointWithNum  num={4} appealSentence={t("appeal4Mobile")} detailSentence={t("detail4Mobile")} wpoint={320} hpoint={328} />
+                <AppealPointWithNum  num={5} appealSentence={t("appeal5Mobile")} detailSentence={t("detail5Mobile")} wpoint={320} hpoint={328} />
                 <AppealPointWithNum  num={6} appealSentence={t("appeal6Mobile")} detailSentence={t("detail6Mobile")} wpoint={320} hpoint={256} />
                 <AppealPointWithNum  num={7} appealSentence={t("appeal7Mobile")} detailSentence={t("detail7Mobile")} wpoint={320} hpoint={300} />
                 <PageMoveButtonTwo toRef="/howtouse" buttonLabel={t("LookHowToUse")} />
