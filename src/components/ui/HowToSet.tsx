@@ -28,6 +28,7 @@ import VoiceIndex from '../../assets/voiceIndex.png';
 import PageMoveButtonLong from '../buttons/PageMoveButtonLong';
 import { useState } from 'react';
 import FlowOneComponent from './FlowComponents/FlowOneComponent';
+import FlowTwoComponent from './FlowComponents/FlowTwoComponent';
 
 export default function HowToSet() {
     const displayValue = useBreakpointValue({base: 'small', md: 'medium',  lg: 'large'});
@@ -37,7 +38,7 @@ export default function HowToSet() {
 
     const items = [
         { value: "first-item", title: t("Flow1"), content: <FlowOneComponent/> },
-        { value: "second-item", title: t("Flow2"), content: <></> },
+        { value: "second-item", title: t("Flow2"), content: <FlowTwoComponent/> },
         { value: "third-item", title: t("Flow3"), content: <></> },
         { value: "fourth-item", title: t("Flow4"), content: <></> },
         { value: "fifth-item", title: t("Flow5"), content: <></> },
@@ -53,12 +54,12 @@ export default function HowToSet() {
                             <Button size="sm" fontSize={16} width="152px" bg="white" color="black" onClick={() => setModeNum(2)}>{t("HowToAccept")}</Button>
                         </Box>
                     </Box>
-                    <Text textStyle="2xl" fontWeight={600} marginBottom="20px" color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("SendFlow")}</Text>
+                    <Text textStyle="2xl" fontWeight={600} marginBottom="20px" color="#C85062" whiteSpace="pre-wrap" >{t("SendFlow")}</Text>
                     <Accordion.Root collapsible value={value} onValueChange={(e) => setValue(e.value)}>
                         {items.map((item, index) => (
                             <Accordion.Item key={index} value={item.value} border="none">
-                                <Accordion.ItemTrigger textStyle="2xl" fontWeight={600} color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>
-                                    <Text marginLeft="4vw" width="70vw" marginTop="8px" >{item.title}</Text>
+                                <Accordion.ItemTrigger textStyle="2xl" fontWeight={600} color="#C85062" whiteSpace="pre-wrap" >
+                                    <Text marginLeft="8vw" width="74vw" marginTop="8px" >{item.title}</Text>
                                     <Accordion.ItemIndicator />
                                 </Accordion.ItemTrigger>
                                 <Accordion.ItemContent>
@@ -70,18 +71,7 @@ export default function HowToSet() {
                     
                     
 
-                    <Flex align="center" direction="column" gap="0px" py={8} justify="space-between" w="92vw">
-                        <Flex direction="column" align="flex-start" w="92vw">
-                            <Text textStyle="2xl" fontWeight={600} color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow2")}</Text>
-                            <Box mt={4} px={4}>
-                                <Text textStyle="lg" color="#6D7685" textAlign="left" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow2detail1")}</Text>
-                            </Box>
-                        </Flex>
-                        <Flex direction="column" gap="32px" marginTop="24px">
-                            <Image src={ContactOne} alt="Voice Recording" width={360} height={780} />
-                            <Image src={ContactFour} alt="Voice Recording" width={360} height={780} />
-                        </Flex>
-                    </Flex>
+                    
 
                     <Flex align="center" direction="column" gap="0px" py={8} justify="space-between" w="92vw">
                         <Flex direction="column" align="flex-start" w="92vw">
