@@ -242,5 +242,15 @@
     "MaxPlanUserTarget": "音声メッセージを複数人に、\nとことん送りたい方向け",
     "Light": "ライト",
     "Plenty": "たっぷり",
-    "Max": "Max"
+    "Max": "Max",
+    "OneHour": "1時間",
+    "ThreeHours": "3時間",
+    "SixHours": "6時間",
+    "TwelveHours": "12時間",
+    "Address": "宛先",
+    "Photos": "画像",
+    "LightPlanPrice": "1,800円/年",
+    "StandardPlanPrice": "2,400円/年",
+    "PlentyPlanPrice": "3,500円/年",
+    "MaxPlanPrice": "4,500円/年"
 }
