@@ -25,7 +25,7 @@ export default function SubscriptionExplanation(props: SubscriptionExplanationPr
         );
     } else {
         return (
-            <Box h="100px" w="60vw" alignSelf={"center"} alignItems={"center"} justifyContent={"center"}>
+            <Box h="128px" w="60vw" alignSelf={"center"} alignItems={"center"} justifyContent={"center"}>
                 <Text textStyle="2xl" textAlign="left" color="#6D7685" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{props.content}</Text>
             </Box>
         );

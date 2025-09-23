@@ -230,6 +230,7 @@
     "VoiceSize": "一括送信可能な\n音声ファイルの合計サイズ",
     "Price": "価格",
     "LightPlan": "ライトプラン",
+    "StandardPlan": "スタンダードプラン",
     "Standard": "スタンダード",
     "PlentyPlan": "たっぷりプラン",
     "MaxPlan": "Maxプラン",
@@ -238,5 +239,8 @@
     "LightPlanUserTarget": "音声メッセージを少人数に\n短時間ずつ送りたい方向け",
     "StandardPlanUserTarget": "音声メッセージを複数人に送りたい方向け",
     "PlentyPlanUserTarget": "音声メッセージを複数人に、\nたっぷり送りたい方向け",
-    "MaxPlanUserTarget": "音声メッセージを複数人に、\nとことん送りたい方向け"
+    "MaxPlanUserTarget": "音声メッセージを複数人に、\nとことん送りたい方向け",
+    "Light": "ライト",
+    "Plenty": "たっぷり",
+    "Max": "Max"
 }
