@@ -30,6 +30,8 @@ import { useState } from 'react';
 import FlowOneComponent from './FlowComponents/FlowOneComponent';
 import FlowTwoComponent from './FlowComponents/FlowTwoComponent';
 import FlowThreeComponent from './FlowComponents/FlowThreeComponent';
+import FlowFourComponent from './FlowComponents/FlowFourComponent';
+import FlowFiveComponent from './FlowComponents/FlowFiveComponent';
 
 export default function HowToSet() {
     const displayValue = useBreakpointValue({base: 'small', md: 'medium',  lg: 'large'});
@@ -41,25 +43,19 @@ export default function HowToSet() {
         { value: "first-item", title: t("Flow1"), content: <FlowOneComponent/> },
         { value: "second-item", title: t("Flow2"), content: <FlowTwoComponent/> },
         { value: "third-item", title: t("Flow3"), content: <FlowThreeComponent/> },
-        { value: "fourth-item", title: t("Flow4"), content: <></> },
-        { value: "fifth-item", title: t("Flow5"), content: <></> },
+        { value: "fourth-item", title: t("Flow4"), content: <FlowFourComponent/> },
+        { value: "fifth-item", title: t("Flow5"), content: <FlowFiveComponent/> },
     ];
 
     if (displayValue === 'small') {
         if (modeNum === 1) {
             return (
                 <Stack bg="#FFFFFF"  py={20} align="center"  w="100vw" >
-                    <Box h="96px" w="85vw"  >
-                        <Box flexDirection={"row"} placeItems={"center"} justifyContent={"center"} display="flex" gap={4} >
-                            <Button size="sm" fontSize={16} width="152px" colorPalette="pink">{t("HowToSend")}</Button>
-                            <Button size="sm" fontSize={16} width="152px" bg="white" color="black" onClick={() => setModeNum(2)}>{t("HowToAccept")}</Button>
-                        </Box>
-                    </Box>
-                    <Text textStyle="2xl" fontWeight={600} marginBottom="20px" color="#C85062" whiteSpace="pre-wrap" >{t("SendFlow")}</Text>
-                    <Accordion.Root collapsible value={value} onValueChange={(e) => setValue(e.value)}>
+                    <Text textStyle="2xl" fontWeight={600} marginBottom="32px" color="#C85062" whiteSpace="pre-wrap" >{t("SendFlow")}</Text>
+                    <Accordion.Root multiple value={value} onValueChange={(e) => setValue(e.value)}>
                         {items.map((item, index) => (
                             <Accordion.Item key={index} value={item.value} border="none">
-                                <Accordion.ItemTrigger textStyle="2xl" fontWeight={600} color="#C85062" whiteSpace="pre-wrap" >
+                                <Accordion.ItemTrigger textStyle="2xl" fontWeight={500} color="#C85062" whiteSpace="pre-wrap" >
                                     <Text marginLeft="8vw" width="74vw" marginTop="8px" >{item.title}</Text>
                                     <Accordion.ItemIndicator />
                                 </Accordion.ItemTrigger>
@@ -69,44 +65,26 @@ export default function HowToSet() {
                             </Accordion.Item>
                         ))}
                     </Accordion.Root>
-                    
-
-                    <Flex align="center" direction="column" gap="0px" py={8} justify="space-between" w="92vw">
-                        <Flex direction="column" align="flex-start" w="92vw">
-                            <Text textStyle="2xl" fontWeight={600} color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow4")}</Text>
-                            <Box mt={4} px={4}>
-                                <Text textStyle="lg" color="#6D7685" textAlign="left" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow4detail1")}</Text>
-                            </Box>
-                        </Flex>
-                        <Flex direction="column" gap="32px" marginTop="24px">
-                            <Image src={TriggerOne} alt="Voice Recording" width={360} height={780} />
-                            <Image src={TriggerTwo} alt="Voice Recording" width={360} height={780} />
-                        </Flex>
-                    </Flex>
-                    
-                    <Flex align="center" direction="column" gap="0px" py={8} justify="space-between" w="92vw">
-                        <Flex direction="column" align="flex-start" w="92vw">
-                            <Text textStyle="2xl" fontWeight={600} color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow5")}</Text>
-                            <Box mt={4} px={4}>
-                                <Text textStyle="lg" color="#6D7685" textAlign="left" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow5detail1")}</Text>
-                            </Box>
-                        </Flex>
-                        <Flex direction="column" gap="32px" marginTop="24px">
-                            <Image src={FollowOne} alt="Voice Recording" width={360} height={780} />
-                            <Image src={FollowTwo} alt="Voice Recording" width={360} height={780} />
-                        </Flex>
-                    </Flex>
+                    <Box h="48px" w="85vw" marginTop="64px" >
+                        <Box flexDirection={"row"} placeItems={"center"} justifyContent={"center"} display="flex" gap={4} >
+                            <Button size="sm" fontSize={16} width="152px" colorPalette="pink">{t("HowToSend")}</Button>
+                            <Button size="sm" fontSize={16} width="152px" bg="white" color="black" onClick={() => setModeNum(2)}>{t("HowToAccept")}</Button>
+                        </Box>
+                    </Box>
                 </Stack>
             );
         } else {
             return (
                 <Stack bg="#FFFFFF"  py={20} align="center"  w="100vw" >
-                    <Box h="96px" w="85vw"  >
+                    <Box h="48px" w="85vw" marginTop="64px" >
                         <Box flexDirection={"row"} placeItems={"center"} justifyContent={"center"} display="flex" gap={4} >
                             <Button size="sm" fontSize={16} width="152px" bg="white" color="black" onClick={() => setModeNum(1)}>{t("HowToSend")}</Button>
                             <Button size="sm" fontSize={16} width="152px" colorPalette="pink">{t("HowToAccept")}</Button>
                         </Box>
                     </Box>
+
+
+                    
                     <Text textStyle="2xl"  color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("AcceptFlowMobile")}</Text>
                     <Flex direction="column" align="center" gap="0px" py={8} justify="space-between" w="92vw">
                         <Flex direction="column" align="flex-start" w="92vw">
