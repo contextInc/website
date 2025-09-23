@@ -29,6 +29,7 @@ import PageMoveButtonLong from '../buttons/PageMoveButtonLong';
 import { useState } from 'react';
 import FlowOneComponent from './FlowComponents/FlowOneComponent';
 import FlowTwoComponent from './FlowComponents/FlowTwoComponent';
+import FlowThreeComponent from './FlowComponents/FlowThreeComponent';
 
 export default function HowToSet() {
     const displayValue = useBreakpointValue({base: 'small', md: 'medium',  lg: 'large'});
@@ -39,7 +40,7 @@ export default function HowToSet() {
     const items = [
         { value: "first-item", title: t("Flow1"), content: <FlowOneComponent/> },
         { value: "second-item", title: t("Flow2"), content: <FlowTwoComponent/> },
-        { value: "third-item", title: t("Flow3"), content: <></> },
+        { value: "third-item", title: t("Flow3"), content: <FlowThreeComponent/> },
         { value: "fourth-item", title: t("Flow4"), content: <></> },
         { value: "fifth-item", title: t("Flow5"), content: <></> },
     ];
@@ -69,22 +70,6 @@ export default function HowToSet() {
                         ))}
                     </Accordion.Root>
                     
-                    
-
-                    
-
-                    <Flex align="center" direction="column" gap="0px" py={8} justify="space-between" w="92vw">
-                        <Flex direction="column" align="flex-start" w="92vw">
-                            <Text textStyle="2xl" fontWeight={600} color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow3")}</Text>
-                            <Box mt={4} px={4}>
-                                <Text textStyle="lg" color="#6D7685" textAlign="left" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow3detail1")}</Text>
-                            </Box>
-                        </Flex>
-                        <Flex direction="column" gap="32px" marginTop="24px">
-                            <Image src={SettingOne} alt="Voice Recording" width={360} height={780} />
-                            <Image src={SettingTwo} alt="Voice Recording" width={360} height={780} />
-                        </Flex>
-                    </Flex>
 
                     <Flex align="center" direction="column" gap="0px" py={8} justify="space-between" w="92vw">
                         <Flex direction="column" align="flex-start" w="92vw">
@@ -98,6 +83,7 @@ export default function HowToSet() {
                             <Image src={TriggerTwo} alt="Voice Recording" width={360} height={780} />
                         </Flex>
                     </Flex>
+                    
                     <Flex align="center" direction="column" gap="0px" py={8} justify="space-between" w="92vw">
                         <Flex direction="column" align="flex-start" w="92vw">
                             <Text textStyle="2xl" fontWeight={600} color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("Flow5")}</Text>
