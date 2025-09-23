@@ -15,12 +15,12 @@ export default function PlanSelectButtonsForMobile(props: PlanSelectButtonsForMo
     const { t } = useTranslation();
     if (props.selectedPlan === 'light') {
         return (
-            <Box h="96px" w="85vw" placeItems={"center"} justifyContent={"center"}>
-                <Box flexDirection={"row"} display="flex" gap={4} >
+            <Box h="96px" w="85vw"  >
+                <Box flexDirection={"row"} placeItems={"center"} justifyContent={"center"} display="flex" gap={4} >
                     <Button size="sm" width="152px" colorPalette="pink">{t("LightPlan")}</Button>
                     <Button size="sm" width="152px" bg="white" color="black" onClick={() => props.setSelectedPlan('standard')}>{t("StandardPlan")}</Button>
                 </Box>
-                <Box flexDirection={"row"} display="flex" gap={4} >
+                <Box flexDirection={"row"} placeItems={"center"} justifyContent={"center"} display="flex" gap={4} >
                     <Button size="sm" width="152px" bg="white" color="black" onClick={() => props.setSelectedPlan('plenty')}>{t("PlentyPlan")}</Button>
                     <Button size="sm" width="152px" bg="white" color="black" onClick={() => props.setSelectedPlan('max')}>{t("MaxPlan")}</Button>
                 </Box>
@@ -29,12 +29,12 @@ export default function PlanSelectButtonsForMobile(props: PlanSelectButtonsForMo
         );
     } else if (props.selectedPlan === 'standard') {
         return (
-            <Box h="96px" w="85vw" placeItems={"center"} justifyContent={"center"}>
-                <Box flexDirection={"row"} display="flex" gap={4} >
+            <Box h="96px" w="85vw" >
+                <Box flexDirection={"row"} placeItems={"center"} justifyContent={"center"} display="flex" gap={4} >
                     <Button size="sm" width="152px" bg="white" color="black" onClick={() => props.setSelectedPlan('light')}>{t("LightPlan")}</Button>
                     <Button size="sm" width="152px" colorPalette="pink">{t("StandardPlan")}</Button>
                 </Box>
-                <Box flexDirection={"row"} display="flex" gap={4} >
+                <Box flexDirection={"row"} placeItems={"center"} justifyContent={"center"} display="flex" gap={4} >
                     <Button size="sm" width="152px" bg="white" color="black" onClick={() => props.setSelectedPlan('plenty')}>{t("PlentyPlan")}</Button>
                     <Button size="sm" width="152px" bg="white" color="black" onClick={() => props.setSelectedPlan('max')}>{t("MaxPlan")}</Button>
                 </Box>
@@ -42,12 +42,12 @@ export default function PlanSelectButtonsForMobile(props: PlanSelectButtonsForMo
         );
     } else if (props.selectedPlan === 'plenty') {
         return (
-            <Box h="96px" w="85vw" placeItems={"center"} justifyContent={"center"}>
-                <Box flexDirection={"row"} display="flex" gap={4} >
+            <Box h="96px" w="85vw">
+                <Box flexDirection={"row"} placeItems={"center"} justifyContent={"center"} display="flex" gap={4} >
                     <Button size="sm" width="152px" bg="white" color="black" onClick={() => props.setSelectedPlan('light')}>{t("LightPlan")}</Button>
                     <Button size="sm" width="152px" bg="white" color="black" onClick={() => props.setSelectedPlan('standard')}>{t("StandardPlan")}</Button>
                 </Box>
-                <Box flexDirection={"row"} display="flex" gap={4} >
+                <Box flexDirection={"row"} placeItems={"center"} justifyContent={"center"} display="flex" gap={4} >
                     <Button size="sm" width="152px" colorPalette="pink">{t("PlentyPlan")}</Button>
                     <Button size="sm" width="152px" bg="white" color="black" onClick={() => props.setSelectedPlan('max')}>{t("MaxPlan")}</Button>
                 </Box>
@@ -57,12 +57,12 @@ export default function PlanSelectButtonsForMobile(props: PlanSelectButtonsForMo
     }
     else {
         return (
-            <Box h="96px" w="85vw" placeItems={"center"} justifyContent={"center"}>
-                <Box flexDirection={"row"} display="flex" gap={4} >
+            <Box h="96px" w="85vw">
+                <Box flexDirection={"row"} placeItems={"center"} justifyContent={"center"} display="flex" gap={4} >
                     <Button size="sm" width="152px" bg="white" color="black" onClick={() => props.setSelectedPlan('light')}>{t("LightPlan")}</Button>
                     <Button size="sm" width="152px" bg="white" color="black" onClick={() => props.setSelectedPlan('standard')}>{t("StandardPlan")}</Button>
                 </Box>
-                <Box flexDirection={"row"} display="flex" gap={4} >
+                <Box flexDirection={"row"} placeItems={"center"} justifyContent={"center"} display="flex" gap={4} >
                     <Button size="sm" width="152px" bg="white" color="black" onClick={() => props.setSelectedPlan('plenty')}>{t("PlentyPlan")}</Button>
                     <Button size="sm" width="152px" colorPalette="pink" >{t("MaxPlan")}</Button>
                 </Box>
