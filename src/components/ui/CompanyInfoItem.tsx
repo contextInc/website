@@ -33,7 +33,7 @@ export default function CompanyInfoItem(props: CompanyInfoItemProps) {
         );
     } else {
         return (
-            <Box h={100} w="50vw">
+            <Box h={132} w="50vw">
                 <Flex direction="column"  gap={4} textAlign="left">
                     <Text textStyle="2xl" color="#6D7685" whiteSpace="pre-wrap" fontWeight="bold" fontFamily='Open Sans, sans-serif'>{props.title}</Text>
                     <Text textStyle="2xl" color="#6D7685" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{props.content}</Text>
