@@ -6,7 +6,6 @@ import Company from './pages/Company';
 import Price from './pages/Price';
 import QA from './pages/QA';
 import PrivacyTwo from './pages/PrivacyTwo';
-import HowToAccept from './pages/HowToAccept';
 
 function App() {
   return (
@@ -18,7 +17,7 @@ function App() {
           <Route path="/" element={<Home />} />
           {/* <Route path="/service" element={<Service />} /> */}
           <Route path="/howtouse" element={<HowToUse />} />
-          <Route path="/howtoaccept" element={<HowToAccept />} />
+          {/* <Route path="/howtoaccept" element={<HowToAccept />} /> */}
           {/* <Route path="/security" element={<Security />} /> */}
           <Route path="/company" element={<Company />} />
           <Route path="/privacy" element={<PrivacyTwo />} />

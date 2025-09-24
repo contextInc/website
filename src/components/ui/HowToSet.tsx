@@ -189,6 +189,7 @@ export default function HowToSet() {
                             <Image src={FollowTwo} alt="Voice Recording" width={240} height={520} />
                         </Flex>
                     </Flex>
+                    <Image src={SetSpan} alt="SetSpan" marginTop="32px" width="80vw" height="auto" />
                     <Button fontSize={18} w="200px" h="48px" onClick={() => setModeNum(2)} marginTop={20} marginBottom={20} variant="outline" boxShadow="sm" fontFamily='Open Sans, sans-serif' color="#C85062" borderColor="#C85062" borderWidth={2} _hover={{ bg: "#C85062", color: "white" }} _active={{ bg: "#C85062", color: "white" }}>
                         {t("LookHowToAccept")}
                     </Button>
@@ -276,7 +277,6 @@ export default function HowToSet() {
                 </Stack>
             );
         }
-
     } else {
         if (modeNum === 1) {
             return (
@@ -348,6 +348,7 @@ export default function HowToSet() {
                             <Image src={FollowTwo} alt="Voice Recording" width={240} height={520} />
                         </Flex>
                     </Flex>
+                    <Image src={SetSpan} alt="SetSpan" marginTop="32px" width="40vw" height="auto" />
                     <Button fontSize={18} w="200px" h="48px" onClick={() => setModeNum(2)} marginTop={20} marginBottom={20} variant="outline" boxShadow="sm" fontFamily='Open Sans, sans-serif' color="#C85062" borderColor="#C85062" borderWidth={2} _hover={{ bg: "#C85062", color: "white" }} _active={{ bg: "#C85062", color: "white" }}>
                         {t("LookHowToAccept")}
                     </Button>
