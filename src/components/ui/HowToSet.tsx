@@ -19,7 +19,6 @@ import TriggerOne from '../../assets/triggerOne.png';
 import TriggerTwo from '../../assets/triggerTwo.png';
 import FollowOne from '../../assets/followOne.png';
 import FollowTwo from '../../assets/followTwo.png';
-import VoiceIndex from '../../assets/voiceIndex.png';
 import PageMoveButtonLong from '../buttons/PageMoveButtonLong';
 import SetSpan from '../../assets/settingSpan.png';
 import { useState } from 'react';
@@ -88,8 +87,8 @@ export default function HowToSet() {
             );
         } else {
             return (
-                <Stack bg="#FFFFFF"  py={20} align="center"  w="100vw" >
-                    <Text textStyle="2xl"  color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("AcceptFlowMobile")}</Text>
+                <Stack bg="#FFFFFF"  py={20} align="center" w="100vw" >
+                    <Text textStyle="2xl"  color="#C85062" fontWeight={600} whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("AcceptFlowMobile")}</Text>
                     <Text textStyle="md" marginTop="8px" marginBottom="32px" color="#233452" whiteSpace="pre-wrap" >{t("TapToOpenDetails")}</Text>
                     <Accordion.Root multiple value={value} onValueChange={(e) => setValue(e.value)}>
                         {acceptItems.map((item, index) => (
