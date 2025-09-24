@@ -19,8 +19,6 @@ import TriggerOne from '../../assets/triggerOne.png';
 import TriggerTwo from '../../assets/triggerTwo.png';
 import FollowOne from '../../assets/followOne.png';
 import FollowTwo from '../../assets/followTwo.png';
-import TelOtpInput from '../../assets/telOtpInput.png';
-import Confirm from '../../assets/confirm.png';
 import VoiceIndex from '../../assets/voiceIndex.png';
 import PageMoveButtonLong from '../buttons/PageMoveButtonLong';
 import SetSpan from '../../assets/settingSpan.png';
@@ -32,7 +30,10 @@ import FlowFourComponent from './FlowComponents/FlowFourComponent';
 import FlowFiveComponent from './FlowComponents/FlowFiveComponent';
 import AcceptFlowOneComponent from './FlowComponents/AcceptFlowOneComponent';
 import AcceptFlowTwoComponent from './FlowComponents/AcceptFlowTwoComponent';
+import AcceptFlowThreeComponent from './FlowComponents/AcceptFlowThreeComponent';
 import AcceptFlowFourComponent from './FlowComponents/AcceptFlowFourComponent';
+import AcceptFlowFiveComponent from './FlowComponents/AcceptFlowFiveComponent';
+import AcceptFlowSixComponent from './FlowComponents/AcceptFlowSixComponent';
 
 export default function HowToSet() {
     const displayValue = useBreakpointValue({base: 'small', md: 'medium',  lg: 'large'});
@@ -51,9 +52,10 @@ export default function HowToSet() {
     const acceptItems = [
         { value: "acfirst-item", title: t("AcceptFlow1"), content: <AcceptFlowOneComponent /> },
         { value: "acsecond-item", title: t("AcceptFlow2"), content: <AcceptFlowTwoComponent /> },
-        { value: "acthird-item", title: t("AcceptFlow4"), content: <AcceptFlowFourComponent /> },
-        { value: "acfourth-item", title: t("AcceptFlow5Mobile"), content: <FlowFourComponent/> },
-        { value: "acfifth-item", title: t("Flow5"), content: <FlowFiveComponent/> },
+        { value: "acthird-item", title: t("AcceptFlow3"), content: <AcceptFlowThreeComponent /> },
+        { value: "acfourth-item", title: t("AcceptFlow4"), content: <AcceptFlowFourComponent /> },
+        { value: "acfifth-item", title: t("AcceptFlow5"), content: <AcceptFlowFiveComponent /> },
+        { value: "acsixth-item", title: t("AcceptFlow6"), content: <AcceptFlowSixComponent /> },
     ];
 
     if (displayValue === 'small') {
@@ -102,82 +104,6 @@ export default function HowToSet() {
                             </Accordion.Item>
                         ))}
                     </Accordion.Root>
-
-                    {/* <Flex direction="column" align="center" gap="0px" py={8} justify="space-between" w="92vw">
-                        <Flex direction="column" align="flex-start" w="92vw">
-                            <Text textStyle="2xl" color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("AcceptFlow1")}</Text>
-                            <Box mt={4} px={2}>
-                                <Text textStyle="lg" color="#6D7685" textAlign="left" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("AcceptFlow1detail1")}</Text>
-                            </Box>
-                        </Flex>
-                        <Flex gap="8px" mt={4}>
-                            <Image src={StartOne} alt="Voice Recording" width={360} height={780} />
-                        </Flex>
-                    </Flex> */}
-
-                    {/* <Flex direction="column" align="center" gap="0px" py={8} justify="space-between" w="92vw">
-                        <Flex direction="column" align="flex-start" w="92vw">
-                            <Text textStyle="2xl" color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("AcceptFlow2")}</Text>
-                            <Box mt={4} px={2}>
-                                <Text textStyle="lg" color="#6D7685" textAlign="left" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("AcceptFlow2detail1")}</Text>
-                            </Box>
-                        </Flex>
-                        <Flex gap="8px" mt={4}>
-                            <Image src={Install} alt="Voice Recording" width={360} height={780} />
-                        </Flex>
-                    </Flex> */}
-
-                    {/* <Flex direction="column" align="center" gap="0px" py={8} justify="space-between" w="92vw">
-                        <Flex direction="column" align="flex-start" w="92vw">
-                            <Text textStyle="2xl" color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("AcceptFlow4")}</Text>
-                            <Box mt={4} px={2}>
-                                <Text textStyle="lg" color="#6D7685" textAlign="left" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("AcceptFlow4detail1")}</Text>
-                            </Box>
-                        </Flex>
-                        <Flex gap="8px" mt={4}>
-                            <Image src={TelInput} alt="Voice Recording" width={360} height={780} />
-                        </Flex>
-                    </Flex> */}
-
-
-                    <Flex direction="column" align="center" gap="0px" py={8} justify="space-between" w="92vw">
-                        <Flex direction="column" align="flex-start" w="92vw">
-                            <Text textStyle="2xl" color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("AcceptFlow5Mobile")}</Text>
-                            <Box mt={4} px={2}>
-                                <Text textStyle="lg" color="#6D7685" textAlign="left" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("AcceptFlow5detail1")}</Text>
-                            </Box>
-                        </Flex>
-                        <Flex gap="8px" mt={4}>
-                            <Image src={TelOtpInput} alt="Voice Recording" width={360} height={780} />
-                        </Flex>
-                    </Flex>
-
-
-
-                    <Flex direction="column" align="center" gap="0px" py={8} justify="space-between" w="92vw">
-                        <Flex direction="column" align="flex-start" w="92vw">
-                            <Text textStyle="2xl" color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("AcceptFlow8")}</Text>
-                            <Box mt={4} px={2}>
-                                <Text textStyle="lg" color="#6D7685" textAlign="left" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("AcceptFlow8detail1")}</Text>
-                            </Box>
-                        </Flex>
-                        <Flex gap="8px" mt={4}>
-                            <Image src={Confirm} alt="Voice Recording" width={360} height={780} />
-                        </Flex>
-                    </Flex>
-
-
-                    <Flex direction="column" align="center" gap="0px" py={8} justify="space-between" w="92vw">
-                        <Flex direction="column" align="flex-start" w="92vw">
-                            <Text textStyle="2xl" color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("AcceptFlow9")}</Text>
-                            <Box mt={4} px={2}>
-                                <Text textStyle="lg" color="#6D7685" textAlign="left" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("AcceptFlow9detail1")}</Text>
-                            </Box>
-                        </Flex>
-                        <Flex gap="8px" mt={4}>
-                            <Image src={VoiceIndex} alt="Voice Recording" width={360} height={780} />
-                        </Flex>
-                    </Flex>
 
                     <Box h="48px" w="85vw" marginTop="64px" >
                         <Box flexDirection={"row"} placeItems={"center"} justifyContent={"center"} display="flex" gap={4} >
