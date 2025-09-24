@@ -255,5 +255,6 @@
     "MaxPlanPrice": "4,500円/年",
     "HowToSend": "送信方法",
     "HowToAccept": "受け取り方法",
-    "SendFlow": "~ メッセージ送信の流れ ~"
+    "SendFlow": "~ メッセージ送信の流れ ~",
+    "TapToOpenDetails": "(タップすると詳細が開きます)"
 }

@@ -26,6 +26,7 @@ import TelOtpInput from '../../assets/telOtpInput.png';
 import Confirm from '../../assets/confirm.png';
 import VoiceIndex from '../../assets/voiceIndex.png';
 import PageMoveButtonLong from '../buttons/PageMoveButtonLong';
+import SetSpan from '../../assets/settingSpan.png';
 import { useState } from 'react';
 import FlowOneComponent from './FlowComponents/FlowOneComponent';
 import FlowTwoComponent from './FlowComponents/FlowTwoComponent';
@@ -47,11 +48,20 @@ export default function HowToSet() {
         { value: "fifth-item", title: t("Flow5"), content: <FlowFiveComponent/> },
     ];
 
+    const acceptItems = [
+        { value: "acfirst-item", title: t("Flow1"), content: <FlowOneComponent/> },
+        { value: "acsecond-item", title: t("Flow2"), content: <FlowTwoComponent/> },
+        { value: "acthird-item", title: t("Flow3"), content: <FlowThreeComponent/> },
+        { value: "acfourth-item", title: t("Flow4"), content: <FlowFourComponent/> },
+        { value: "acfifth-item", title: t("Flow5"), content: <FlowFiveComponent/> },
+    ];
+
     if (displayValue === 'small') {
         if (modeNum === 1) {
             return (
                 <Stack bg="#FFFFFF"  py={20} align="center"  w="100vw" >
-                    <Text textStyle="2xl" fontWeight={600} marginBottom="32px" color="#C85062" whiteSpace="pre-wrap" >{t("SendFlow")}</Text>
+                    <Text textStyle="2xl" fontWeight={600}  color="#C85062" whiteSpace="pre-wrap" >{t("SendFlow")}</Text>
+                    <Text textStyle="md" marginTop="8px" marginBottom="32px" color="#233452" whiteSpace="pre-wrap" >{t("TapToOpenDetails")}</Text>
                     <Accordion.Root multiple value={value} onValueChange={(e) => setValue(e.value)}>
                         {items.map((item, index) => (
                             <Accordion.Item key={index} value={item.value} border="none">
@@ -65,6 +75,7 @@ export default function HowToSet() {
                             </Accordion.Item>
                         ))}
                     </Accordion.Root>
+                    <Image src={SetSpan} alt="SetSpan" marginTop="32px" width="90vw" height="auto" />
                     <Box h="48px" w="85vw" marginTop="64px" >
                         <Box flexDirection={"row"} placeItems={"center"} justifyContent={"center"} display="flex" gap={4} >
                             <Button size="sm" fontSize={16} width="152px" colorPalette="pink">{t("HowToSend")}</Button>
@@ -76,16 +87,23 @@ export default function HowToSet() {
         } else {
             return (
                 <Stack bg="#FFFFFF"  py={20} align="center"  w="100vw" >
-                    <Box h="48px" w="85vw" marginTop="64px" >
-                        <Box flexDirection={"row"} placeItems={"center"} justifyContent={"center"} display="flex" gap={4} >
-                            <Button size="sm" fontSize={16} width="152px" bg="white" color="black" onClick={() => setModeNum(1)}>{t("HowToSend")}</Button>
-                            <Button size="sm" fontSize={16} width="152px" colorPalette="pink">{t("HowToAccept")}</Button>
-                        </Box>
-                    </Box>
-
-
-                    
                     <Text textStyle="2xl"  color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("AcceptFlowMobile")}</Text>
+                    <Text textStyle="md" marginTop="8px" marginBottom="32px" color="#233452" whiteSpace="pre-wrap" >{t("TapToOpenDetails")}</Text>
+                    <Accordion.Root multiple value={value} onValueChange={(e) => setValue(e.value)}>
+                        {acceptItems.map((item, index) => (
+                            <Accordion.Item key={index} value={item.value} border="none">
+                                <Accordion.ItemTrigger textStyle="2xl" fontWeight={500} color="#C85062" whiteSpace="pre-wrap" >
+                                    <Text marginLeft="8vw" width="74vw" marginTop="8px" >{item.title}</Text>
+                                    <Accordion.ItemIndicator />
+                                </Accordion.ItemTrigger>
+                                <Accordion.ItemContent>
+                                    <Accordion.ItemBody >{item.content}</Accordion.ItemBody>
+                                </Accordion.ItemContent>
+                            </Accordion.Item>
+                        ))}
+                    </Accordion.Root>
+
+
                     <Flex direction="column" align="center" gap="0px" py={8} justify="space-between" w="92vw">
                         <Flex direction="column" align="flex-start" w="92vw">
                             <Text textStyle="2xl" color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("AcceptFlow1")}</Text>
@@ -97,6 +115,8 @@ export default function HowToSet() {
                             <Image src={StartOne} alt="Voice Recording" width={360} height={780} />
                         </Flex>
                     </Flex>
+
+
                     <Flex direction="column" align="center" gap="0px" py={8} justify="space-between" w="92vw">
                         <Flex direction="column" align="flex-start" w="92vw">
                             <Text textStyle="2xl" color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("AcceptFlow2")}</Text>
@@ -152,6 +172,13 @@ export default function HowToSet() {
                             <Image src={VoiceIndex} alt="Voice Recording" width={360} height={780} />
                         </Flex>
                     </Flex>
+
+                    <Box h="48px" w="85vw" marginTop="64px" >
+                        <Box flexDirection={"row"} placeItems={"center"} justifyContent={"center"} display="flex" gap={4} >
+                            <Button size="sm" fontSize={16} width="152px" bg="white" color="black" onClick={() => setModeNum(1)}>{t("HowToSend")}</Button>
+                            <Button size="sm" fontSize={16} width="152px" colorPalette="pink">{t("HowToAccept")}</Button>
+                        </Box>
+                    </Box>
                 </Stack>
             );
         }

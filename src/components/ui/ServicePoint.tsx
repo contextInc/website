@@ -8,6 +8,7 @@ import '@/i18n';
 import PageMoveButtonTwo from '../buttons/PageMoveButtonTwo';
 import AppealPointWithNum from './AppealPointWithNum';
 import Impact from '../../assets/Group2602.png';
+import SetSpan from '../../assets/settingSpan.png';
 
 export default function ServicePoint() {
     const displayValue = useBreakpointValue({base: 'small', md: 'medium', lg: 'large'});
@@ -27,6 +28,7 @@ export default function ServicePoint() {
                 <AppealPointWithNum  num={5} appealSentence={t("appeal5Mobile")} detailSentence={t("detail5Mobile")} wpoint={320} hpoint={336} />
                 <AppealPointWithNum  num={6} appealSentence={t("appeal6Mobile")} detailSentence={t("detail6Mobile")} wpoint={320} hpoint={416} />
                 <AppealPointWithNum  num={7} appealSentence={t("appeal7Mobile")} detailSentence={t("detail7Mobile")} wpoint={320} hpoint={240} />
+                <Image src={SetSpan} alt="SetSpan" width="90vw" height="auto" />
                 <PageMoveButtonTwo toRef="/howtouse" buttonLabel={t("LookHowToUse")} />
             </Stack>
         );
