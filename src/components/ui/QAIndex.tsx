@@ -16,10 +16,9 @@ export default function QAIndex() {
     const [value, setValue] = useState(["first-item"]);
 
     const items = [
+        { value: "nineth-item", title: t("IfMailOrTelDifferent"), text: t("IfMailOrTelDifferentAnswer") },
         { value: "first-item", title: t("OtpNotArrive"), text: t("OtpNotArriveAnswer") },
-        { value: "second-item", title: t("RcsNotArrive"), text: t("RcsNotArriveAnswer") },
         { value: "eighth-item", title: t("DifficultDomain"), text: t("DifficultDomainAnswer") },
-        { value: "ninth-item", title: t("DifficultNotice"), text: t("DifficultNoticeAnswer") },
         { value: "third-item", title: t("EndToEnd"), text: t("EndToEndAnswer") },
         { value: "fourth-item", title: t("AboutDemo"), text: t("AboutDemoAnswer") },
         { value: "fifth-item", title: t("AboutRepresentativeAuth"), text: t("AboutRepresentativeAuthAnswer") },
@@ -34,7 +33,7 @@ export default function QAIndex() {
                     <Text textStyle="2xl" marginBottom={10} color="#C85062" whiteSpace="pre-wrap"  fontFamily='Open Sans, sans-serif'>{t("QA")}</Text>
                     {/* <Separator color="#000000" width="45vw" height={2} marginBottom={4} /> */}
                     <Box w="85vw" >
-                        <Accordion.Root value={value} onValueChange={(e) => setValue(e.value)}>
+                        <Accordion.Root multiple value={value} onValueChange={(e) => setValue(e.value)}>
                             {items.map((item, index) => (
                                 <Accordion.Item key={index} value={item.value}>
                                     <Accordion.ItemTrigger textStyle="2xl" py={10} fontFamily='Open Sans, sans-serif' color="#6D7685">
@@ -60,7 +59,7 @@ export default function QAIndex() {
                     <Text textStyle="5xl" marginBottom={10} color="#C85062" whiteSpace="pre-wrap"  fontFamily='Open Sans, sans-serif'>{t("QA")}</Text>
                     {/* <Separator color="#000000" width="45vw" height={2} marginBottom={4} /> */}
                     <Box w="85vw" >
-                        <Accordion.Root value={value} onValueChange={(e) => setValue(e.value)}>
+                        <Accordion.Root multiple value={value} onValueChange={(e) => setValue(e.value)}>
                             {items.map((item, index) => (
                                 <Accordion.Item key={index} value={item.value}>
                                     <Accordion.ItemTrigger textStyle="3xl" py={10} fontFamily='Open Sans, sans-serif' color="#6D7685">
@@ -86,7 +85,7 @@ export default function QAIndex() {
                     <Text textStyle="5xl" marginBottom={10} color="#C85062" whiteSpace="pre-wrap"  fontFamily='Open Sans, sans-serif'>{t("QA")}</Text>
                     {/* <Separator color="#000000" width="45vw" height={2} marginBottom={4} /> */}
                     <Box w="40vw" >
-                        <Accordion.Root value={value} onValueChange={(e) => setValue(e.value)}>
+                        <Accordion.Root multiple value={value} onValueChange={(e) => setValue(e.value)}>
                             {items.map((item, index) => (
                                 <Accordion.Item key={index} value={item.value}>
                                     <Accordion.ItemTrigger textStyle="3xl" py={10}  fontFamily='Open Sans, sans-serif' color="#6D7685">
