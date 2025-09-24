@@ -19,9 +19,6 @@ import TriggerOne from '../../assets/triggerOne.png';
 import TriggerTwo from '../../assets/triggerTwo.png';
 import FollowOne from '../../assets/followOne.png';
 import FollowTwo from '../../assets/followTwo.png';
-import StartOne from '../../assets/startOne.png';
-import Install from '../../assets/install.png';
-import TelInput from '../../assets/telInput.png';
 import TelOtpInput from '../../assets/telOtpInput.png';
 import Confirm from '../../assets/confirm.png';
 import VoiceIndex from '../../assets/voiceIndex.png';
@@ -33,6 +30,9 @@ import FlowTwoComponent from './FlowComponents/FlowTwoComponent';
 import FlowThreeComponent from './FlowComponents/FlowThreeComponent';
 import FlowFourComponent from './FlowComponents/FlowFourComponent';
 import FlowFiveComponent from './FlowComponents/FlowFiveComponent';
+import AcceptFlowOneComponent from './FlowComponents/AcceptFlowOneComponent';
+import AcceptFlowTwoComponent from './FlowComponents/AcceptFlowTwoComponent';
+import AcceptFlowFourComponent from './FlowComponents/AcceptFlowFourComponent';
 
 export default function HowToSet() {
     const displayValue = useBreakpointValue({base: 'small', md: 'medium',  lg: 'large'});
@@ -49,10 +49,10 @@ export default function HowToSet() {
     ];
 
     const acceptItems = [
-        { value: "acfirst-item", title: t("Flow1"), content: <FlowOneComponent/> },
-        { value: "acsecond-item", title: t("Flow2"), content: <FlowTwoComponent/> },
-        { value: "acthird-item", title: t("Flow3"), content: <FlowThreeComponent/> },
-        { value: "acfourth-item", title: t("Flow4"), content: <FlowFourComponent/> },
+        { value: "acfirst-item", title: t("AcceptFlow1"), content: <AcceptFlowOneComponent /> },
+        { value: "acsecond-item", title: t("AcceptFlow2"), content: <AcceptFlowTwoComponent /> },
+        { value: "acthird-item", title: t("AcceptFlow4"), content: <AcceptFlowFourComponent /> },
+        { value: "acfourth-item", title: t("AcceptFlow5Mobile"), content: <FlowFourComponent/> },
         { value: "acfifth-item", title: t("Flow5"), content: <FlowFiveComponent/> },
     ];
 
@@ -103,8 +103,7 @@ export default function HowToSet() {
                         ))}
                     </Accordion.Root>
 
-
-                    <Flex direction="column" align="center" gap="0px" py={8} justify="space-between" w="92vw">
+                    {/* <Flex direction="column" align="center" gap="0px" py={8} justify="space-between" w="92vw">
                         <Flex direction="column" align="flex-start" w="92vw">
                             <Text textStyle="2xl" color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("AcceptFlow1")}</Text>
                             <Box mt={4} px={2}>
@@ -114,10 +113,9 @@ export default function HowToSet() {
                         <Flex gap="8px" mt={4}>
                             <Image src={StartOne} alt="Voice Recording" width={360} height={780} />
                         </Flex>
-                    </Flex>
+                    </Flex> */}
 
-
-                    <Flex direction="column" align="center" gap="0px" py={8} justify="space-between" w="92vw">
+                    {/* <Flex direction="column" align="center" gap="0px" py={8} justify="space-between" w="92vw">
                         <Flex direction="column" align="flex-start" w="92vw">
                             <Text textStyle="2xl" color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("AcceptFlow2")}</Text>
                             <Box mt={4} px={2}>
@@ -127,8 +125,9 @@ export default function HowToSet() {
                         <Flex gap="8px" mt={4}>
                             <Image src={Install} alt="Voice Recording" width={360} height={780} />
                         </Flex>
-                    </Flex>
-                    <Flex direction="column" align="center" gap="0px" py={8} justify="space-between" w="92vw">
+                    </Flex> */}
+
+                    {/* <Flex direction="column" align="center" gap="0px" py={8} justify="space-between" w="92vw">
                         <Flex direction="column" align="flex-start" w="92vw">
                             <Text textStyle="2xl" color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("AcceptFlow4")}</Text>
                             <Box mt={4} px={2}>
@@ -138,7 +137,9 @@ export default function HowToSet() {
                         <Flex gap="8px" mt={4}>
                             <Image src={TelInput} alt="Voice Recording" width={360} height={780} />
                         </Flex>
-                    </Flex>
+                    </Flex> */}
+
+
                     <Flex direction="column" align="center" gap="0px" py={8} justify="space-between" w="92vw">
                         <Flex direction="column" align="flex-start" w="92vw">
                             <Text textStyle="2xl" color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("AcceptFlow5Mobile")}</Text>
@@ -150,6 +151,9 @@ export default function HowToSet() {
                             <Image src={TelOtpInput} alt="Voice Recording" width={360} height={780} />
                         </Flex>
                     </Flex>
+
+
+
                     <Flex direction="column" align="center" gap="0px" py={8} justify="space-between" w="92vw">
                         <Flex direction="column" align="flex-start" w="92vw">
                             <Text textStyle="2xl" color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("AcceptFlow8")}</Text>
@@ -161,6 +165,8 @@ export default function HowToSet() {
                             <Image src={Confirm} alt="Voice Recording" width={360} height={780} />
                         </Flex>
                     </Flex>
+
+
                     <Flex direction="column" align="center" gap="0px" py={8} justify="space-between" w="92vw">
                         <Flex direction="column" align="flex-start" w="92vw">
                             <Text textStyle="2xl" color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("AcceptFlow9")}</Text>
