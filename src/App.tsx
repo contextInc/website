@@ -2,11 +2,11 @@ import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import HowToUse from './pages/HowToUse';
-import HowToAccept from './pages/HowToAccept';
 import Company from './pages/Company';
 import Price from './pages/Price';
 import QA from './pages/QA';
 import PrivacyTwo from './pages/PrivacyTwo';
+import HowToAccept from './pages/HowToAccept';
 
 function App() {
   return (

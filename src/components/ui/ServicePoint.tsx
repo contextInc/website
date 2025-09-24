@@ -46,6 +46,7 @@ export default function ServicePoint() {
                 <AppealPointWithNum  num={5} appealSentence={t("appeal5")} detailSentence={t("detail5")} wpoint={320} hpoint={368} />
                 <AppealPointWithNum  num={6} appealSentence={t("appeal6")} detailSentence={t("detail6")} wpoint={320} hpoint={428} />
                 <AppealPointWithNum  num={7} appealSentence={t("appeal7")} detailSentence={t("detail7")} wpoint={320} hpoint={320} />
+                <Image src={SetSpan} alt="SetSpan" marginTop="32px" w={480} height="auto" />
                 <PageMoveButtonTwo toRef="/howtouse" buttonLabel={t("LookHowToUse")} />
             </Stack>
         );
@@ -68,7 +69,10 @@ export default function ServicePoint() {
                     <AppealPointWithNum  num={5} appealSentence={t("appeal5")} detailSentence={t("detail5")} />
                     <AppealPointWithNum  num={6} appealSentence={t("appeal6")} detailSentence={t("detail6")} />
                 </Flex>
-                <AppealPointWithNum  num={7} appealSentence={t("appeal7")} detailSentence={t("detail7")} />
+                <Flex align="center" gap={14} py={8} justify="space-between">
+                    <AppealPointWithNum  num={7} appealSentence={t("appeal7")} detailSentence={t("detail7")} />
+                    <Image src={SetSpan} alt="SetSpan" marginTop="32px" w={480} height="auto" />
+                </Flex>
                 <PageMoveButtonTwo toRef="/howtouse" buttonLabel={t("LookHowToUse")} />
             </Stack>
         );

@@ -13,7 +13,7 @@ import { useState } from 'react';
 export default function QAIndex() {
     const displayValue = useBreakpointValue({base: 'small', md: 'medium',  lg: 'large'});
     const { t } = useTranslation();
-    const [value, setValue] = useState(["first-item"]);
+    const [value, setValue] = useState(["zero-item"]);
 
     const items = [
         { value: "nineth-item", title: t("IfMailOrTelDifferent"), text: t("IfMailOrTelDifferentAnswer") },
