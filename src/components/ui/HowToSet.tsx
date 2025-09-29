@@ -10,8 +10,7 @@ import '@/i18n';
 import RecordingOne from '../../assets/recordingThree.png';
 import RecordingTwo from '../../assets/recordingTwo.png';
 import ContactOne from '../../assets/contactOne.png';
-import ContactThree from '../../assets/contactThree.png';
-import ContactFour from '../../assets/contactFour.png';
+import ContactTwo from '../../assets/contactTwo.png';
 import SettingOne from '../../assets/settingOne.png';
 import SettingTwo from '../../assets/settingTwo.png';
 import TriggerOne from '../../assets/triggerOne.png';
@@ -150,7 +149,7 @@ export default function HowToSet() {
                         </Flex>
                         <Flex gap="32px" marginTop="24px">
                             <Image src={ContactOne} alt="Voice Recording" width={240} height={520} />
-                            <Image src={ContactFour} alt="Voice Recording" width={240} height={520} />
+                            <Image src={ContactTwo} alt="Voice Recording" width={240} height={520} />
                         </Flex>
                     </Flex>
                     <Flex align="center" direction="column" gap="0px" py={8} justify="space-between" w="80vw">
@@ -309,7 +308,7 @@ export default function HowToSet() {
                         </Flex>
                         <Flex gap="8px">
                             <Image src={ContactOne} alt="Voice Recording" width={240} height={520} />
-                            <Image src={ContactFour} alt="Voice Recording" width={240} height={520} />
+                            <Image src={ContactTwo} alt="Voice Recording" width={240} height={520} />
                         </Flex>
                     </Flex>
                     <Flex align="center" gap="0px" py={8} justify="space-between" w="976px">

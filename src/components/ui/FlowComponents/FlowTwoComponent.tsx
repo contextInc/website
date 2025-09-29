@@ -5,7 +5,7 @@ import {
   Image
 } from '@chakra-ui/react';
 import ContactOne from '../../../assets/contactOne.png';
-import ContactFour from '../../../assets/contactFour.png';
+import ContactTwo from '../../../assets/contactTwo.png';
 import { useTranslation } from 'react-i18next';
 import '@/i18n';
 
@@ -20,7 +20,7 @@ export default function FlowTwoComponent() {
             </Flex>
             <Flex direction="column" gap="32px" marginTop="24px">
                 <Image src={ContactOne} alt="Voice Recording" width={360} height={780} />
-                <Image src={ContactFour} alt="Voice Recording" width={360} height={780} />
+                <Image src={ContactTwo} alt="Voice Recording" width={360} height={780} />
             </Flex>
         </Flex>
     );
