@@ -4,7 +4,7 @@ import {
   Flex,
   Image
 } from '@chakra-ui/react';
-import RecordingOne from '../../../assets/recordingOne.png';
+import RecordingOne from '../../../assets/recordingThree.png';
 import RecordingTwo from '../../../assets/recordingTwo.png';
 import { useTranslation } from 'react-i18next';
 import '@/i18n';
