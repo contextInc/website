@@ -18,6 +18,16 @@ import TriggerTwo from '../../assets/triggerTwo.png';
 import FollowOne from '../../assets/followOne.png';
 import FollowTwo from '../../assets/followTwo.png';
 import SetSpan from '../../assets/settingSpan.png';
+import smsOne from '../../assets/smsOne.png';
+import mailOne from '../../assets/mailOne.png';
+import installOne from '../../assets/installOne.png';
+import installTwo from '../../assets/installTwo.png';
+import telAuthOne from '../../assets/telAuthOne.png';
+import telAuthTwo from '../../assets/telAuthTwo.png';
+import senderConfirmOne from '../../assets/senderConfirmOne.png';
+import senderConfirmTwo from '../../assets/senderConfirmTwo.png';
+import downloadOne from '../../assets/downloadOne.png';
+import downloadTwo from '../../assets/downloadTwo.png';
 import { useState } from 'react';
 import FlowOneComponent from './FlowComponents/FlowOneComponent';
 import FlowTwoComponent from './FlowComponents/FlowTwoComponent';
@@ -204,70 +214,64 @@ export default function HowToSet() {
                         </Box>
                     </Box>
                     <Text textStyle="4xl" marginBottom={20} color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("AcceptFlowMobile")}</Text>
-                    <Flex align="center" gap="0px" py={8} justify="space-between" w="90vw">
-                        <Flex direction="column" align="flex-start" w="50vw">
+                    <Flex align="center" direction="column" gap="0px" py={8} justify="space-between" w="80vw">
+                        <Flex direction="column" align="flex-start" w="80vw">
                             <Text textStyle="4xl" color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("AcceptFlow1")}</Text>
-                            <Box mt={4} px={12}>
+                            <Box mt={4} px={8}>
                                 <Text textStyle="xl" color="#6D7685" textAlign="left" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("AcceptFlow1detail1")}</Text>
                             </Box>
                         </Flex>
-                        <Flex gap="8px">
-                            <Image src={StartOne} alt="Voice Recording" width={240} height={520} />
+                        <Flex gap="32px" marginTop="24px">
+                            <Image src={smsOne} alt="SMS" width={240} height={520} />
+                            <Image src={mailOne} alt="Voice Recording" width={240} height={520} />
                         </Flex>
                     </Flex>
-                    <Flex align="center" gap="0px" py={8} justify="space-between" w="90vw">
-                        <Flex direction="column" align="flex-start" w="50vw">
+                    <Flex align="center" direction="column" gap="0px" py={8} justify="space-between" w="80vw">
+                        <Flex direction="column" align="flex-start" w="80vw">
                             <Text textStyle="4xl" color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("AcceptFlow2")}</Text>
-                            <Box mt={4} px={12}>
+                            <Box mt={4} px={8}>
                                 <Text textStyle="xl" color="#6D7685" textAlign="left" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("AcceptFlow2detail1")}</Text>
                             </Box>
                         </Flex>
-                        <Flex gap="8px">
-                            <Image src={Install} alt="Voice Recording" width={240} height={520} />
+                        <Flex gap="32px" marginTop="24px">
+                            <Image src={installOne} alt="SMS" width={240} height={520} />
+                            <Image src={installTwo} alt="Voice Recording" width={240} height={520} />
                         </Flex>
                     </Flex>
-                    <Flex align="center" gap="0px" py={8} justify="space-between" w="90vw">
-                        <Flex direction="column" align="flex-start" w="50vw">
+                    <Flex align="center" direction="column" gap="0px" py={8} justify="space-between" w="80vw">
+                        <Flex direction="column" align="flex-start" w="80vw">
                             <Text textStyle="4xl" color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("AcceptFlow3")}</Text>
-                            <Box mt={4} px={12}>
+                            <Box mt={4} px={8}>
                                 <Text textStyle="xl" color="#6D7685" textAlign="left" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("AcceptFlow3detail1")}</Text>
                             </Box>
                         </Flex>
-                        <Flex gap="8px">
-                            <Image src={AuthCode} alt="Voice Recording" width={240} height={520} />
+                        <Flex gap="32px" marginTop="24px">
+                            <Image src={telAuthOne} alt="SMS" width={240} height={520} />
+                            <Image src={telAuthTwo} alt="Voice Recording" width={240} height={520} />
                         </Flex>
                     </Flex>
-                    <Flex align="center" gap="0px" py={8} justify="space-between" w="90vw">
-                        <Flex direction="column" align="flex-start" w="50vw">
-                            <Text textStyle="4xl" color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("AcceptFlow4")}</Text>
-                            <Box mt={4} px={12}>
-                                <Text textStyle="xl" color="#6D7685" textAlign="left" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("AcceptFlow4detail1")}</Text>
-                            </Box>
-                        </Flex>
-                        <Flex gap="8px">
-                            <Image src={TelInput} alt="Voice Recording" width={240} height={520} />
-                        </Flex>
-                    </Flex>
-                    <Flex align="center" gap="0px" py={8} justify="space-between" w="90vw">
-                        <Flex direction="column" align="flex-start" w="50vw">
+                    <Flex align="center" direction="column" gap="0px" py={8} justify="space-between" w="80vw">
+                        <Flex direction="column" align="flex-start" w="80vw">
                             <Text textStyle="4xl" color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("AcceptFlow5")}</Text>
-                            <Box mt={4} px={12}>
+                            <Box mt={4} px={8}>
                                 <Text textStyle="xl" color="#6D7685" textAlign="left" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("AcceptFlow5detail1")}</Text>
                             </Box>
                         </Flex>
-                        <Flex gap="8px">
-                            <Image src={TelOtpInput} alt="Voice Recording" width={240} height={520} />
+                        <Flex gap="32px" marginTop="24px">
+                            <Image src={senderConfirmOne} alt="SMS" width={240} height={520} />
+                            <Image src={senderConfirmTwo} alt="Voice Recording" width={240} height={520} />
                         </Flex>
                     </Flex>
-                    <Flex align="center" gap="0px" py={8} justify="space-between" w="90vw">
-                        <Flex direction="column" align="flex-start" w="50vw">
+                    <Flex align="center" direction="column" gap="0px" py={8} justify="space-between" w="80vw">
+                        <Flex direction="column" align="flex-start" w="80vw">
                             <Text textStyle="4xl" color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("AcceptFlow6")}</Text>
-                            <Box mt={4} px={12}>
+                            <Box mt={4} px={8}>
                                 <Text textStyle="xl" color="#6D7685" textAlign="left" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("AcceptFlow6detail1")}</Text>
                             </Box>
                         </Flex>
-                        <Flex gap="8px">
-                            <Image src={MailInput} alt="Voice Recording" width={240} height={520} />
+                        <Flex gap="32px" marginTop="24px">
+                            <Image src={downloadOne} alt="SMS" width={240} height={520} />
+                            <Image src={downloadTwo} alt="Voice Recording" width={240} height={520} />
                         </Flex>
                     </Flex>
                     <Button fontSize={18} w="200px" h="48px" onClick={() => setModeNum(1)} marginTop={20} marginBottom={20} variant="outline" boxShadow="sm" fontFamily='Open Sans, sans-serif' color="#C85062" borderColor="#C85062" borderWidth={2} _hover={{ bg: "#C85062", color: "white" }} _active={{ bg: "#C85062", color: "white" }}>
