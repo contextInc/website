@@ -37,7 +37,6 @@ import FlowFiveComponent from './FlowComponents/FlowFiveComponent';
 import AcceptFlowOneComponent from './FlowComponents/AcceptFlowOneComponent';
 import AcceptFlowTwoComponent from './FlowComponents/AcceptFlowTwoComponent';
 import AcceptFlowThreeComponent from './FlowComponents/AcceptFlowThreeComponent';
-import AcceptFlowFourComponent from './FlowComponents/AcceptFlowFourComponent';
 import AcceptFlowFiveComponent from './FlowComponents/AcceptFlowFiveComponent';
 import AcceptFlowSixComponent from './FlowComponents/AcceptFlowSixComponent';
 import StartOne from '../../assets/startOne.png';
@@ -66,7 +65,6 @@ export default function HowToSet() {
         { value: "acfirst-item", title: t("AcceptFlow1"), content: <AcceptFlowOneComponent /> },
         { value: "acsecond-item", title: t("AcceptFlow2"), content: <AcceptFlowTwoComponent /> },
         { value: "acthird-item", title: t("AcceptFlow3"), content: <AcceptFlowThreeComponent /> },
-        { value: "acfourth-item", title: t("AcceptFlow4"), content: <AcceptFlowFourComponent /> },
         { value: "acfifth-item", title: t("AcceptFlow5"), content: <AcceptFlowFiveComponent /> },
         { value: "acsixth-item", title: t("AcceptFlow6"), content: <AcceptFlowSixComponent /> },
     ];

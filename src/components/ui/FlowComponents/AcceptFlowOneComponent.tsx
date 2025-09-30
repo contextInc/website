@@ -4,7 +4,8 @@ import {
   Flex,
   Image
 } from '@chakra-ui/react';
-import StartOne from '../../../assets/startOne.png';
+import smsOne from '../../../assets/smsOne.png';
+import mailOne from '../../../assets/mailOne.png';
 import { useTranslation } from 'react-i18next';
 import '@/i18n';
 
@@ -18,7 +19,8 @@ export default function AcceptFlowOneComponent() {
                 </Box>
             </Flex>
             <Flex direction="column" gap="32px" marginTop="24px">
-                <Image src={StartOne} alt="Voice Recording" width={360} height={780} />
+                <Image src={smsOne} alt="Voice Recording" width={360} height={780} />
+                <Image src={mailOne} alt="Voice Recording" width={360} height={780} />
             </Flex>
         </Flex>
     );
