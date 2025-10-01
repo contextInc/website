@@ -4,7 +4,8 @@ import {
   Flex,
   Image
 } from '@chakra-ui/react';
-import Confirm from '../../../assets/confirm.png';
+import senderConfirmOne from '../../../assets/senderConfirmOne.png';
+import senderConfirmTwo from '../../../assets/senderConfirmTwo.png';
 import { useTranslation } from 'react-i18next';
 import '@/i18n';
 
@@ -18,7 +19,8 @@ export default function AcceptFlowFiveComponent() {
                 </Box>
             </Flex>
             <Flex direction="column" gap="32px" marginTop="24px">
-                <Image src={Confirm} alt="Voice Recording" width={360} height={780} />
+                <Image src={senderConfirmOne} alt="Voice Recording" width={360} height={780} />
+                <Image src={senderConfirmTwo} alt="Voice Recording" width={360} height={780} />
             </Flex>
         </Flex>
     );

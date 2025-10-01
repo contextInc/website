@@ -437,6 +437,5 @@ export default function HowToSet() {
                 </Stack>
             );
         }
-
     }
 }

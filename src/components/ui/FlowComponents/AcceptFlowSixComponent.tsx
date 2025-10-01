@@ -4,7 +4,8 @@ import {
   Flex,
   Image
 } from '@chakra-ui/react';
-import VoiceIndex from '../../../assets/voiceIndex.png';
+import downloadOne from '../../../assets/downloadOne.png';
+import downloadTwo from '../../../assets/downloadTwo.png';
 import { useTranslation } from 'react-i18next';
 import '@/i18n';
 
@@ -18,7 +19,8 @@ export default function AcceptFlowSixComponent() {
                 </Box>
             </Flex>
             <Flex direction="column" gap="32px" marginTop="24px">
-                <Image src={VoiceIndex} alt="Voice Recording" width={360} height={780} />
+                <Image src={downloadOne} alt="Voice Recording" width={360} height={780} />
+                <Image src={downloadTwo} alt="Voice Recording" width={360} height={780} />
             </Flex>
         </Flex>
     );

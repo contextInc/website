@@ -4,7 +4,8 @@ import {
   Flex,
   Image
 } from '@chakra-ui/react';
-import TelInput from '../../../assets/telInput.png';
+import telAuthOne from '../../../assets/telAuthOne.png';
+import telAuthTwo from '../../../assets/telAuthTwo.png';
 import { useTranslation } from 'react-i18next';
 import '@/i18n';
 
@@ -18,7 +19,8 @@ export default function AcceptFlowThreeComponent() {
                 </Box>
             </Flex>
             <Flex direction="column" gap="32px" marginTop="24px">
-                <Image src={TelInput} alt="Voice Recording" width={360} height={780} />
+                <Image src={telAuthOne} alt="Voice Recording" width={360} height={780} />
+                <Image src={telAuthTwo} alt="Voice Recording" width={360} height={780} />
             </Flex>
         </Flex>
     );
