@@ -39,13 +39,6 @@ import AcceptFlowTwoComponent from './FlowComponents/AcceptFlowTwoComponent';
 import AcceptFlowThreeComponent from './FlowComponents/AcceptFlowThreeComponent';
 import AcceptFlowFiveComponent from './FlowComponents/AcceptFlowFiveComponent';
 import AcceptFlowSixComponent from './FlowComponents/AcceptFlowSixComponent';
-import StartOne from '../../assets/startOne.png';
-import Install from '../../assets/install.png';
-import AuthCode from '../../assets/authCode.png';
-import TelInput from '../../assets/telInput.png';
-import TelOtpInput from '../../assets/telOtpInput.png';
-import MailInput from '../../assets/mailInput.png';
-
 
 export default function HowToSet() {
     const displayValue = useBreakpointValue({base: 'small', md: 'medium',  lg: 'large'});
@@ -366,69 +359,63 @@ export default function HowToSet() {
                     </Box>
                     <Text textStyle="5xl" marginBottom={20} color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("AcceptFlowMobile")}</Text>
                     <Flex align="center" gap="0px" py={8} justify="space-between" w="976px">
-                        <Flex direction="column" align="flex-start" w="728px">
+                        <Flex direction="column" align="flex-start" w="488px">
                             <Text textStyle="5xl" color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("AcceptFlow1")}</Text>
                             <Box mt={4} px={12}>
                                 <Text textStyle="xl" color="#6D7685" textAlign="left" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("AcceptFlow1detail1")}</Text>
                             </Box>
                         </Flex>
                         <Flex gap="8px">
-                            <Image src={StartOne} alt="Voice Recording" width={240} height={520} />
+                            <Image src={smsOne} alt="Voice Recording" width={240} height={520} />
+                            <Image src={mailOne} alt="Voice Recording" width={240} height={520} />
                         </Flex>
                     </Flex>
                     <Flex align="center" gap="0px" py={8} justify="space-between" w="976px">
-                        <Flex direction="column" align="flex-start" w="728px">
-                            <Text textStyle="5xl" color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("AcceptFlow2")}</Text>
+                        <Flex direction="column" align="flex-start" w="488px">
+                            <Text textStyle="5xl" color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("AcceptFlow2PC")}</Text>
                             <Box mt={4} px={12}>
                                 <Text textStyle="xl" color="#6D7685" textAlign="left" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("AcceptFlow2detail1")}</Text>
                             </Box>
                         </Flex>
                         <Flex gap="8px">
-                            <Image src={Install} alt="Voice Recording" width={240} height={520} />
+                            <Image src={installOne} alt="Voice Recording" width={240} height={520} />
+                            <Image src={installTwo} alt="Voice Recording" width={240} height={520} />
                         </Flex>
                     </Flex>
                     <Flex align="center" gap="0px" py={8} justify="space-between" w="976px">
-                        <Flex direction="column" align="flex-start" w="728px">
+                        <Flex direction="column" align="flex-start" w="488px">
                             <Text textStyle="5xl" color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("AcceptFlow3")}</Text>
                             <Box mt={4} px={12}>
                                 <Text textStyle="xl" color="#6D7685" textAlign="left" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("AcceptFlow3detail1")}</Text>
                             </Box>
                         </Flex>
                         <Flex gap="8px">
-                            <Image src={AuthCode} alt="Voice Recording" width={240} height={520} />
+                            <Image src={telAuthOne} alt="Voice Recording" width={240} height={520} />
+                            <Image src={telAuthTwo} alt="Voice Recording" width={240} height={520} />
                         </Flex>
                     </Flex>
                     <Flex align="center" gap="0px" py={8} justify="space-between" w="976px">
-                        <Flex direction="column" align="flex-start" w="728px">
-                            <Text textStyle="5xl" color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("AcceptFlow4")}</Text>
-                            <Box mt={4} px={12}>
-                                <Text textStyle="xl" color="#6D7685" textAlign="left" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("AcceptFlow4detail1")}</Text>
-                            </Box>
-                        </Flex>
-                        <Flex gap="8px">
-                            <Image src={TelInput} alt="Voice Recording" width={240} height={520} />
-                        </Flex>
-                    </Flex>
-                    <Flex align="center" gap="0px" py={8} justify="space-between" w="976px">
-                        <Flex direction="column" align="flex-start" w="728px">
+                        <Flex direction="column" align="flex-start" w="488px">
                             <Text textStyle="5xl" color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("AcceptFlow5")}</Text>
                             <Box mt={4} px={12}>
                                 <Text textStyle="xl" color="#6D7685" textAlign="left" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("AcceptFlow5detail1")}</Text>
                             </Box>
                         </Flex>
                         <Flex gap="8px">
-                            <Image src={TelOtpInput} alt="Voice Recording" width={240} height={520} />
+                            <Image src={senderConfirmOne} alt="Voice Recording" width={240} height={520} />
+                            <Image src={senderConfirmTwo} alt="Voice Recording" width={240} height={520} />
                         </Flex>
                     </Flex>
                     <Flex align="center" gap="0px" py={8} justify="space-between" w="976px">
-                        <Flex direction="column" align="flex-start" w="728px">
+                        <Flex direction="column" align="flex-start" w="488px">
                             <Text textStyle="5xl" color="#C85062" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("AcceptFlow6")}</Text>
                             <Box mt={4} px={12}>
                                 <Text textStyle="xl" color="#6D7685" textAlign="left" whiteSpace="pre-wrap" fontFamily='Open Sans, sans-serif'>{t("AcceptFlow6detail1")}</Text>
                             </Box>
                         </Flex>
                         <Flex gap="8px">
-                            <Image src={MailInput} alt="Voice Recording" width={240} height={520} />
+                            <Image src={downloadOne} alt="Voice Recording" width={240} height={520} />
+                            <Image src={downloadTwo} alt="Voice Recording" width={240} height={520} />
                         </Flex>
                     </Flex>
                     <Button fontSize={18} w="200px" h="48px" onClick={() => setModeNum(1)} marginTop={20} marginBottom={20} variant="outline" boxShadow="sm" fontFamily='Open Sans, sans-serif' color="#C85062" borderColor="#C85062" borderWidth={2} _hover={{ bg: "#C85062", color: "white" }} _active={{ bg: "#C85062", color: "white" }}>
